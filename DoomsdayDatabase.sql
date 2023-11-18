@@ -117,7 +117,8 @@ CREATE TABLE Person (
     PersonDateOfDeath DATE,
 	LocationLodgingID INT,
     FactionID INT,
-    FOREIGN KEY (FactionID) REFERENCES Faction(FactionID)
+    FOREIGN KEY (FactionID) REFERENCES Faction(FactionID),
+	FOREIGN KEY (LocationLodgingID) REFERENCES LocationLodging(LocationLodgingID)
 );
 
 -- Create the Skill table
