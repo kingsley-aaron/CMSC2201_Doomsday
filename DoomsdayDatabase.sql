@@ -206,7 +206,3 @@ CREATE TABLE SkillTask (
     FOREIGN KEY (TaskID) REFERENCES Task(TaskID),
     FOREIGN KEY (SkillID) REFERENCES Skill(SkillID)
 );
-
-
---Comment to test changes
-
