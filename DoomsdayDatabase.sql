@@ -14,8 +14,8 @@ CREATE TABLE Location (
     LocationID INT IDENTITY(1,1) PRIMARY KEY,
     LocationName NVARCHAR(35),
     LocationDescription NVARCHAR(MAX),
-    LocationSafetyLevel TINYINT,
-    LocationExpansionPotential TINYINT
+    LocationSafetyLevel TINYINT CHECK (LocationSafetyLevel BETWEEN 1 AND 5),
+    LocationExpansionPotential TINYINT CHECK (LocationExpansionPotential BETWEEN 1 AND 5)
 );
 
 --Create the Lodging table
@@ -41,8 +41,8 @@ CREATE TABLE LocationLodging (
 CREATE TABLE Faction (
     FactionID INT IDENTITY(1,1) PRIMARY KEY,
     FactionName NVARCHAR(35),
-    FactionSize INT,
-    FactionInfluence TINYINT,
+    FactionSize INT CHECK (FactionSize > 0),
+    FactionInfluence TINYINT CHECK (FactionInfluence BETWEEN 1 AND 10)
 );
 
 -- Create the FoodSource table
@@ -83,7 +83,7 @@ CREATE TABLE Food (
 -- Create the Water table
 CREATE TABLE Water (
     WaterID INT IDENTITY(1,1) PRIMARY KEY,
-    WaterQuality TINYINT,
+    WaterQuality TINYINT CHECK (WaterQuality BETWEEN 1 AND 5),
     WaterQuantity DECIMAL(8,2),
     WaterSourceID INT,
     FOREIGN KEY (WaterSourceID) REFERENCES WaterSource(WaterSourceID)
@@ -93,7 +93,7 @@ CREATE TABLE Water (
 CREATE TABLE Power (
     PowerID INT IDENTITY(1,1) PRIMARY KEY,
     PowerCapacity DECIMAL(8,2),
-    PowerAmount DECIMAL(8,2), -- This may need to change, no type on the DD
+    PowerAmount DECIMAL(8,2) CHECK (PowerAmount < PowerCapacity), 
     PowerSourceID INT,
     FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID)
 );
@@ -102,7 +102,7 @@ CREATE TABLE Power (
 CREATE TABLE Currency (
     CurrencyID INT IDENTITY(1,1) PRIMARY KEY,
     CurrencyName NVARCHAR(35),
-    CurrencyValue TINYINT
+    CurrencyValue TINYINT CHECK (CurrencyValue BETWEEN 1 AND 10)
 );
 
 -- Create the Person table
@@ -112,7 +112,7 @@ CREATE TABLE Person (
     PersonLastName NVARCHAR(35),
     PersonDateOfBirth DATE,
     PersonCallSign NVARCHAR(35),
-    PersonHealth TINYINT,
+    PersonHealth TINYINT CHECK (PersonHealth BETWEEN 0 AND 100),
     PersonDeceased BIT,
     PersonDateOfDeath DATE,
 	LocationLodgingID INT,
@@ -155,7 +155,7 @@ CREATE TABLE PersonTask (
     TaskID INT,
     TaskStatusID INT,
     PersonTaskStartDate DATE,
-    PersonTaskDueDate DATE,
+    PersonTaskDueDate DATE CHECK (PersonTaskDueDate >= PersonTaskStartDate),
     PRIMARY KEY (PersonID, TaskID),
     FOREIGN KEY (PersonID) REFERENCES Person(PersonID),
     FOREIGN KEY (TaskID) REFERENCES Task(TaskID),
@@ -191,7 +191,7 @@ CREATE TABLE CurrencyPerson (
 CREATE TABLE PersonSkill (
     PersonID INT,
     SkillID INT,
-    PersonSkillProficiency TINYINT,
+    PersonSkillProficiency TINYINT CHECK (PersonSkillProficiency BETWEEN 1 AND 10),
     PRIMARY KEY (PersonID, SkillID),
     FOREIGN KEY (PersonID) REFERENCES Person(PersonID),
     FOREIGN KEY (SkillID) REFERENCES Skill(SkillID)
@@ -201,7 +201,7 @@ CREATE TABLE PersonSkill (
 CREATE TABLE SkillTask (
     TaskID INT,
     SkillID INT,
-    SkillTaskDifficulty TINYINT,
+    SkillTaskDifficulty TINYINT CHECK (SkillTaskDifficulty BETWEEN 1 AND 5),
     PRIMARY KEY (TaskID, SkillID),
     FOREIGN KEY (TaskID) REFERENCES Task(TaskID),
     FOREIGN KEY (SkillID) REFERENCES Skill(SkillID)
