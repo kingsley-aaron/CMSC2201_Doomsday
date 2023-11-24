@@ -90,10 +90,10 @@ CREATE TABLE Water (
 );
 
 -- Create the Power table
-CREATE TABLE Power (
+CREATE TABLE [Power] (
     PowerID INT IDENTITY(1,1) PRIMARY KEY,
     PowerCapacity DECIMAL(8,2),
-    PowerAmount DECIMAL(8,2) CHECK (PowerAmount < PowerCapacity), 
+    PowerAmount DECIMAL(8,2), -- CHECK (PowerAmount < PowerCapacity) /*****CONSTRAINT IS BROKEN, WORKING ON A FIX*****/
     PowerSourceID INT,
     FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID)
 );
