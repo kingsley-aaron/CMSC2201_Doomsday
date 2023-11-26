@@ -113,7 +113,7 @@ CREATE TABLE Power (
 CREATE TABLE Currency (
     CurrencyID INT IDENTITY(1,1) PRIMARY KEY,
     CurrencyName NVARCHAR(35),
-    CurrencyValue TINYINT CHECK (CurrencyValue BETWEEN 1 AND 10)
+    CurrencyValue TINYINT CHECK (CurrencyValue BETWEEN 1 AND 255)
 );
 
 -- Create the Person table
