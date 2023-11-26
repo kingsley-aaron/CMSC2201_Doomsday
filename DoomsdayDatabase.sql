@@ -45,6 +45,15 @@ CREATE TABLE Faction (
     FactionInfluence TINYINT CHECK (FactionInfluence BETWEEN 1 AND 10)
 );
 
+-- Create the FactionLocation Table
+CREATE TABLE FactionLocation (
+    FactionID INT,
+    LocationID INT,
+    PRIMARY KEY (FactionID, LocationID),
+    FOREIGN KEY (FactionID) REFERENCES Faction(FactionID),
+    FOREIGN KEY (LocationID) REFERENCES Location(LocationID)
+);
+
 -- Create the FoodSource table
 CREATE TABLE FoodSource (
     FoodSourceID INT IDENTITY(1,1) PRIMARY KEY,
