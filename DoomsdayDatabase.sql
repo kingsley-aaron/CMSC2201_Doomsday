@@ -88,15 +88,17 @@ CREATE TABLE Water (
     WaterSourceID INT,
     FOREIGN KEY (WaterSourceID) REFERENCES WaterSource(WaterSourceID)
 );
-
 -- Create the Power table
-CREATE TABLE [Power] (
+CREATE TABLE Power (
     PowerID INT IDENTITY(1,1) PRIMARY KEY,
     PowerCapacity DECIMAL(8,2),
-    PowerAmount DECIMAL(8,2), -- CHECK (PowerAmount < PowerCapacity) /*****CONSTRAINT IS BROKEN, WORKING ON A FIX*****/
+    PowerAmount DECIMAL(8,2),
     PowerSourceID INT,
-    FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID)
+    FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID),
+    CONSTRAINT CHK_PowerAmount_LessThan_Capacity 
+        CHECK (PowerAmount < PowerCapacity)
 );
+
 
 -- Create the Currency table
 CREATE TABLE Currency (
@@ -155,11 +157,13 @@ CREATE TABLE PersonTask (
     TaskID INT,
     TaskStatusID INT,
     PersonTaskStartDate DATE,
-    PersonTaskDueDate DATE CHECK (PersonTaskDueDate >= PersonTaskStartDate),
+    PersonTaskDueDate DATE,
     PRIMARY KEY (PersonID, TaskID),
     FOREIGN KEY (PersonID) REFERENCES Person(PersonID),
     FOREIGN KEY (TaskID) REFERENCES Task(TaskID),
-    FOREIGN KEY (TaskStatusID) REFERENCES TaskStatus(TaskStatusID)
+    FOREIGN KEY (TaskStatusID) REFERENCES TaskStatus(TaskStatusID),
+	CONSTRAINT CHK_DueDate_After_StartDate
+		CHECK (PersonTaskDueDate >= PersonTaskStartDate)
 );
 
 -- Create the Inventory table
