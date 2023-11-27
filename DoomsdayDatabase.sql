@@ -113,7 +113,7 @@ CREATE TABLE Power (
 CREATE TABLE Currency (
     CurrencyID INT IDENTITY(1,1) PRIMARY KEY,
     CurrencyName NVARCHAR(35),
-    CurrencyValue TINYINT CHECK (CurrencyValue BETWEEN 1 AND 10)
+    CurrencyValue TINYINT CHECK (CurrencyValue BETWEEN 1 AND 255)
 );
 
 -- Create the Person table
@@ -129,7 +129,9 @@ CREATE TABLE Person (
 	LocationLodgingID INT,
     FactionID INT,
     FOREIGN KEY (FactionID) REFERENCES Faction(FactionID),
-	FOREIGN KEY (LocationLodgingID) REFERENCES LocationLodging(LocationLodgingID)
+	FOREIGN KEY (LocationLodgingID) REFERENCES LocationLodging(LocationLodgingID),
+    CONSTRAINT CHK_PersonDateOfDeath_BeforeToday
+        CHECK (PersonDateOfDeath < CONVERT(DATE, GETDATE()))
 );
 
 -- Create the Skill table
@@ -164,7 +166,7 @@ CREATE TABLE Adversaries (
 CREATE TABLE PersonTask (
     PersonID INT,
     TaskID INT,
-    TaskStatusID INT,
+    TaskStatusID INT CHECK (TaskStatusID BETWEEN 1 AND 4),
     PersonTaskStartDate DATE,
     PersonTaskDueDate DATE,
     PRIMARY KEY (PersonID, TaskID),
