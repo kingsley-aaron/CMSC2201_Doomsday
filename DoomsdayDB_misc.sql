@@ -69,10 +69,12 @@ AS
 	DECLARE @factionID INT;
 	DECLARE @newinfluence INT;
 	DECLARE @oldinfluence INT;
+	DECLARE @factionName NVARCHAR(35);
 
 	SELECT @factionID = i.FactionID FROM inserted i;
 	SELECT @newinfluence = i.FactionInfluence FROM inserted i;
 	SELECT @oldinfluence = d.FactionInfluence FROM deleted d;
+	SELECT @factionName = d.FactionName FROM deleted d;
 
 	BEGIN
 		IF EXISTS(SELECT * FROM inserted i JOIN deleted d ON i.FactionID = d.FactionID WHERE i.FactionInfluence <= 0)
@@ -80,6 +82,7 @@ AS
 				DELETE FROM DoomsdayDatabase.dbo.FactionLocation WHERE FactionID IN (SELECT FactionID FROM deleted);
 				UPDATE DoomsdayDatabase.dbo.Person SET FactionID = NULL WHERE FactionID IN (SELECT FactionID FROM deleted);
 				DELETE FROM DoomsdayDatabase.dbo.Faction WHERE FactionID in (SELECT FactionID FROM deleted);
+				PRINT 'Faction ' + @factionName + ' has been disbanded';
 			END
 		ELSE
 			BEGIN
@@ -167,4 +170,3 @@ BEGIN
 		c.CurrencyValue,
 		cp.CurrencyAmount;
 
-EXEC usp_GetPersonInformation 5
