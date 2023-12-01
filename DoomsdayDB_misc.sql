@@ -86,5 +86,85 @@ AS
 				UPDATE DoomsdayDatabase.dbo.Faction SET FactionInfluence = (SELECT FactionInfluence from inserted) WHERE FactionID in (SELECT FactionID FROM inserted);
 			END
 	END;
+GO
 
+-- SPROC to get all information on a person into one report
+CREATE PROCEDURE [dbo].[usp_GetPersonInformation]
+    @PersonID INT
+AS
+BEGIN
+    SET NOCOUNT ON;
 
+    -- Get basic person information
+    SELECT
+        PersonFirstName + ' ' + PersonLastName AS [Name],
+        PersonDateOfBirth AS [DOB],
+		DATEDIFF(YEAR,PersonDateOfBirth,GETDATE()) AS [Age],
+        PersonCallSign AS [Call Sign],
+        PersonHealth AS [Health %],
+        CASE 
+			WHEN PersonDeceased = 1 THEN 'YES'
+			ELSE 'No'
+		END AS [Is Deceased],
+        PersonDateOfDeath AS [Date of Death],
+        l.LocationName AS [Location],
+		lod.LodgingName AS [Lodging Type],
+        f.FactionName AS [Faction]
+
+    FROM
+        dbo.Person p
+    LEFT JOIN
+        dbo.LocationLodging ll ON p.LocationLodgingID = ll.LocationLodgingID
+    LEFT JOIN
+        dbo.Location l ON ll.LocationID = l.LocationID
+	LEFT JOIN
+		Lodging lod ON ll.LodgingID = lod.LodgingID
+    LEFT JOIN
+        dbo.Faction f ON p.FactionID = f.FactionID
+    WHERE
+        p.PersonID = @PersonID;
+
+    -- Get skills information
+    SELECT
+        s.SkillName,
+        ps.PersonSkillProficiency
+    FROM
+        dbo.PersonSkill ps
+    JOIN
+        dbo.Skill s ON ps.SkillID = s.SkillID
+    WHERE
+        ps.PersonID = @PersonID;
+
+    -- Get tasks information
+    SELECT
+        t.TaskName,
+        ts.TaskStatusDescription,
+        pt.PersonTaskStartDate,
+        pt.PersonTaskDueDate
+    FROM
+        dbo.PersonTask pt
+    JOIN
+        dbo.Task t ON pt.TaskID = t.TaskID
+    JOIN
+        dbo.TaskStatus ts ON pt.TaskStatusID = ts.TaskStatusID
+    WHERE
+        pt.PersonID = @PersonID;
+
+	-- Get wallet information
+	SELECT 
+		c.CurrencyName,
+		c.CurrencyValue,
+		cp.CurrencyAmount,
+		CAST(SUM(cp.CurrencyAmount * c.CurrencyValue) AS MONEY) AS [Total Value]
+	FROM 
+		CurrencyPerson cp 
+	JOIN 
+		Currency c ON cp.CurrencyID = c.CurrencyID
+	WHERE
+		cp.PersonID = @PersonID
+	GROUP BY 
+		c.CurrencyName,
+		c.CurrencyValue,
+		cp.CurrencyAmount;
+
+EXEC usp_GetPersonInformation 5
