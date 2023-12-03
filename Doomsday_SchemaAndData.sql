@@ -1,11 +1,11 @@
 USE [master]
 GO
-/****** Object:  Database [DoomsdayDatabase]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Database [DoomsdayDatabase]    Script Date: 12/3/2023 1:35:35 PM ******/
 CREATE DATABASE [DoomsdayDatabase]
 GO
 USE [DoomsdayDatabase]
 GO
-/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Allies]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Allies]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,7 +33,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Currency]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Currency]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,7 +48,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -64,7 +64,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Faction]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Faction]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -80,7 +80,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -95,7 +95,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Food]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Food]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -112,7 +112,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -126,7 +126,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -144,7 +144,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Location]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Location]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -161,7 +161,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -179,7 +179,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lodging]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Lodging]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -194,7 +194,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Person]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Person]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -216,7 +216,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -232,7 +232,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -250,7 +250,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Power]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Power]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -266,7 +266,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -281,7 +281,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Skill]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Skill]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -296,7 +296,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -312,7 +312,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Task]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Task]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -327,7 +327,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -341,7 +341,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Water]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[Water]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -357,7 +357,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/3/2023 12:24:01 PM ******/
+/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/3/2023 1:35:36 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1584,6 +1584,504 @@ GO
 INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (499, 473, 49, CAST(444.47 AS Decimal(12, 2)))
 GO
 INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (500, 3, 29, CAST(98.96 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (501, 1490, 12, CAST(892.40 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (502, 1036, 12, CAST(754.83 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (503, 1192, 39, CAST(414.14 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (504, 1328, 3, CAST(91.06 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (505, 1161, 43, CAST(808.66 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (506, 1385, 18, CAST(425.22 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (507, 1252, 40, CAST(564.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (508, 1095, 29, CAST(340.99 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (509, 1020, 15, CAST(471.55 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (510, 1333, 7, CAST(54.70 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (511, 1237, 21, CAST(248.85 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (512, 1200, 27, CAST(893.11 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (513, 1181, 20, CAST(43.01 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (514, 1162, 30, CAST(724.77 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (515, 1415, 14, CAST(906.61 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (516, 1253, 10, CAST(824.80 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (517, 1316, 23, CAST(508.20 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (518, 1342, 41, CAST(587.96 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (519, 1085, 5, CAST(587.24 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (520, 1329, 15, CAST(818.30 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (521, 1073, 36, CAST(957.56 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (522, 1409, 13, CAST(991.79 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (523, 1050, 19, CAST(133.39 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (524, 1387, 19, CAST(546.40 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (525, 1265, 23, CAST(974.95 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (526, 1266, 48, CAST(71.29 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (527, 1129, 9, CAST(86.56 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (528, 1034, 31, CAST(410.67 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (529, 1137, 50, CAST(681.91 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (530, 1276, 19, CAST(400.82 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (531, 1144, 32, CAST(512.77 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (532, 1242, 1, CAST(422.69 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (533, 1471, 7, CAST(30.48 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (534, 1480, 50, CAST(163.52 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (535, 1165, 37, CAST(902.60 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (536, 1322, 24, CAST(72.86 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (537, 1156, 17, CAST(956.62 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (538, 1138, 22, CAST(456.45 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (539, 1211, 39, CAST(776.13 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (540, 1296, 50, CAST(37.28 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (541, 1211, 3, CAST(672.77 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (542, 1280, 12, CAST(344.61 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (543, 1386, 29, CAST(314.82 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (544, 1054, 50, CAST(440.50 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (545, 1118, 31, CAST(67.92 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (546, 1174, 39, CAST(149.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (547, 1203, 3, CAST(880.58 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (548, 1063, 48, CAST(644.52 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (549, 1450, 33, CAST(31.01 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (550, 1049, 6, CAST(664.21 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (551, 1476, 22, CAST(646.75 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (552, 1445, 17, CAST(560.09 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (553, 1325, 31, CAST(641.45 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (554, 1048, 27, CAST(88.85 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (555, 1187, 10, CAST(909.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (556, 1106, 47, CAST(319.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (557, 1301, 17, CAST(70.57 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (558, 1259, 25, CAST(471.39 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (559, 1493, 7, CAST(369.80 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (560, 1382, 38, CAST(872.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (561, 1005, 49, CAST(816.89 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (562, 1163, 29, CAST(506.94 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (563, 1254, 13, CAST(646.09 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (564, 1363, 8, CAST(460.65 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (565, 1019, 27, CAST(517.09 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (566, 1383, 17, CAST(764.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (567, 1234, 40, CAST(605.94 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (568, 1225, 35, CAST(765.53 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (569, 1215, 48, CAST(894.74 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (570, 1124, 5, CAST(713.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (571, 1191, 6, CAST(189.83 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (572, 1105, 8, CAST(729.71 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (573, 1134, 11, CAST(40.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (574, 1352, 47, CAST(741.29 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (575, 1310, 46, CAST(568.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (576, 1372, 37, CAST(442.68 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (577, 1263, 8, CAST(747.91 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (578, 1362, 17, CAST(205.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (579, 1062, 43, CAST(266.66 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (580, 1482, 23, CAST(852.15 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (581, 1012, 36, CAST(821.35 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (582, 1435, 33, CAST(784.36 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (583, 1456, 7, CAST(933.72 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (584, 1147, 19, CAST(856.65 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (585, 1045, 25, CAST(653.57 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (586, 1050, 8, CAST(631.53 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (587, 1104, 35, CAST(927.43 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (588, 1093, 34, CAST(366.27 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (589, 1006, 17, CAST(654.75 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (590, 1413, 34, CAST(756.46 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (591, 1112, 23, CAST(99.24 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (592, 1437, 19, CAST(946.72 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (593, 1281, 31, CAST(899.38 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (594, 1249, 26, CAST(797.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (595, 1074, 10, CAST(125.14 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (596, 1307, 32, CAST(397.27 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (597, 1463, 41, CAST(542.03 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (598, 1160, 25, CAST(577.46 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (599, 1109, 44, CAST(765.27 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (600, 1417, 26, CAST(911.73 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (601, 1085, 10, CAST(528.09 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (602, 1375, 43, CAST(135.45 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (603, 1165, 40, CAST(724.61 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (604, 1142, 47, CAST(173.29 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (605, 1116, 34, CAST(427.90 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (606, 1045, 3, CAST(671.23 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (607, 1257, 45, CAST(266.02 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (608, 1264, 44, CAST(985.99 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (609, 1109, 45, CAST(47.38 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (610, 1312, 41, CAST(981.51 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (611, 1172, 38, CAST(872.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (612, 1264, 23, CAST(889.24 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (613, 1051, 44, CAST(392.96 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (614, 1230, 34, CAST(944.16 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (615, 1456, 8, CAST(29.67 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (616, 1246, 8, CAST(487.10 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (617, 1139, 35, CAST(101.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (618, 1369, 19, CAST(820.81 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (619, 1319, 37, CAST(357.62 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (620, 1489, 18, CAST(242.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (621, 1087, 40, CAST(569.93 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (622, 1013, 29, CAST(998.86 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (623, 1298, 12, CAST(663.85 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (624, 1108, 18, CAST(743.31 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (625, 1487, 45, CAST(300.34 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (626, 1020, 1, CAST(344.53 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (627, 1036, 33, CAST(339.79 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (628, 1082, 39, CAST(101.47 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (629, 1203, 27, CAST(980.73 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (630, 1458, 13, CAST(318.38 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (631, 1265, 5, CAST(285.72 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (632, 1304, 30, CAST(993.81 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (633, 1280, 46, CAST(984.57 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (634, 1294, 12, CAST(731.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (635, 1430, 25, CAST(62.22 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (636, 1382, 36, CAST(91.70 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (637, 1173, 17, CAST(663.62 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (638, 1299, 25, CAST(547.10 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (639, 1116, 17, CAST(434.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (640, 1149, 21, CAST(551.77 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (641, 1183, 33, CAST(517.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (642, 1469, 9, CAST(752.58 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (643, 1403, 16, CAST(184.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (644, 1109, 8, CAST(544.59 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (645, 1360, 44, CAST(947.18 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (646, 1390, 7, CAST(635.56 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (647, 1020, 22, CAST(935.70 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (648, 1244, 27, CAST(214.83 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (649, 1403, 34, CAST(663.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (650, 1194, 46, CAST(64.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (651, 1117, 28, CAST(628.23 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (652, 1426, 13, CAST(355.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (653, 1110, 44, CAST(908.65 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (654, 1307, 3, CAST(679.89 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (655, 1281, 12, CAST(476.18 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (656, 1381, 18, CAST(881.51 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (657, 1030, 23, CAST(627.87 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (658, 1193, 32, CAST(651.71 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (659, 1450, 43, CAST(56.93 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (660, 1306, 23, CAST(12.61 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (661, 1356, 13, CAST(554.55 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (662, 1036, 26, CAST(982.86 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (663, 1310, 22, CAST(800.90 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (664, 1326, 17, CAST(816.08 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (665, 1323, 34, CAST(700.03 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (666, 1063, 25, CAST(711.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (667, 1140, 4, CAST(598.57 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (668, 1488, 30, CAST(529.89 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (669, 1109, 1, CAST(53.79 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (670, 1274, 1, CAST(765.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (671, 1056, 6, CAST(424.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (672, 1330, 31, CAST(55.84 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (673, 1049, 12, CAST(783.00 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (674, 1288, 2, CAST(398.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (675, 1444, 49, CAST(558.32 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (676, 1437, 13, CAST(386.11 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (677, 1050, 10, CAST(85.90 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (678, 1227, 11, CAST(654.40 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (679, 1259, 29, CAST(480.30 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (680, 1318, 30, CAST(356.94 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (681, 1410, 10, CAST(716.71 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (682, 1158, 45, CAST(569.76 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (683, 1154, 26, CAST(61.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (684, 1258, 39, CAST(388.10 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (685, 1438, 19, CAST(15.38 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (686, 1245, 44, CAST(458.14 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (687, 1191, 39, CAST(507.73 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (688, 1196, 34, CAST(959.88 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (689, 1052, 14, CAST(630.24 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (690, 1449, 11, CAST(451.11 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (691, 1380, 19, CAST(990.20 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (692, 1056, 1, CAST(388.73 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (693, 1270, 47, CAST(148.57 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (694, 1490, 14, CAST(606.28 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (695, 1268, 5, CAST(526.50 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (696, 1004, 46, CAST(461.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (697, 1275, 49, CAST(767.90 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (698, 1076, 20, CAST(631.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (699, 1414, 41, CAST(71.30 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (700, 1199, 9, CAST(956.86 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (701, 1039, 19, CAST(680.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (702, 1227, 31, CAST(732.80 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (703, 1116, 10, CAST(338.42 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (704, 1023, 27, CAST(816.42 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (705, 1270, 40, CAST(560.48 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (706, 1373, 15, CAST(945.63 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (707, 1412, 31, CAST(316.26 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (708, 1263, 19, CAST(953.06 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (709, 1163, 8, CAST(113.77 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (710, 1155, 44, CAST(761.28 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (711, 1375, 22, CAST(571.20 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (712, 1460, 16, CAST(805.39 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (713, 1077, 41, CAST(771.73 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (714, 1042, 5, CAST(503.59 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (715, 1202, 8, CAST(468.56 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (716, 1070, 10, CAST(382.35 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (717, 1317, 14, CAST(587.82 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (718, 1446, 11, CAST(412.56 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (719, 1316, 33, CAST(433.58 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (720, 1445, 39, CAST(594.10 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (721, 1106, 31, CAST(881.23 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (722, 1112, 38, CAST(136.22 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (723, 1027, 39, CAST(92.49 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (724, 1253, 30, CAST(808.93 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (725, 1351, 36, CAST(674.00 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (726, 1236, 12, CAST(697.91 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (727, 1316, 20, CAST(650.00 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (728, 1481, 16, CAST(371.16 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (729, 1491, 32, CAST(139.41 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (730, 1076, 33, CAST(345.84 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (731, 1425, 21, CAST(187.14 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (732, 1195, 47, CAST(61.04 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (733, 1140, 39, CAST(254.76 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (734, 1469, 28, CAST(475.37 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (735, 1168, 4, CAST(932.06 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (736, 1251, 18, CAST(168.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (737, 1493, 49, CAST(837.19 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (738, 1157, 40, CAST(135.47 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (739, 1391, 16, CAST(135.64 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (740, 1202, 18, CAST(90.83 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (741, 1301, 22, CAST(99.16 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (742, 1466, 23, CAST(882.17 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (743, 1145, 48, CAST(567.81 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (744, 1250, 23, CAST(837.47 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (745, 1276, 34, CAST(246.05 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (746, 1207, 30, CAST(544.60 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (747, 1028, 17, CAST(242.08 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (748, 1214, 13, CAST(428.58 AS Decimal(12, 2)))
+GO
+INSERT [dbo].[CurrencyPerson] ([CurrencyPersonID], [PersonID], [CurrencyID], [CurrencyAmount]) VALUES (749, 1359, 8, CAST(718.08 AS Decimal(12, 2)))
 GO
 SET IDENTITY_INSERT [dbo].[CurrencyPerson] OFF
 GO
@@ -8405,6 +8903,506 @@ INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VAL
 GO
 INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1000, 9, 7)
 GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1002, 49, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1003, 1, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1007, 6, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1007, 20, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1007, 28, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1008, 10, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1009, 36, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1009, 48, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1011, 44, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1015, 30, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1016, 8, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1016, 14, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1018, 29, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1021, 6, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1024, 8, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1026, 16, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1027, 13, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1029, 1, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1032, 49, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1035, 6, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1035, 12, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1037, 1, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1037, 27, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1038, 25, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1039, 35, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1040, 18, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1041, 39, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1041, 48, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1048, 16, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1048, 17, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1048, 40, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1051, 3, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1051, 5, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1054, 22, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1057, 16, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1058, 21, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1059, 15, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1060, 10, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1066, 9, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1069, 46, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1070, 37, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1074, 44, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1075, 8, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1081, 2, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1081, 10, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1081, 17, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1083, 31, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1085, 16, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1085, 44, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1086, 18, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1086, 26, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1089, 7, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1090, 13, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1093, 4, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1096, 15, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1097, 26, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1097, 37, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1098, 21, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1099, 32, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1100, 18, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1101, 14, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1102, 49, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1103, 40, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1104, 18, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1105, 32, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1105, 45, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1106, 5, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1108, 8, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1110, 37, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1111, 36, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1112, 16, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1114, 4, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1115, 19, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1120, 43, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1121, 40, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1123, 27, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1127, 13, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1130, 37, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1130, 39, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1132, 28, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1133, 50, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1136, 31, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1140, 24, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1143, 14, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1147, 47, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1151, 33, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1151, 34, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1154, 18, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1155, 19, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1159, 30, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1161, 12, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1161, 23, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1162, 46, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1165, 33, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1166, 6, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1169, 35, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1170, 26, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1173, 5, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1173, 6, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1178, 33, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1181, 5, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1186, 30, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1186, 49, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1195, 9, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1195, 22, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1195, 27, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1195, 47, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1197, 31, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1203, 29, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1203, 37, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1207, 3, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1207, 30, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1208, 36, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1208, 43, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1208, 47, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1209, 43, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1209, 45, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1214, 47, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1219, 26, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1220, 29, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1226, 40, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1229, 35, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1233, 35, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1235, 47, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1236, 7, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1240, 13, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1241, 15, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1243, 47, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1245, 31, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1246, 26, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1248, 41, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1250, 23, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1250, 42, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1250, 45, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1259, 31, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1264, 10, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1268, 38, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1269, 29, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1270, 13, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1272, 21, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1272, 33, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1273, 27, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1276, 20, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1276, 36, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1276, 39, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1284, 23, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1286, 27, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1287, 33, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1287, 46, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1290, 15, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1293, 33, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1300, 45, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1302, 25, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1302, 26, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1304, 33, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1306, 19, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1306, 20, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1308, 22, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1309, 11, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1309, 45, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1311, 12, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1312, 22, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1312, 32, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1313, 6, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1314, 14, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1316, 45, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1321, 5, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1323, 5, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1325, 16, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1331, 23, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1331, 24, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1332, 5, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1332, 29, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1332, 38, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1336, 31, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1339, 25, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1344, 37, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1344, 50, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1345, 18, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1346, 9, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1346, 10, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1347, 4, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1354, 19, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1355, 2, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1355, 8, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1355, 25, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1358, 16, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1358, 23, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1360, 3, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1363, 43, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1364, 5, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1367, 48, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1368, 7, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1371, 5, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1373, 18, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1373, 42, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1373, 47, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1374, 9, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1376, 4, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1381, 11, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1381, 45, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1388, 38, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1389, 25, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1391, 23, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1391, 43, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1392, 30, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1393, 13, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1394, 9, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1400, 16, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1400, 18, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1401, 16, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1401, 21, 6)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1401, 45, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1403, 39, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1405, 12, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1411, 44, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1422, 31, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1427, 35, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1427, 38, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1429, 9, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1430, 38, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1432, 31, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1435, 41, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1439, 32, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1440, 29, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1443, 47, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1445, 16, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1446, 30, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1452, 31, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1454, 22, 1)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1454, 38, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1456, 44, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1459, 32, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1462, 36, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1464, 9, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1470, 37, 9)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1474, 42, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1475, 30, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1477, 22, 4)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1478, 2, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1478, 11, 8)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1484, 40, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1485, 6, 3)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1485, 40, 7)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1486, 5, 10)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1490, 21, 5)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1490, 25, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1493, 19, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1493, 46, 2)
+GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1494, 23, 6)
+GO
 INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1, 47, 3, CAST(N'2023-02-15' AS Date), CAST(N'2023-07-22' AS Date))
 GO
 INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (4, 34, 3, CAST(N'2022-11-16' AS Date), CAST(N'2023-05-21' AS Date))
@@ -9398,6 +10396,504 @@ GO
 INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (996, 23, 1, CAST(N'2023-12-03' AS Date), CAST(N'2024-11-25' AS Date))
 GO
 INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (997, 47, 2, CAST(N'2023-06-29' AS Date), CAST(N'2024-06-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1005, 26, 2, CAST(N'2023-05-09' AS Date), CAST(N'2024-03-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1006, 22, 3, CAST(N'2022-12-26' AS Date), CAST(N'2023-04-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1007, 17, 2, CAST(N'2023-03-19' AS Date), CAST(N'2024-05-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1008, 7, 4, CAST(N'2022-08-30' AS Date), CAST(N'2023-01-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1012, 40, 2, CAST(N'2023-08-30' AS Date), CAST(N'2024-08-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1015, 29, 1, CAST(N'2024-11-06' AS Date), CAST(N'2025-08-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1015, 39, 1, CAST(N'2023-12-29' AS Date), CAST(N'2024-11-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1016, 6, 4, CAST(N'2022-04-15' AS Date), CAST(N'2023-02-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1020, 19, 4, CAST(N'2023-01-14' AS Date), CAST(N'2023-05-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1023, 28, 3, CAST(N'2022-05-14' AS Date), CAST(N'2023-02-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1025, 7, 1, CAST(N'2024-09-20' AS Date), CAST(N'2025-02-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1025, 24, 2, CAST(N'2023-04-22' AS Date), CAST(N'2024-06-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1029, 6, 3, CAST(N'2022-08-27' AS Date), CAST(N'2023-05-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1032, 32, 3, CAST(N'2023-05-21' AS Date), CAST(N'2023-09-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1033, 36, 1, CAST(N'2024-06-09' AS Date), CAST(N'2024-06-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1035, 41, 3, CAST(N'2022-10-20' AS Date), CAST(N'2023-06-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1037, 5, 2, CAST(N'2023-07-31' AS Date), CAST(N'2024-04-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1037, 7, 4, CAST(N'2023-03-10' AS Date), CAST(N'2023-11-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1037, 41, 2, CAST(N'2023-03-03' AS Date), CAST(N'2024-04-06' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1044, 6, 4, CAST(N'2022-03-07' AS Date), CAST(N'2023-01-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1044, 38, 1, CAST(N'2024-12-01' AS Date), CAST(N'2025-05-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1048, 13, 4, CAST(N'2023-06-02' AS Date), CAST(N'2023-06-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1048, 35, 3, CAST(N'2022-08-30' AS Date), CAST(N'2023-05-31' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1050, 14, 2, CAST(N'2023-05-28' AS Date), CAST(N'2024-05-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1051, 7, 2, CAST(N'2023-03-01' AS Date), CAST(N'2024-08-31' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1053, 7, 2, CAST(N'2023-09-04' AS Date), CAST(N'2024-03-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1054, 20, 4, CAST(N'2023-07-10' AS Date), CAST(N'2023-11-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1058, 40, 2, CAST(N'2023-06-13' AS Date), CAST(N'2024-08-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1059, 8, 1, CAST(N'2024-01-08' AS Date), CAST(N'2024-10-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1064, 5, 4, CAST(N'2022-11-02' AS Date), CAST(N'2023-01-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1065, 30, 4, CAST(N'2022-08-01' AS Date), CAST(N'2023-07-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1066, 4, 3, CAST(N'2023-06-23' AS Date), CAST(N'2023-07-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1068, 10, 2, CAST(N'2023-11-10' AS Date), CAST(N'2024-05-14' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1073, 3, 1, CAST(N'2024-04-30' AS Date), CAST(N'2025-04-11' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1075, 9, 3, CAST(N'2023-06-02' AS Date), CAST(N'2023-09-12' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1076, 46, 1, CAST(N'2024-01-25' AS Date), CAST(N'2024-04-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1077, 1, 4, CAST(N'2023-07-10' AS Date), CAST(N'2023-09-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1079, 39, 1, CAST(N'2024-07-09' AS Date), CAST(N'2025-02-12' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1082, 13, 1, CAST(N'2024-02-21' AS Date), CAST(N'2024-06-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1084, 33, 4, CAST(N'2023-04-10' AS Date), CAST(N'2023-09-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1085, 3, 3, CAST(N'2023-02-18' AS Date), CAST(N'2023-04-08' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1087, 14, 3, CAST(N'2023-02-05' AS Date), CAST(N'2023-11-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1088, 3, 4, CAST(N'2023-09-04' AS Date), CAST(N'2023-10-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1090, 21, 3, CAST(N'2023-04-10' AS Date), CAST(N'2023-06-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1093, 34, 4, CAST(N'2023-10-08' AS Date), CAST(N'2023-10-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1094, 31, 2, CAST(N'2023-12-01' AS Date), CAST(N'2024-03-07' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1095, 29, 4, CAST(N'2023-06-19' AS Date), CAST(N'2023-09-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1096, 12, 4, CAST(N'2023-05-03' AS Date), CAST(N'2023-06-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1098, 26, 4, CAST(N'2023-04-09' AS Date), CAST(N'2023-06-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1099, 24, 2, CAST(N'2022-12-05' AS Date), CAST(N'2024-02-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1102, 20, 4, CAST(N'2022-07-22' AS Date), CAST(N'2023-07-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1103, 31, 2, CAST(N'2023-05-11' AS Date), CAST(N'2024-08-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1103, 46, 3, CAST(N'2022-12-18' AS Date), CAST(N'2023-07-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1110, 14, 1, CAST(N'2024-01-15' AS Date), CAST(N'2024-02-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1110, 46, 3, CAST(N'2023-05-13' AS Date), CAST(N'2023-07-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1111, 11, 2, CAST(N'2023-01-02' AS Date), CAST(N'2024-01-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1113, 14, 4, CAST(N'2022-03-07' AS Date), CAST(N'2022-12-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1114, 21, 1, CAST(N'2024-03-29' AS Date), CAST(N'2025-03-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1115, 6, 4, CAST(N'2023-04-07' AS Date), CAST(N'2023-11-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1117, 19, 3, CAST(N'2022-04-30' AS Date), CAST(N'2023-01-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1118, 39, 3, CAST(N'2022-09-29' AS Date), CAST(N'2023-07-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1120, 47, 1, CAST(N'2024-08-19' AS Date), CAST(N'2025-05-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1123, 14, 4, CAST(N'2022-06-30' AS Date), CAST(N'2023-01-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1126, 6, 2, CAST(N'2023-07-01' AS Date), CAST(N'2024-08-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1131, 40, 4, CAST(N'2022-08-18' AS Date), CAST(N'2022-12-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1138, 12, 1, CAST(N'2024-10-13' AS Date), CAST(N'2025-02-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1138, 40, 2, CAST(N'2023-07-21' AS Date), CAST(N'2024-05-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1141, 30, 1, CAST(N'2024-11-19' AS Date), CAST(N'2024-11-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1141, 40, 1, CAST(N'2024-08-10' AS Date), CAST(N'2024-10-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1144, 12, 1, CAST(N'2024-07-06' AS Date), CAST(N'2025-06-07' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1148, 18, 3, CAST(N'2022-05-09' AS Date), CAST(N'2023-01-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1150, 28, 4, CAST(N'2022-02-05' AS Date), CAST(N'2023-01-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1151, 15, 2, CAST(N'2023-04-08' AS Date), CAST(N'2024-08-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1151, 31, 4, CAST(N'2022-12-19' AS Date), CAST(N'2023-03-31' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1153, 11, 3, CAST(N'2023-10-07' AS Date), CAST(N'2023-10-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1154, 41, 4, CAST(N'2023-02-01' AS Date), CAST(N'2023-08-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1155, 5, 2, CAST(N'2023-04-12' AS Date), CAST(N'2024-09-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1160, 38, 3, CAST(N'2023-02-17' AS Date), CAST(N'2023-02-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1162, 42, 1, CAST(N'2024-10-27' AS Date), CAST(N'2025-07-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1165, 5, 3, CAST(N'2023-04-11' AS Date), CAST(N'2023-04-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1166, 21, 4, CAST(N'2022-11-19' AS Date), CAST(N'2023-03-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1167, 15, 1, CAST(N'2024-02-27' AS Date), CAST(N'2024-03-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1167, 37, 1, CAST(N'2024-05-13' AS Date), CAST(N'2024-07-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1170, 27, 3, CAST(N'2022-12-09' AS Date), CAST(N'2023-10-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1174, 42, 3, CAST(N'2023-04-24' AS Date), CAST(N'2023-10-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1177, 18, 2, CAST(N'2023-02-20' AS Date), CAST(N'2024-02-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1177, 43, 4, CAST(N'2022-12-20' AS Date), CAST(N'2023-10-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1177, 46, 2, CAST(N'2023-04-17' AS Date), CAST(N'2024-02-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1178, 20, 3, CAST(N'2022-12-22' AS Date), CAST(N'2023-04-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1178, 31, 2, CAST(N'2023-04-16' AS Date), CAST(N'2024-04-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1179, 41, 2, CAST(N'2023-07-21' AS Date), CAST(N'2024-08-08' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1181, 30, 3, CAST(N'2022-03-07' AS Date), CAST(N'2023-02-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1182, 23, 1, CAST(N'2024-04-11' AS Date), CAST(N'2025-01-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1187, 24, 3, CAST(N'2023-08-21' AS Date), CAST(N'2023-09-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1191, 4, 3, CAST(N'2023-07-17' AS Date), CAST(N'2023-08-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1195, 16, 1, CAST(N'2024-02-26' AS Date), CAST(N'2024-09-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1200, 3, 2, CAST(N'2023-05-06' AS Date), CAST(N'2024-11-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1200, 23, 3, CAST(N'2023-02-12' AS Date), CAST(N'2023-02-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1201, 8, 3, CAST(N'2023-01-05' AS Date), CAST(N'2023-06-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1202, 22, 3, CAST(N'2022-12-14' AS Date), CAST(N'2023-04-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1205, 18, 4, CAST(N'2023-02-25' AS Date), CAST(N'2023-08-31' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1207, 14, 3, CAST(N'2022-07-16' AS Date), CAST(N'2022-12-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1208, 13, 3, CAST(N'2022-04-26' AS Date), CAST(N'2023-03-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1208, 34, 1, CAST(N'2024-06-03' AS Date), CAST(N'2025-04-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1210, 11, 2, CAST(N'2022-12-15' AS Date), CAST(N'2024-01-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1210, 27, 1, CAST(N'2024-05-08' AS Date), CAST(N'2024-08-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1213, 8, 1, CAST(N'2024-07-29' AS Date), CAST(N'2025-07-19' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1223, 44, 1, CAST(N'2024-02-12' AS Date), CAST(N'2024-11-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1224, 31, 4, CAST(N'2022-12-26' AS Date), CAST(N'2023-09-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1226, 35, 2, CAST(N'2022-12-04' AS Date), CAST(N'2024-01-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1227, 40, 3, CAST(N'2023-05-16' AS Date), CAST(N'2023-08-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1228, 45, 1, CAST(N'2024-04-18' AS Date), CAST(N'2024-12-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1229, 42, 3, CAST(N'2022-11-22' AS Date), CAST(N'2022-12-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1231, 5, 2, CAST(N'2023-09-26' AS Date), CAST(N'2024-08-14' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1236, 19, 4, CAST(N'2023-08-08' AS Date), CAST(N'2023-09-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1236, 30, 3, CAST(N'2023-03-21' AS Date), CAST(N'2023-03-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1236, 44, 4, CAST(N'2022-04-20' AS Date), CAST(N'2022-12-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1238, 8, 1, CAST(N'2024-04-14' AS Date), CAST(N'2024-05-01' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1240, 32, 4, CAST(N'2022-03-07' AS Date), CAST(N'2023-01-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1240, 46, 1, CAST(N'2024-03-08' AS Date), CAST(N'2024-07-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1243, 27, 3, CAST(N'2022-07-10' AS Date), CAST(N'2023-02-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1243, 29, 4, CAST(N'2022-10-11' AS Date), CAST(N'2023-03-12' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1243, 41, 4, CAST(N'2023-05-01' AS Date), CAST(N'2023-10-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1244, 5, 1, CAST(N'2023-12-21' AS Date), CAST(N'2024-08-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1244, 20, 4, CAST(N'2023-09-22' AS Date), CAST(N'2023-10-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1249, 6, 1, CAST(N'2024-08-14' AS Date), CAST(N'2025-05-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1249, 7, 2, CAST(N'2023-07-17' AS Date), CAST(N'2024-04-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1249, 31, 1, CAST(N'2023-12-17' AS Date), CAST(N'2024-09-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1250, 3, 1, CAST(N'2024-04-20' AS Date), CAST(N'2025-01-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1251, 1, 3, CAST(N'2022-11-30' AS Date), CAST(N'2023-02-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1252, 40, 2, CAST(N'2023-03-05' AS Date), CAST(N'2024-04-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1259, 33, 2, CAST(N'2023-11-05' AS Date), CAST(N'2024-08-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1261, 4, 3, CAST(N'2023-03-20' AS Date), CAST(N'2023-10-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1261, 8, 1, CAST(N'2024-09-23' AS Date), CAST(N'2025-01-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1263, 2, 4, CAST(N'2022-11-15' AS Date), CAST(N'2023-09-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1263, 22, 3, CAST(N'2022-05-09' AS Date), CAST(N'2022-12-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1264, 30, 2, CAST(N'2023-04-25' AS Date), CAST(N'2024-07-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1267, 37, 3, CAST(N'2022-03-19' AS Date), CAST(N'2023-01-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1268, 41, 1, CAST(N'2024-05-25' AS Date), CAST(N'2025-02-19' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1269, 5, 2, CAST(N'2023-05-07' AS Date), CAST(N'2024-02-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1271, 1, 2, CAST(N'2023-07-15' AS Date), CAST(N'2024-08-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1271, 36, 4, CAST(N'2023-03-03' AS Date), CAST(N'2023-06-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1273, 29, 3, CAST(N'2023-05-25' AS Date), CAST(N'2023-08-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1275, 46, 1, CAST(N'2024-04-12' AS Date), CAST(N'2024-12-07' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1279, 25, 1, CAST(N'2024-10-07' AS Date), CAST(N'2024-10-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1281, 39, 1, CAST(N'2024-11-05' AS Date), CAST(N'2025-03-08' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1282, 4, 4, CAST(N'2022-06-28' AS Date), CAST(N'2023-02-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1283, 46, 3, CAST(N'2023-05-04' AS Date), CAST(N'2023-09-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1284, 15, 2, CAST(N'2023-11-22' AS Date), CAST(N'2024-07-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1285, 39, 2, CAST(N'2023-02-15' AS Date), CAST(N'2024-11-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1286, 44, 3, CAST(N'2022-07-04' AS Date), CAST(N'2023-03-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1287, 34, 1, CAST(N'2023-12-18' AS Date), CAST(N'2024-03-01' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1292, 13, 1, CAST(N'2024-10-10' AS Date), CAST(N'2024-12-06' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1296, 30, 2, CAST(N'2023-04-19' AS Date), CAST(N'2024-06-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1297, 4, 2, CAST(N'2023-08-17' AS Date), CAST(N'2024-11-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1297, 6, 4, CAST(N'2022-08-02' AS Date), CAST(N'2023-01-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1297, 15, 4, CAST(N'2022-10-13' AS Date), CAST(N'2023-06-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1300, 20, 1, CAST(N'2024-05-21' AS Date), CAST(N'2024-07-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1310, 33, 3, CAST(N'2022-06-03' AS Date), CAST(N'2023-04-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1312, 23, 3, CAST(N'2023-05-25' AS Date), CAST(N'2023-07-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1313, 1, 2, CAST(N'2023-10-22' AS Date), CAST(N'2024-07-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1313, 17, 4, CAST(N'2023-03-10' AS Date), CAST(N'2023-06-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1319, 19, 4, CAST(N'2022-06-10' AS Date), CAST(N'2022-12-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1323, 43, 3, CAST(N'2022-05-29' AS Date), CAST(N'2023-03-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1325, 10, 4, CAST(N'2023-08-02' AS Date), CAST(N'2023-09-06' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1325, 42, 4, CAST(N'2023-09-12' AS Date), CAST(N'2023-10-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1326, 36, 4, CAST(N'2022-03-23' AS Date), CAST(N'2023-01-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1328, 4, 2, CAST(N'2023-11-10' AS Date), CAST(N'2024-07-14' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1329, 15, 4, CAST(N'2022-11-23' AS Date), CAST(N'2023-02-01' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1330, 43, 4, CAST(N'2022-09-08' AS Date), CAST(N'2022-12-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1332, 10, 3, CAST(N'2022-11-16' AS Date), CAST(N'2023-10-14' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1335, 17, 4, CAST(N'2022-10-05' AS Date), CAST(N'2022-12-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1335, 22, 3, CAST(N'2022-08-03' AS Date), CAST(N'2022-12-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1340, 44, 1, CAST(N'2024-06-20' AS Date), CAST(N'2024-07-06' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1342, 13, 1, CAST(N'2024-11-10' AS Date), CAST(N'2025-05-27' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1345, 35, 4, CAST(N'2022-11-11' AS Date), CAST(N'2023-02-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1348, 42, 4, CAST(N'2022-10-24' AS Date), CAST(N'2023-03-07' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1351, 31, 2, CAST(N'2023-06-02' AS Date), CAST(N'2024-05-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1354, 26, 4, CAST(N'2022-08-17' AS Date), CAST(N'2023-03-17' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1356, 39, 1, CAST(N'2024-11-14' AS Date), CAST(N'2025-05-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1357, 32, 4, CAST(N'2022-11-14' AS Date), CAST(N'2023-07-12' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1358, 24, 1, CAST(N'2024-05-04' AS Date), CAST(N'2025-03-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1358, 29, 4, CAST(N'2022-11-20' AS Date), CAST(N'2023-11-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1359, 43, 1, CAST(N'2024-04-10' AS Date), CAST(N'2025-01-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1360, 27, 1, CAST(N'2024-10-01' AS Date), CAST(N'2024-11-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1366, 4, 1, CAST(N'2024-01-07' AS Date), CAST(N'2024-01-19' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1371, 43, 3, CAST(N'2023-02-27' AS Date), CAST(N'2023-07-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1372, 2, 1, CAST(N'2024-04-02' AS Date), CAST(N'2024-04-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1373, 44, 3, CAST(N'2022-11-26' AS Date), CAST(N'2023-09-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1374, 16, 2, CAST(N'2023-07-05' AS Date), CAST(N'2024-10-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1375, 13, 1, CAST(N'2024-04-27' AS Date), CAST(N'2024-06-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1378, 24, 1, CAST(N'2024-02-18' AS Date), CAST(N'2025-02-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1378, 37, 4, CAST(N'2023-01-04' AS Date), CAST(N'2023-01-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1379, 47, 1, CAST(N'2024-10-12' AS Date), CAST(N'2025-01-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1380, 41, 2, CAST(N'2023-07-13' AS Date), CAST(N'2024-06-08' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1381, 47, 1, CAST(N'2024-07-09' AS Date), CAST(N'2025-04-04' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1384, 3, 1, CAST(N'2024-08-04' AS Date), CAST(N'2025-05-01' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1384, 43, 1, CAST(N'2024-01-31' AS Date), CAST(N'2024-02-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1385, 33, 1, CAST(N'2024-01-19' AS Date), CAST(N'2024-02-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1386, 5, 4, CAST(N'2023-09-22' AS Date), CAST(N'2023-09-30' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1392, 39, 4, CAST(N'2022-04-04' AS Date), CAST(N'2023-03-16' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1393, 10, 2, CAST(N'2023-03-27' AS Date), CAST(N'2024-01-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1393, 42, 4, CAST(N'2023-08-03' AS Date), CAST(N'2023-12-01' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1398, 32, 3, CAST(N'2023-06-30' AS Date), CAST(N'2023-08-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1402, 10, 1, CAST(N'2024-11-16' AS Date), CAST(N'2025-01-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1404, 6, 3, CAST(N'2022-10-27' AS Date), CAST(N'2023-02-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1405, 17, 1, CAST(N'2023-12-18' AS Date), CAST(N'2024-06-29' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1408, 25, 1, CAST(N'2024-02-15' AS Date), CAST(N'2024-02-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1413, 10, 2, CAST(N'2023-09-27' AS Date), CAST(N'2024-11-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1413, 18, 2, CAST(N'2023-05-03' AS Date), CAST(N'2024-05-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1417, 4, 1, CAST(N'2024-06-14' AS Date), CAST(N'2024-07-19' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1422, 11, 3, CAST(N'2022-11-17' AS Date), CAST(N'2023-06-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1422, 18, 1, CAST(N'2023-12-20' AS Date), CAST(N'2024-07-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1424, 36, 4, CAST(N'2022-12-15' AS Date), CAST(N'2023-06-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1427, 3, 1, CAST(N'2024-04-27' AS Date), CAST(N'2024-10-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1427, 20, 1, CAST(N'2024-05-13' AS Date), CAST(N'2025-01-22' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1430, 18, 4, CAST(N'2022-04-27' AS Date), CAST(N'2023-02-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1433, 21, 4, CAST(N'2023-01-06' AS Date), CAST(N'2023-10-18' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1436, 43, 4, CAST(N'2023-08-13' AS Date), CAST(N'2023-10-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1437, 39, 3, CAST(N'2023-04-01' AS Date), CAST(N'2023-07-10' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1438, 42, 3, CAST(N'2022-10-26' AS Date), CAST(N'2023-01-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1442, 13, 1, CAST(N'2024-04-20' AS Date), CAST(N'2024-11-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1442, 20, 1, CAST(N'2024-08-03' AS Date), CAST(N'2025-07-12' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1442, 39, 3, CAST(N'2022-11-21' AS Date), CAST(N'2023-06-08' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1447, 30, 1, CAST(N'2024-07-13' AS Date), CAST(N'2025-05-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1450, 22, 4, CAST(N'2022-09-15' AS Date), CAST(N'2022-12-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1451, 33, 1, CAST(N'2024-04-26' AS Date), CAST(N'2025-04-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1452, 19, 3, CAST(N'2022-05-02' AS Date), CAST(N'2023-03-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1454, 40, 1, CAST(N'2024-03-07' AS Date), CAST(N'2024-11-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1456, 14, 2, CAST(N'2022-12-10' AS Date), CAST(N'2024-01-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1457, 1, 4, CAST(N'2022-08-31' AS Date), CAST(N'2023-01-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1457, 47, 3, CAST(N'2023-04-18' AS Date), CAST(N'2023-08-25' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1458, 36, 2, CAST(N'2022-12-09' AS Date), CAST(N'2024-09-13' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1459, 44, 4, CAST(N'2022-08-23' AS Date), CAST(N'2023-06-09' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1465, 15, 1, CAST(N'2024-05-18' AS Date), CAST(N'2025-03-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1467, 17, 2, CAST(N'2023-02-06' AS Date), CAST(N'2024-03-20' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1468, 32, 4, CAST(N'2022-07-06' AS Date), CAST(N'2023-03-06' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1471, 29, 3, CAST(N'2023-01-30' AS Date), CAST(N'2023-07-03' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1473, 14, 4, CAST(N'2022-01-13' AS Date), CAST(N'2022-12-11' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1475, 22, 4, CAST(N'2022-12-03' AS Date), CAST(N'2023-02-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1480, 1, 1, CAST(N'2024-07-16' AS Date), CAST(N'2024-12-23' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1481, 18, 4, CAST(N'2022-10-21' AS Date), CAST(N'2023-04-02' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1481, 47, 3, CAST(N'2023-02-22' AS Date), CAST(N'2023-06-24' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1483, 5, 3, CAST(N'2022-11-11' AS Date), CAST(N'2022-12-28' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1484, 10, 1, CAST(N'2024-07-02' AS Date), CAST(N'2025-05-26' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1484, 19, 1, CAST(N'2024-03-21' AS Date), CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1488, 24, 2, CAST(N'2023-03-10' AS Date), CAST(N'2024-11-21' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1494, 3, 4, CAST(N'2022-08-20' AS Date), CAST(N'2023-06-05' AS Date))
+GO
+INSERT [dbo].[PersonTask] ([PersonID], [TaskID], [TaskStatusID], [PersonTaskStartDate], [PersonTaskDueDate]) VALUES (1500, 19, 3, CAST(N'2022-07-11' AS Date), CAST(N'2023-02-20' AS Date))
 GO
 SET IDENTITY_INSERT [dbo].[Power] ON 
 GO
