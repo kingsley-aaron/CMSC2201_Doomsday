@@ -170,3 +170,46 @@ BEGIN
 		c.CurrencyValue,
 		cp.CurrencyAmount;
 
+
+-- Trigger to update influence when a new location and faction are added to FactionLocation table.
+
+CREATE TRIGGER [dbo].[trg_UpdateInfluence]
+ON [dbo].[FactionLocation]
+AFTER INSERT
+AS
+	DECLARE @newfactionID INT;
+	DECLARE @newinfluence INT;
+	
+	SELECT @newfactionID = i.FactionID FROM inserted i;
+	
+
+	BEGIN
+		IF EXISTS(SELECT i.FactionID FROM inserted i JOIN Faction ON i.FactionID = Faction.FactionID)
+			BEGIN
+				UPDATE DoomsdayDatabase.dbo.Faction SET Faction.FactionInfluence = FactionInfluence +1
+				WHERE Faction.FactionID = @newfactionID AND FactionInfluence <=9
+			END
+	END;
+
+
+-- SPROC to update date of death and deceased status when health reaches 0
+CREATE PROCEDURE [dbo].[sp_ZeroHealth]
+AS
+BEGIN
+    SET NOCOUNT ON;
+	BEGIN
+    UPDATE Person
+    SET PersonDeceased = 1,
+	PersonDateOfDeath =  CONVERT(Date, GETDATE())
+    WHERE PersonHealth = 0 AND PersonDeceased = 0;
+END
+END;
+
+-- View to find safest locations when danger is imminent
+CREATE VIEW view_SafestLocations
+AS
+SELECT TOP (100) PERCENT LocationName, LocationDescription, LocationSafetyLevel
+FROM     dbo.Location
+GROUP BY LocationSafetyLevel, LocationName, LocationDescription
+ORDER BY LocationSafetyLevel DESC;
+
