@@ -170,6 +170,7 @@ BEGIN
 		c.CurrencyValue,
 		cp.CurrencyAmount;
 
+
 -- Trigger to update influence when a new location and faction are added to FactionLocation table.
 
 CREATE TRIGGER [dbo].[trg_UpdateInfluence]
@@ -211,3 +212,4 @@ SELECT TOP (100) PERCENT LocationName, LocationDescription, LocationSafetyLevel
 FROM     dbo.Location
 GROUP BY LocationSafetyLevel, LocationName, LocationDescription
 ORDER BY LocationSafetyLevel DESC;
+
