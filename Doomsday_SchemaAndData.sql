@@ -13522,10 +13522,18 @@ ALTER TABLE [dbo].[Location]  WITH CHECK ADD CHECK  (([LocationSafetyLevel]>=(1)
 GO
 ALTER TABLE [dbo].[Location]  WITH CHECK ADD CHECK  (([LocationExpansionPotential]>=(1) AND [LocationExpansionPotential]<=(5)))
 GO
-ALTER TABLE [dbo].[Person]  WITH CHECK ADD  CONSTRAINT [CHK_PersonDateOfDeath_BeforeToday] CHECK  (([PersonDateOfDeath]<CONVERT([date],getdate())))
+
+ALTER TABLE [dbo].[Person]  WITH CHECK ADD  CONSTRAINT [CHK_PersonDateOfDeath_AfterBirth] CHECK ([PersonDateOfDeath] >= [PersonDateOfBirth])
 GO
-ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [CHK_PersonDateOfDeath_BeforeToday]
+ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [CHK_PersonDateOfDeath_AfterBirth]
 GO
+
+ALTER TABLE [dbo].[Person]  WITH CHECK ADD  CONSTRAINT [CHK_PersonDateOfDeath_NotInFuture] CHECK ([PersonDateOfDeath] <= CONVERT(DATE,GETDATE()))
+GO
+ALTER TABLE [dbo].[Person] CHECK CONSTRAINT [CHK_PersonDateOfDeath_NotInFuture]
+GO
+
+
 ALTER TABLE [dbo].[Person]  WITH CHECK ADD CHECK  (([PersonHealth]>=(0) AND [PersonHealth]<=(100)))
 GO
 ALTER TABLE [dbo].[PersonSkill]  WITH CHECK ADD CHECK  (([PersonSkillProficiency]>=(1) AND [PersonSkillProficiency]<=(10)))
