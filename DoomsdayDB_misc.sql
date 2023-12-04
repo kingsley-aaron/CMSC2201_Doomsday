@@ -127,8 +127,8 @@ JOIN DoomsdayDatabase.dbo.Currency c ON c.CurrencyID = cp.CurrencyID
 GROUP BY 
     PersonFirstName + ' ' + PersonLastName,
     FactionName,
-    FactionInfluence,
-    PersonDateOfBirth
+    FactionInfluence
+    ,PersonDateOfBirth
 ORDER BY [Money on Hand] DESC;
 
 
@@ -282,4 +282,71 @@ AS
 SELECT TOP (100) PERCENT LocationName, LocationDescription, LocationSafetyLevel
 FROM     dbo.Location
 GROUP BY LocationSafetyLevel, LocationName, LocationDescription
-ORDER BY LocationSafetyLevel DESC;
+ORDER BY LocationSafetyLevel DESC
+
+GO
+
+-- View to get combined wealth of each faction
+CREATE VIEW FactionWealthView AS
+SELECT
+    f.FactionID,
+    f.FactionName,
+	f.FactionInfluence,
+    SUM(cp.CurrencyAmount * c.CurrencyValue) AS CombinedWealth
+FROM
+    DoomsdayDatabase.dbo.Faction f
+JOIN
+    DoomsdayDatabase.dbo.Person p ON f.FactionID = p.FactionID
+JOIN
+    DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
+JOIN
+    DoomsdayDatabase.dbo.Currency c ON cp.CurrencyID = c.CurrencyID
+WHERE
+    p.PersonDeceased = 0  -- Consider only alive faction members
+GROUP BY
+    f.FactionID,
+    f.FactionName,
+	FactionInfluence
+ORDER BY CombinedWealth DESC
+
+
+GO
+
+-- SPROC to update tasks to overdue if not completed by due date
+CREATE PROCEDURE usp_UpdateOverdueTasks
+AS 
+BEGIN
+
+	UPDATE DoomsdayDatabase.dbo.PersonTask
+	SET TaskStatusID = 4
+	WHERE TaskStatusID NOT IN (3, 4)
+	AND PersonTaskDueDate < GETDATE();
+END;
+GO
+
+-- SPROC to get report of all in-progress tasks for a faction
+ALTER PROCEDURE usp_InProgressTasks
+	@factionID INT
+AS 
+BEGIN
+	SELECT 
+		p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
+		t.TaskName,
+		pt.PersonTaskStartDate AS [Start Date],
+		pt.PersonTaskDueDate AS [Due Date],
+		DATEDIFF(DAY, pt.PersonTaskDueDate, GETDATE()) AS [Days Until Due],
+		CASE WHEN pt.TaskStatusID = 4 THEN 'Overdue'
+		ELSE 'In-Progress' 
+		END AS [Task Status]
+		
+	FROM
+		Person p
+	JOIN 
+		PersonTask pt ON p.PersonID = pt.PersonID
+	JOIN 
+		Task t ON pt.TaskID = t.TaskID
+	WHERE p.FactionID = @factionID
+	AND TaskStatusID in (2, 4)
+	ORDER BY [Days Until Due];
+END;
+GO
