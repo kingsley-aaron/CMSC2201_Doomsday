@@ -1,3 +1,125 @@
+-- Sean
+
+-- Created View to find the most proficient members in Minneapolis and St. Paul
+CREATE VIEW vw_SkilledIndividualsAtCommunityCenter AS
+SELECT 
+    P.PersonFirstName, 
+    P.PersonLastName, 
+	L.LocationName,
+    S.SkillName,
+    PS.PersonSkillProficiency
+FROM Person P
+INNER JOIN PersonSkill PS ON P.PersonID = PS.PersonID
+INNER JOIN Skill S ON PS.SkillID = S.SkillID
+INNER JOIN LocationLodging LL ON P.LocationLodgingID = LL.LocationLodgingID
+INNER JOIN Location L ON LL.LocationID = L.LocationID
+WHERE (LL.LocationID = 1 OR LL.LocationID = 2) AND PS.PersonSkillProficiency >= 7;
+
+-- Trigger to notify maintenance teams if PowerAmount falls below 10% of PowerCapacity
+CREATE TRIGGER trg_PowerOutageNotification
+ON Power
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT 1 
+        FROM inserted i
+        INNER JOIN deleted d ON i.PowerID = d.PowerID
+        WHERE i.PowerAmount < i.PowerCapacity * 0.10 -- Checking for less than 10% of capacity
+    )
+    BEGIN
+        -- Raising an error message for notification
+        RAISERROR ('Power below 10%% of capacity, notify maintenance team', 16, 1);
+    END
+END;
+
+-- Stored Procedure to allocate resources to a different Location
+
+CREATE PROCEDURE sp_AllocateResources
+    @LocationID INT, 
+    @ResourceType NVARCHAR(50), -- Resource Type 'Food', 'Water', 'Power'
+    @ResourceID INT    -- ID for the specific resource
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Check if the specified location exists
+    IF NOT EXISTS (SELECT 1 FROM Location WHERE LocationID = @LocationID)
+    BEGIN
+        RAISERROR ('Invalid location specified', 16, 1);
+        RETURN;
+    END
+
+    -- Allocate Food resources
+    IF @ResourceType = 'Food'
+    BEGIN
+        -- Check if the FoodID exists
+        IF NOT EXISTS (SELECT 1 FROM Food WHERE FoodID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid FoodID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Food resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND FoodID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, FoodID)
+            VALUES (@LocationID, @ResourceID);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Food resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE IF @ResourceType = 'Water'
+    BEGIN
+        -- Check if the WaterID exists
+        IF NOT EXISTS (SELECT 1 FROM Water WHERE WaterID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid WaterID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Water resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, WaterID)
+            VALUES (@LocationID, @ResourceID);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Water resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE IF @ResourceType = 'Power'
+    BEGIN
+        -- Check if the PowerID exists
+        IF NOT EXISTS (SELECT 1 FROM Power WHERE PowerID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid PowerID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Power resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, PowerID)
+            VALUES (@LocationID, @ResourceID);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Power resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE
+    BEGIN
+        RAISERROR ('Resource type not recognized', 16, 1);
+    END
+END;
+
+
 -- Trigger to check if person is alive before adding to PersonTask table
 
 CREATE TRIGGER trg_CheckPersonAliveBeforeInsert
