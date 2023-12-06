@@ -3,8 +3,7 @@
 -- Created View to find the most proficient members in Minneapolis and St. Paul
 CREATE VIEW vw_SkilledIndividualsAtCommunityCenter AS
 SELECT 
-    P.PersonFirstName, 
-    P.PersonLastName, 
+    CONCAT(P.PersonFirstName, ' ', P.PersonLastName) AS Name, 
 	L.LocationName,
     S.SkillName,
     PS.PersonSkillProficiency
