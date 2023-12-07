@@ -164,18 +164,18 @@ CREATE TABLE Inventory (
     LocationID INT,
     FoodID INT,
     InvFoodAmount DECIMAL(8,2), 
-    WaterID INT,
+    WaterSourceID INT,
     InvWaterQuantity DECIMAL(8,2),
     PowerSourceID INT,
     InvPowerCapacity DECIMAL(8,2),
     InvPowerAmount DECIMAL(8,2),
     InvDateAcquired DATE
     FOREIGN KEY (LocationID) REFERENCES Location(LocationID),
-    FOREIGN KEY (WaterID) REFERENCES Water(WaterID),
+    FOREIGN KEY (WaterSourceID) REFERENCES WaterSource(WaterSourceID),
     FOREIGN KEY (FoodID) REFERENCES Food(FoodID),
-    FOREIGN KEY (PowerID) REFERENCES Power(PowerID),
+    FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID),
     CONSTRAINT CHK_PowerAmount_LessThan_Capacity 
-        CHECK (PowerAmount < PowerCapacity)
+        CHECK (InvPowerAmount < InvPowerCapacity)
 );
 
 -- Create the CurrencyPerson table
