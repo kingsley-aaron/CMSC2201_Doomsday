@@ -14,9 +14,10 @@ INNER JOIN LocationLodging LL ON P.LocationLodgingID = LL.LocationLodgingID
 INNER JOIN Location L ON LL.LocationID = L.LocationID
 WHERE (LL.LocationID = 1 OR LL.LocationID = 2) AND PS.PersonSkillProficiency >= 7;
 
+
 -- Trigger to notify maintenance teams if PowerAmount falls below 10% of PowerCapacity
 CREATE TRIGGER trg_PowerOutageNotification
-ON Power
+ON Inventory
 AFTER UPDATE
 AS
 BEGIN
@@ -25,8 +26,8 @@ BEGIN
     IF EXISTS (
         SELECT 1 
         FROM inserted i
-        INNER JOIN deleted d ON i.PowerID = d.PowerID
-        WHERE i.PowerAmount < i.PowerCapacity * 0.10 -- Checking for less than 10% of capacity
+        INNER JOIN deleted d ON i.PowerSourceID = d.PowerSourceID
+        WHERE i.InvPowerAmount < i.InvPowerCapacity * 0.10 -- Checking for less than 10% of capacity
     )
     BEGIN
         -- Raising an error message for notification
@@ -34,12 +35,14 @@ BEGIN
     END
 END;
 
--- Stored Procedure to allocate resources to a different Location
 
+-- Updated Stored Procedure with Amounts as a parameter.
 CREATE PROCEDURE sp_AllocateResources
     @LocationID INT, 
     @ResourceType NVARCHAR(50), -- Resource Type 'Food', 'Water', 'Power'
-    @ResourceID INT    -- ID for the specific resource
+    @ResourceID INT,            -- ID for the specific resource
+    @Amount DECIMAL(8,2),       -- Amount of the resource
+    @Capacity DECIMAL(8,2) = NULL -- Capacity, only used for Power resources
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -64,8 +67,8 @@ BEGIN
         -- Assign Food resource to the location
         IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND FoodID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, FoodID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, FoodID, InvFoodAmount)
+            VALUES (@LocationID, @ResourceID, @Amount);
         END
         ELSE
         BEGIN
@@ -74,18 +77,18 @@ BEGIN
     END
     ELSE IF @ResourceType = 'Water'
     BEGIN
-        -- Check if the WaterID exists
-        IF NOT EXISTS (SELECT 1 FROM Water WHERE WaterID = @ResourceID)
+        -- Check if the WaterSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM WaterSource WHERE WaterSourceID = @ResourceID)
         BEGIN
-            RAISERROR ('Invalid WaterID specified', 16, 1);
+            RAISERROR ('Invalid WaterSourceID specified', 16, 1);
             RETURN;
         END
 
         -- Assign Water resource to the location
-        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterID = @ResourceID)
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterSourceID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, WaterID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, WaterSourceID, InvWaterQuantity)
+            VALUES (@LocationID, @ResourceID, @Amount);
         END
         ELSE
         BEGIN
@@ -94,18 +97,18 @@ BEGIN
     END
     ELSE IF @ResourceType = 'Power'
     BEGIN
-        -- Check if the PowerID exists
-        IF NOT EXISTS (SELECT 1 FROM Power WHERE PowerID = @ResourceID)
+        -- Check if the PowerSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM PowerSource WHERE PowerSourceID = @ResourceID)
         BEGIN
-            RAISERROR ('Invalid PowerID specified', 16, 1);
+            RAISERROR ('Invalid PowerSourceID specified', 16, 1);
             RETURN;
         END
 
         -- Assign Power resource to the location
-        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerID = @ResourceID)
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerSourceID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, PowerID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, PowerSourceID, InvPowerCapacity, InvPowerAmount)
+            VALUES (@LocationID, @ResourceID, @Capacity, @Amount);
         END
         ELSE
         BEGIN
@@ -120,7 +123,6 @@ END;
 
 
 -- Trigger to check if person is alive before adding to PersonTask table
-
 CREATE TRIGGER trg_CheckPersonAliveBeforeInsert
 ON PersonTask
 INSTEAD OF INSERT
@@ -150,7 +152,6 @@ END;
 -- Stored Procedure to check if PersonTaskStartDate is in the past and if so
 -- update TaskStatusID from 1 (Not Started) -> 2 (In Progress)
 -- Can set up a Job to automate this process, might be too complex for the scope
-
 CREATE PROCEDURE sp_UpdateTaskStatus
 AS
 BEGIN
