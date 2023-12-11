@@ -1,9 +1,9 @@
 USE [master]
 GO
 /****** Object:  Database [DoomsdayDatabaseTest]    Script Date: 12/6/2023 6:45:31 PM ******/
-CREATE DATABASE [DoomsdayDatabaseTest]
+CREATE DATABASE [DoomsdayDatabase]
 GO
-USE [DoomsdayDatabaseTest]
+USE [DoomsdayDatabase]
 GO
 /****** Object:  Table [dbo].[Adversaries]    Script Date: 12/6/2023 6:45:32 PM ******/
 SET ANSI_NULLS ON
@@ -14222,5 +14222,5 @@ ALTER TABLE [dbo].[WaterSource]  WITH CHECK ADD CHECK  (([WaterQuality]>=(1) AND
 GO
 USE [master]
 GO
-ALTER DATABASE [DoomsdayDatabaseTest] SET  READ_WRITE 
+ALTER DATABASE [DoomsdayDatabase] SET  READ_WRITE 
 GO
