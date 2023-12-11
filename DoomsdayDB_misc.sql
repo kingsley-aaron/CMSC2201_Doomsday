@@ -14,6 +14,7 @@ INNER JOIN LocationLodging LL ON P.LocationLodgingID = LL.LocationLodgingID
 INNER JOIN Location L ON LL.LocationID = L.LocationID
 WHERE (LL.LocationID = 1 OR LL.LocationID = 2) AND PS.PersonSkillProficiency >= 7;
 
+GO
 
 -- Trigger to notify maintenance teams if PowerAmount falls below 10% of PowerCapacity
 CREATE TRIGGER trg_PowerOutageNotification
@@ -35,8 +36,14 @@ BEGIN
     END
 END;
 
+GO
+
+-- Stored Procedure to allocate resources to a different Location
+
+
 
 -- Updated Stored Procedure with Amounts as a parameter.
+
 CREATE PROCEDURE sp_AllocateResources
     @LocationID INT, 
     @ResourceType NVARCHAR(50), -- Resource Type 'Food', 'Water', 'Power'
@@ -46,6 +53,86 @@ CREATE PROCEDURE sp_AllocateResources
 AS
 BEGIN
     SET NOCOUNT ON;
+
+
+    -- Check if the specified location exists
+    IF NOT EXISTS (SELECT 1 FROM Location WHERE LocationID = @LocationID)
+    BEGIN
+        RAISERROR ('Invalid location specified', 16, 1);
+        RETURN;
+    END
+
+    -- Allocate Food resources
+    IF @ResourceType = 'Food'
+    BEGIN
+        -- Check if the FoodID exists
+        IF NOT EXISTS (SELECT 1 FROM Food WHERE FoodID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid FoodID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Food resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND FoodID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, FoodID, InvFoodAmount)
+            VALUES (@LocationID, @ResourceID, @Amount);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Food resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE IF @ResourceType = 'Water'
+    BEGIN
+        -- Check if the WaterSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM WaterSource WHERE WaterSourceID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid WaterSourceID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Water resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterSourceID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, WaterSourceID, InvWaterQuantity)
+            VALUES (@LocationID, @ResourceID, @Amount);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Water resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE IF @ResourceType = 'Power'
+    BEGIN
+        -- Check if the PowerSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM PowerSource WHERE PowerSourceID = @ResourceID)
+        BEGIN
+            RAISERROR ('Invalid PowerSourceID specified', 16, 1);
+            RETURN;
+        END
+
+        -- Assign Power resource to the location
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerSourceID = @ResourceID)
+        BEGIN
+            INSERT INTO Inventory (LocationID, PowerSourceID, InvPowerCapacity, InvPowerAmount)
+            VALUES (@LocationID, @ResourceID, @Capacity, @Amount);
+        END
+        ELSE
+        BEGIN
+            RAISERROR ('Power resource already assigned to this location', 16, 1);
+        END
+    END
+    ELSE
+    BEGIN
+        RAISERROR ('Resource type not recognized', 16, 1);
+    END
+END;
+GO
+
+
+-- Trigger to check if person is alive before adding to PersonTask table
+
 
     -- Check if the specified location exists
     IF NOT EXISTS (SELECT 1 FROM Location WHERE LocationID = @LocationID)
@@ -147,7 +234,7 @@ BEGIN
     SELECT PersonID, TaskID, TaskStatusID, PersonTaskStartDate, PersonTaskDueDate
     FROM inserted;
 END;
-
+GO
 
 -- Stored Procedure to check if PersonTaskStartDate is in the past and if so
 -- update TaskStatusID from 1 (Not Started) -> 2 (In Progress)
@@ -234,6 +321,81 @@ END
 
 
 GO
+--create view of the tasks that are overdue and display the person and task
+CREATE VIEW	overDueTasks AS
+SELECT dbo.PersonTask.PersonID,CONCAT(dbo.Person.PersonFirstName,' ',dbo.Person.PersonLastName) AS Name,
+PersonTaskStartDate, PersonTaskDueDate,TaskName,TaskDescription
+FROM dbo.PersonTask
+JOIN dbo.Task ON dbo.task.TaskID = dbo.PersonTask.TaskID
+JOIN dbo.Person ON dbo.Person.PersonID = dbo.PersonTask.PersonID
+WHERE TaskStatusID = 4;
+GO
+
+--Michael
+--create temp table called deceased to hold information on deceased
+CREATE TABLE [dbo].[Deceased](
+    [DeceasedID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [PersonID] [int] NOT NULL,
+    [PersonFirstName] nvarchar(255)  NOT NULL,
+    [PersonLastName] nvarchar(255) NOT NULL,
+	[PersonDateOfBirth] [date] NOT NULL,
+	[FactionID] [int] NOT NULL,
+    [DeathTimestamp] [datetime] DEFAULT GETDATE() NOT NULL
+);
+GO
+--create trigger that adds the name of the deceased after the table updates 
+CREATE TRIGGER trg_PassedAway 
+ON [dbo].[Person]
+AFTER UPDATE
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	 INSERT INTO [dbo].[Deceased] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [FactionID])
+     SELECT [PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [FactionID]
+     FROM inserted
+     WHERE [PersonDeceased] = 1;
+ END;
+ GO
+ --Stored Proc
+ CREATE PROCEDURE sp_FactionDetail
+--initiate variables and set to null
+    @factionInfluence INT = NULL,
+    @factionMembers INT = NULL
+AS
+BEGIN
+
+    SET NOCOUNT ON;
+-- Initialize the @sql with a placeholder
+    DECLARE @sql NVARCHAR(MAX);
+	DECLARE @sql2 NVARCHAR(MAX);
+    SET @sql = N'SELECT * FROM dbo.Faction';
+	SET @sql2 = N'SELECT PersonID,PersonFirstName,PersonLastName,PersonDateOfBirth,PersonCallSign,PersonHealth,PersonDeceased
+	FROM dbo.Faction';
+--change conditions based on entered values
+--factionMembers list
+    IF @factionMembers IS NOT NULL
+    BEGIN
+        SET @sql = @sql2 + N' JOIN dbo.Person ON dbo.Person.FactionID = dbo.Faction.FactionID' +
+		N' AND dbo.Person.FactionID = @factionMembers';
+    END
+
+    IF @factionInfluence IS NOT NULL
+    BEGIN
+        SET @sql = @sql + N' WHERE FactionInfluence = @factionInfluence';
+    END
+
+  -- Execute the dynamic SQL query 
+    EXEC sp_executesql @sql,
+        N'@factionInfluence INT, @factionMembers INT',
+        @factionInfluence, @factionMembers;
+END
+
+
+GO
+
+--Aaron
+
 --Query/View to locate the richest people the factions they are in
 CREATE OR ALTER VIEW Richest_People AS
 SELECT TOP 20
@@ -242,17 +404,17 @@ SELECT TOP 20
     FactionName AS [Faction],
     FactionInfluence AS [Faction Influence],
     CAST(SUM(cp.CurrencyAmount * c.CurrencyValue) AS MONEY) AS [Money on Hand]
-FROM DoomsdayDatabase.dbo.Person p 
-JOIN DoomsdayDatabase.dbo.Faction f ON p.FactionID = f.FactionID
-JOIN DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
-JOIN DoomsdayDatabase.dbo.Currency c ON c.CurrencyID = cp.CurrencyID
+FROM Person p 
+JOIN Faction f ON p.FactionID = f.FactionID
+JOIN CurrencyPerson cp ON p.PersonID = cp.PersonID
+JOIN Currency c ON c.CurrencyID = cp.CurrencyID
 GROUP BY 
     PersonFirstName + ' ' + PersonLastName,
     FactionName,
     FactionInfluence
     ,PersonDateOfBirth
 ORDER BY [Money on Hand] DESC;
-
+GO
 
 -- Trigger to Delete factions when their influence reaches 0
 CREATE TRIGGER trg_UpdateFaction
@@ -272,16 +434,43 @@ AS
 	BEGIN
 		IF EXISTS(SELECT * FROM inserted i JOIN deleted d ON i.FactionID = d.FactionID WHERE i.FactionInfluence <= 0)
 			BEGIN
-				DELETE FROM DoomsdayDatabase.dbo.FactionLocation WHERE FactionID IN (SELECT FactionID FROM deleted);
-				UPDATE DoomsdayDatabase.dbo.Person SET FactionID = NULL WHERE FactionID IN (SELECT FactionID FROM deleted);
-				DELETE FROM DoomsdayDatabase.dbo.Faction WHERE FactionID in (SELECT FactionID FROM deleted);
+				DELETE FROM FactionLocation WHERE FactionID IN (SELECT FactionID FROM deleted);
+				UPDATE Person SET FactionID = NULL WHERE FactionID IN (SELECT FactionID FROM deleted);
+				DELETE FROM Faction WHERE FactionID in (SELECT FactionID FROM deleted);
 				PRINT 'Faction ' + @factionName + ' has been disbanded';
 			END
 		ELSE
 			BEGIN
-				UPDATE DoomsdayDatabase.dbo.Faction SET FactionInfluence = (SELECT FactionInfluence from inserted) WHERE FactionID in (SELECT FactionID FROM inserted);
+				UPDATE Faction 
+				SET FactionInfluence = i.FactionInfluence
+                FROM Faction f
+                JOIN inserted i ON f.FactionID = i.FactionID;
 			END
 	END;
+GO
+
+--Trigger to update faction counts when a person dies, or changes factions
+CREATE TRIGGER trg_UpdateFactionSize
+ON Person
+AFTER UPDATE
+AS
+BEGIN
+    IF UPDATE(PersonDeceased) OR UPDATE(FactionID)
+    BEGIN
+        -- Update the FactionSize in Faction table
+        UPDATE f
+        SET FactionSize = p.AliveMembersCount
+        FROM Faction f
+        JOIN (
+            SELECT FactionID, COUNT(*) AS AliveMembersCount
+            FROM Person
+            WHERE PersonDeceased = 0
+            GROUP BY FactionID
+        ) p ON f.FactionID = p.FactionID
+        WHERE f.FactionID IN (SELECT i.FactionID FROM INSERTED i);
+    END
+END;
+
 GO
 
 -- SPROC to get all information on a person into one report
@@ -362,7 +551,74 @@ BEGIN
 		c.CurrencyName,
 		c.CurrencyValue,
 		cp.CurrencyAmount;
+END;
+GO
 
+-- View to get combined wealth of each faction
+CREATE VIEW FactionWealthView AS
+SELECT
+    f.FactionID,
+    f.FactionName,
+	f.FactionInfluence,
+    SUM(cp.CurrencyAmount * c.CurrencyValue) AS CombinedWealth
+FROM
+    Faction f
+JOIN
+    Person p ON f.FactionID = p.FactionID
+JOIN
+    CurrencyPerson cp ON p.PersonID = cp.PersonID
+JOIN
+    Currency c ON cp.CurrencyID = c.CurrencyID
+WHERE
+    p.PersonDeceased = 0  -- Consider only alive faction members
+GROUP BY
+    f.FactionID,
+    f.FactionName,
+	FactionInfluence
+
+
+GO
+
+-- SPROC to update tasks to overdue if not completed by due date
+CREATE PROCEDURE usp_UpdateOverdueTasks
+AS 
+BEGIN
+
+	UPDATE PersonTask
+	SET TaskStatusID = 4
+	WHERE TaskStatusID NOT IN (3, 4)
+	AND PersonTaskDueDate < GETDATE();
+END;
+GO
+
+-- SPROC to get report of all in-progress tasks for a faction
+CREATE PROCEDURE usp_InProgressTasks
+	@factionID INT
+AS 
+BEGIN
+	SELECT 
+		p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
+		t.TaskName,
+		pt.PersonTaskStartDate AS [Start Date],
+		pt.PersonTaskDueDate AS [Due Date],
+		DATEDIFF(DAY, pt.PersonTaskDueDate, GETDATE()) AS [Days Until Due],
+		CASE WHEN pt.TaskStatusID = 4 THEN 'Overdue'
+		ELSE 'In-Progress' 
+		END AS [Task Status]
+		
+	FROM
+		Person p
+	JOIN 
+		PersonTask pt ON p.PersonID = pt.PersonID
+	JOIN 
+		Task t ON pt.TaskID = t.TaskID
+	WHERE p.FactionID = @factionID
+	AND TaskStatusID in (2, 4)
+	ORDER BY [Days Until Due];
+END;
+GO
+
+--Heidi
 
 -- Trigger to update influence when a new location and faction are added to FactionLocation table.
 
@@ -379,23 +635,72 @@ AS
 	BEGIN
 		IF EXISTS(SELECT i.FactionID FROM inserted i JOIN Faction ON i.FactionID = Faction.FactionID)
 			BEGIN
-				UPDATE DoomsdayDatabase.dbo.Faction SET Faction.FactionInfluence = FactionInfluence +1
+				UPDATE Faction SET Faction.FactionInfluence = FactionInfluence +1
 				WHERE Faction.FactionID = @newfactionID AND FactionInfluence <=9
 			END
 	END;
 
-
+GO
 -- SPROC to update date of death and deceased status when health reaches 0
 CREATE PROCEDURE [dbo].[sp_ZeroHealth]
 AS
 BEGIN
     SET NOCOUNT ON;
-	BEGIN
+--Deletes the tasks of the deceased person
+    DELETE PT
+    FROM PersonTask PT
+    INNER JOIN Person P ON PT.PersonID = P.PersonID
+    WHERE P.PersonHealth = 0 AND P.PersonDeceased = 0;
+
+--Changes deceased status to "1" and adds deceased date
     UPDATE Person
-    SET PersonDeceased = 1,
-	PersonDateOfDeath =  CONVERT(Date, GETDATE())
-    WHERE PersonHealth = 0 AND PersonDeceased = 0;
-END
+    SET Person.PersonDeceased = 1,
+    Person.PersonDateOfDeath =  CONVERT(Date, GETDATE())
+    WHERE Person.PersonHealth = 0 AND Person.PersonDeceased = 0;
+
+--Adds deceased person's wealth to their corresponding faction's coffer
+	WITH PersonWealth AS (
+    SELECT
+        p.PersonID,
+        p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
+        f.FactionName AS [Faction],
+        SUM(cp.CurrencyAmount * c.CurrencyValue) AS WEALTH
+	
+    FROM
+        DoomsdayDatabase.dbo.Person p
+    JOIN DoomsdayDatabase.dbo.Faction f ON p.FactionID = f.FactionID
+    JOIN DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
+    JOIN DoomsdayDatabase.dbo.Currency c ON c.CurrencyID = cp.CurrencyID
+	GROUP BY p.PersonID, PersonFirstName, PersonLastName, FactionName, FactionInfluence
+),
+
+DeceasedPersons AS (
+    SELECT
+        p.PersonID,
+        p.FactionID,
+        cp.CurrencyAmount
+    FROM
+        DoomsdayDatabase.dbo.Person p
+    JOIN DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
+    WHERE
+        p.PersonDeceased = 1
+)
+
+UPDATE f
+SET f.FactionCoffer = Wealth
+FROM DoomsdayDatabase.dbo.Faction f
+JOIN DeceasedPersons dp ON f.FactionID = dp.FactionID
+JOIN PersonWealth p ON dp.PersonID = p.PersonID
+
+--Deceased person's currency is then set to 0
+UPDATE cp
+SET cp.CurrencyAmount = 0
+FROM
+    DoomsdayDatabase.dbo.CurrencyPerson cp
+    JOIN DoomsdayDatabase.dbo.Person p ON p.PersonID = cp.PersonID
+WHERE
+    p.PersonDeceased = 1;
+
 END;
 
 -- View to find safest locations when danger is imminent
@@ -405,6 +710,7 @@ SELECT TOP (100) PERCENT LocationName, LocationDescription, LocationSafetyLevel
 FROM     dbo.Location
 GROUP BY LocationSafetyLevel, LocationName, LocationDescription
 ORDER BY LocationSafetyLevel DESC
+
 
 GO
 
