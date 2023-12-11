@@ -16,7 +16,7 @@ WHERE (LL.LocationID = 1 OR LL.LocationID = 2) AND PS.PersonSkillProficiency >= 
 GO
 -- Trigger to notify maintenance teams if PowerAmount falls below 10% of PowerCapacity
 CREATE TRIGGER trg_PowerOutageNotification
-ON Power
+ON Inventory
 AFTER UPDATE
 AS
 BEGIN
@@ -25,21 +25,24 @@ BEGIN
     IF EXISTS (
         SELECT 1 
         FROM inserted i
-        INNER JOIN deleted d ON i.PowerID = d.PowerID
-        WHERE i.PowerAmount < i.PowerCapacity * 0.10 -- Checking for less than 10% of capacity
+        INNER JOIN deleted d ON i.PowerSourceID = d.PowerSourceID
+        WHERE i.InvPowerAmount < i.InvPowerCapacity * 0.10 -- Checking for less than 10% of capacity
     )
     BEGIN
         -- Raising an error message for notification
         RAISERROR ('Power below 10%% of capacity, notify maintenance team', 16, 1);
     END
 END;
+GO
 
 -- Stored Procedure to allocate resources to a different Location
-GO
+
 CREATE PROCEDURE sp_AllocateResources
     @LocationID INT, 
     @ResourceType NVARCHAR(50), -- Resource Type 'Food', 'Water', 'Power'
-    @ResourceID INT    -- ID for the specific resource
+    @ResourceID INT,            -- ID for the specific resource
+    @Amount DECIMAL(8,2),       -- Amount of the resource
+    @Capacity DECIMAL(8,2) = NULL -- Capacity, only used for Power resources
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -64,8 +67,8 @@ BEGIN
         -- Assign Food resource to the location
         IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND FoodID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, FoodID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, FoodID, InvFoodAmount)
+            VALUES (@LocationID, @ResourceID, @Amount);
         END
         ELSE
         BEGIN
@@ -74,18 +77,18 @@ BEGIN
     END
     ELSE IF @ResourceType = 'Water'
     BEGIN
-        -- Check if the WaterID exists
-        IF NOT EXISTS (SELECT 1 FROM Water WHERE WaterID = @ResourceID)
+        -- Check if the WaterSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM WaterSource WHERE WaterSourceID = @ResourceID)
         BEGIN
-            RAISERROR ('Invalid WaterID specified', 16, 1);
+            RAISERROR ('Invalid WaterSourceID specified', 16, 1);
             RETURN;
         END
 
         -- Assign Water resource to the location
-        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterID = @ResourceID)
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterSourceID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, WaterID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, WaterSourceID, InvWaterQuantity)
+            VALUES (@LocationID, @ResourceID, @Amount);
         END
         ELSE
         BEGIN
@@ -94,18 +97,18 @@ BEGIN
     END
     ELSE IF @ResourceType = 'Power'
     BEGIN
-        -- Check if the PowerID exists
-        IF NOT EXISTS (SELECT 1 FROM Power WHERE PowerID = @ResourceID)
+        -- Check if the PowerSourceID exists
+        IF NOT EXISTS (SELECT 1 FROM PowerSource WHERE PowerSourceID = @ResourceID)
         BEGIN
-            RAISERROR ('Invalid PowerID specified', 16, 1);
+            RAISERROR ('Invalid PowerSourceID specified', 16, 1);
             RETURN;
         END
 
         -- Assign Power resource to the location
-        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerID = @ResourceID)
+        IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerSourceID = @ResourceID)
         BEGIN
-            INSERT INTO Inventory (LocationID, PowerID)
-            VALUES (@LocationID, @ResourceID);
+            INSERT INTO Inventory (LocationID, PowerSourceID, InvPowerCapacity, InvPowerAmount)
+            VALUES (@LocationID, @ResourceID, @Capacity, @Amount);
         END
         ELSE
         BEGIN
@@ -117,6 +120,7 @@ BEGIN
         RAISERROR ('Resource type not recognized', 16, 1);
     END
 END;
+GO
 
 
 -- Trigger to check if person is alive before adding to PersonTask table
@@ -145,7 +149,7 @@ BEGIN
     SELECT PersonID, TaskID, TaskStatusID, PersonTaskStartDate, PersonTaskDueDate
     FROM inserted;
 END;
-
+GO
 
 -- Stored Procedure to check if PersonTaskStartDate is in the past and if so
 -- update TaskStatusID from 1 (Not Started) -> 2 (In Progress)
@@ -487,21 +491,60 @@ CREATE PROCEDURE [dbo].[sp_ZeroHealth]
 AS
 BEGIN
     SET NOCOUNT ON;
-	BEGIN
-    UPDATE Person
-    SET PersonDeceased = 1,
-	PersonDateOfDeath =  CONVERT(Date, GETDATE())
-    WHERE PersonHealth = 0 AND PersonDeceased = 0;
-END
-END;
-GO
--- View to find safest locations when danger is imminent
-CREATE VIEW view_SafestLocations
-AS
-SELECT TOP (100) PERCENT LocationName, LocationDescription, LocationSafetyLevel
-FROM     dbo.Location
-GROUP BY LocationSafetyLevel, LocationName, LocationDescription
-ORDER BY LocationSafetyLevel DESC
+--Deletes the tasks of the deceased person
+    DELETE PT
+    FROM PersonTask PT
+    INNER JOIN Person P ON PT.PersonID = P.PersonID
+    WHERE P.PersonHealth = 0 AND P.PersonDeceased = 0;
 
-GO
+--Changes deceased status to "1" and adds deceased date
+    UPDATE Person
+    SET Person.PersonDeceased = 1,
+    Person.PersonDateOfDeath =  CONVERT(Date, GETDATE())
+    WHERE Person.PersonHealth = 0 AND Person.PersonDeceased = 0;
+
+--Adds deceased person's wealth to their corresponding faction's coffer
+	WITH PersonWealth AS (
+    SELECT
+        p.PersonID,
+        p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
+        f.FactionName AS [Faction],
+        SUM(cp.CurrencyAmount * c.CurrencyValue) AS WEALTH
+	
+    FROM
+        DoomsdayDatabase.dbo.Person p
+    JOIN DoomsdayDatabase.dbo.Faction f ON p.FactionID = f.FactionID
+    JOIN DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
+    JOIN DoomsdayDatabase.dbo.Currency c ON c.CurrencyID = cp.CurrencyID
+	GROUP BY p.PersonID, PersonFirstName, PersonLastName, FactionName, FactionInfluence
+),
+
+DeceasedPersons AS (
+    SELECT
+        p.PersonID,
+        p.FactionID,
+        cp.CurrencyAmount
+    FROM
+        DoomsdayDatabase.dbo.Person p
+    JOIN DoomsdayDatabase.dbo.CurrencyPerson cp ON p.PersonID = cp.PersonID
+    WHERE
+        p.PersonDeceased = 1
+)
+
+UPDATE f
+SET f.FactionCoffer = Wealth
+FROM DoomsdayDatabase.dbo.Faction f
+JOIN DeceasedPersons dp ON f.FactionID = dp.FactionID
+JOIN PersonWealth p ON dp.PersonID = p.PersonID
+
+--Deceased person's currency is then set to 0
+UPDATE cp
+SET cp.CurrencyAmount = 0
+FROM
+    DoomsdayDatabase.dbo.CurrencyPerson cp
+    JOIN DoomsdayDatabase.dbo.Person p ON p.PersonID = cp.PersonID
+WHERE
+    p.PersonDeceased = 1;
+
+END;
 
