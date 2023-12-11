@@ -1,11 +1,11 @@
 USE [master]
 GO
-/****** Object:  Database [DoomsdayDatabase]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Database [DoomsdayDatabase]    Script Date: 12/11/2023 5:52:10 PM ******/
 CREATE DATABASE [DoomsdayDatabase]
 GO
 USE [DoomsdayDatabase]
 GO
-/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Allies]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Allies]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,7 +33,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Currency]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Currency]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,7 +48,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -64,7 +64,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Faction]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Faction]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -81,7 +81,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +96,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Food]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Food]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -112,7 +112,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -126,7 +126,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -148,7 +148,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Location]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Location]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -165,7 +165,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -183,7 +183,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lodging]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Lodging]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -198,7 +198,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Person]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Person]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -220,7 +220,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -236,7 +236,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -254,7 +254,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -269,7 +269,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Skill]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Skill]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -284,7 +284,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -300,7 +300,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Task]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[Task]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -315,7 +315,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -329,7 +329,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/11/2023 5:34:28 PM ******/
+/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/11/2023 5:52:10 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -7258,6 +7258,8 @@ INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VAL
 GO
 INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1070, 37, 10)
 GO
+INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1070, 51, 10)
+GO
 INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1074, 44, 8)
 GO
 INSERT [dbo].[PersonSkill] ([PersonID], [SkillID], [PersonSkillProficiency]) VALUES (1075, 8, 10)
@@ -9285,6 +9287,8 @@ GO
 INSERT [dbo].[Skill] ([SkillID], [SkillName], [SkillDescription]) VALUES (49, N'Game Development ', N' Creating interactive and engaging video games.')
 GO
 INSERT [dbo].[Skill] ([SkillID], [SkillName], [SkillDescription]) VALUES (50, N'Crisis Management ', N' Effectively responding to and mitigating crises.')
+GO
+INSERT [dbo].[Skill] ([SkillID], [SkillName], [SkillDescription]) VALUES (51, N'Healthcare Directive Planning', N'Involved in creating a legal document that outlines preferences for medical treatment in case you are unable to make decisions for yourself.')
 GO
 SET IDENTITY_INSERT [dbo].[Skill] OFF
 GO
@@ -14083,8 +14087,6 @@ GO
 INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (46, N'Promote Water Conservation', N' Advocate for and practice water conservation habits to preserve local water resources.')
 GO
 INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (47, N'Tree Planting Events', N' Join or organize tree-planting events to contribute to environmental sustainability.')
-GO
-INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (48, N'Healthcare Directive Planning', N'Involved in creating a legal document that outlines preferences for medical treatment in case you are unable to make decisions for yourself.')
 GO
 SET IDENTITY_INSERT [dbo].[Task] OFF
 GO
