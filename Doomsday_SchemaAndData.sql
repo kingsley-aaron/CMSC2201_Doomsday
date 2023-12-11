@@ -3768,7 +3768,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (297, N'Mary', N'Robinson', CAST(N'1961-05-25' AS Date), N'MR400', 0, 1, CAST(N'2022-01-02' AS Date), 66, 19)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (298, N'David', N'Hall', CAST(N'1940-06-02' AS Date), N'DH461', 8, 0, NULL, 98, 5)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (298, N'David', N'Hall', CAST(N'1971-12-08' AS Date), N'DH461', 74, 0, NULL, 98, 5)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (299, N'Elizabeth', N'Walker', CAST(N'2000-01-24' AS Date), N'EW481', 83, 0, NULL, 42, 11)
 GO
