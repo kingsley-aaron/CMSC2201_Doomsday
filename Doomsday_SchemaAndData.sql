@@ -1,11 +1,11 @@
 USE [master]
 GO
-/****** Object:  Database [DoomsdayDatabaseTest]    Script Date: 12/6/2023 6:45:31 PM ******/
+/****** Object:  Database [DoomsdayDatabase]    Script Date: 12/11/2023 5:34:28 PM ******/
 CREATE DATABASE [DoomsdayDatabase]
 GO
 USE [DoomsdayDatabase]
 GO
-/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Adversaries]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Allies]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Allies]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,7 +33,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Currency]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Currency]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -48,7 +48,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[CurrencyPerson]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -64,7 +64,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Faction]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Faction]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -81,7 +81,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[FactionLocation]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +96,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Food]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Food]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -112,7 +112,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[FoodSource]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -126,7 +126,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -148,7 +148,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Location]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Location]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -165,7 +165,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[LocationLodging]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -183,7 +183,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lodging]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Lodging]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -198,7 +198,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Person]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Person]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -220,7 +220,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[PersonSkill]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -236,7 +236,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[PersonTask]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -254,7 +254,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[PowerSource]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -269,7 +269,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Skill]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Skill]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -284,7 +284,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[SkillTask]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -300,7 +300,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Task]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[Task]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -315,7 +315,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[TaskStatus]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -329,7 +329,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/6/2023 6:45:32 PM ******/
+/****** Object:  Table [dbo].[WaterSource]    Script Date: 12/11/2023 5:34:28 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -5178,7 +5178,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1002, N'Benjamin', N'Baker', CAST(N'1934-05-05' AS Date), N'BB305', 42, 0, NULL, 44, 2)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1003, N'Oliver', N'Hill', CAST(N'1984-11-02' AS Date), N'OH240', 90, 1, CAST(N'2014-05-07' AS Date), 69, 2)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1003, N'Oliver', N'Hill', CAST(N'1984-11-02' AS Date), N'OH240', 0, 1, CAST(N'2014-05-07' AS Date), 69, 2)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1004, N'Olivia', N'Hernandez', CAST(N'1959-06-10' AS Date), N'OH498', 80, 0, NULL, 98, 2)
 GO
@@ -5186,13 +5186,13 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1006, N'Amelia', N'Young', CAST(N'2001-09-01' AS Date), N'AY163', 35, 0, NULL, 115, 2)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1007, N'Benjamin', N'Mitchell', CAST(N'1953-01-22' AS Date), N'BM377', 28, 1, CAST(N'2012-09-28' AS Date), 45, 2)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1007, N'Benjamin', N'Mitchell', CAST(N'1953-01-22' AS Date), N'BM377', 0, 1, CAST(N'2012-09-28' AS Date), 45, 2)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1008, N'Sophia', N'Carter', CAST(N'2007-06-16' AS Date), N'SC831', 25, 0, NULL, 25, 2)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1009, N'Henry', N'Roberts', CAST(N'1959-08-06' AS Date), N'HR499', 37, 1, CAST(N'1975-06-30' AS Date), 3, 2)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1009, N'Henry', N'Roberts', CAST(N'1959-08-06' AS Date), N'HR499', 0, 1, CAST(N'1975-06-30' AS Date), 3, 2)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1010, N'Ava', N'Young', CAST(N'1949-05-21' AS Date), N'AY598', 48, 1, CAST(N'1997-05-22' AS Date), 115, 2)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1010, N'Ava', N'Young', CAST(N'1949-05-21' AS Date), N'AY598', 0, 1, CAST(N'1997-05-22' AS Date), 115, 2)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1011, N'Sophia', N'Hill', CAST(N'1990-08-23' AS Date), N'SH700', 6, 0, NULL, 69, 2)
 GO
@@ -5220,7 +5220,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1023, N'Oliver', N'Wright', CAST(N'1978-11-10' AS Date), N'OW397', 100, 0, NULL, 69, 3)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1024, N'Henry', N'Mitchell', CAST(N'1999-07-21' AS Date), N'HM105', 66, 1, CAST(N'2010-03-02' AS Date), 101, 3)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1024, N'Henry', N'Mitchell', CAST(N'1999-07-21' AS Date), N'HM105', 0, 1, CAST(N'2010-03-02' AS Date), 101, 3)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1025, N'Lucas', N'Hill', CAST(N'1940-07-31' AS Date), N'LH591', 18, 0, NULL, 75, 3)
 GO
@@ -5232,7 +5232,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1029, N'Oliver', N'Wright', CAST(N'2013-01-01' AS Date), N'OW319', 69, 0, NULL, 69, 3)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1030, N'Elijah', N'Campbell', CAST(N'1939-10-28' AS Date), N'EC335', 65, 1, CAST(N'1964-12-08' AS Date), 83, 3)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1030, N'Elijah', N'Campbell', CAST(N'1939-10-28' AS Date), N'EC335', 0, 1, CAST(N'1964-12-08' AS Date), 83, 3)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1031, N'Sophia', N'Hill', CAST(N'1928-07-04' AS Date), N'SH936', 97, 0, NULL, 75, 3)
 GO
@@ -5242,33 +5242,33 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1034, N'Ava', N'Gonzalez', CAST(N'1963-02-04' AS Date), N'AG936', 60, 0, NULL, 105, 3)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1035, N'Elijah', N'Mitchell', CAST(N'1944-10-02' AS Date), N'EM663', 27, 1, CAST(N'1954-04-01' AS Date), 101, 3)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1035, N'Elijah', N'Mitchell', CAST(N'1944-10-02' AS Date), N'EM663', 0, 1, CAST(N'1954-04-01' AS Date), 101, 3)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1036, N'Elijah', N'Turner', CAST(N'1920-01-07' AS Date), N'ET243', 61, 0, NULL, 103, 3)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1037, N'Mia', N'Scott', CAST(N'1950-04-15' AS Date), N'MS253', 4, 1, CAST(N'1985-11-13' AS Date), 112, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1037, N'Mia', N'Scott', CAST(N'1950-04-15' AS Date), N'MS253', 0, 1, CAST(N'1985-11-13' AS Date), 112, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1038, N'Amelia', N'Adams', CAST(N'1962-02-04' AS Date), N'AA566', 64, 1, CAST(N'2021-01-02' AS Date), 47, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1038, N'Amelia', N'Adams', CAST(N'1962-02-04' AS Date), N'AA566', 0, 1, CAST(N'2021-01-02' AS Date), 47, 4)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1039, N'Henry', N'Turner', CAST(N'1920-04-14' AS Date), N'HT620', 30, 0, NULL, 75, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1040, N'Henry', N'Gonzalez', CAST(N'1999-06-19' AS Date), N'HG983', 12, 1, CAST(N'2002-06-17' AS Date), 97, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1040, N'Henry', N'Gonzalez', CAST(N'1999-06-19' AS Date), N'HG983', 0, 1, CAST(N'2002-06-17' AS Date), 97, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1041, N'Mia', N'Wright', CAST(N'1958-05-01' AS Date), N'MW735', 78, 1, CAST(N'1976-10-06' AS Date), 62, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1041, N'Mia', N'Wright', CAST(N'1958-05-01' AS Date), N'MW735', 0, 1, CAST(N'1976-10-06' AS Date), 62, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1042, N'Charlotte', N'Nelson', CAST(N'1961-10-18' AS Date), N'CN628', 43, 1, CAST(N'1962-11-22' AS Date), 117, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1042, N'Charlotte', N'Nelson', CAST(N'1961-10-18' AS Date), N'CN628', 0, 1, CAST(N'1962-11-22' AS Date), 117, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1043, N'Liam', N'Green', CAST(N'1993-12-11' AS Date), N'LG891', 41, 1, CAST(N'2010-06-18' AS Date), 20, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1043, N'Liam', N'Green', CAST(N'1993-12-11' AS Date), N'LG891', 0, 1, CAST(N'2010-06-18' AS Date), 20, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1044, N'Benjamin', N'Adams', CAST(N'2013-08-16' AS Date), N'BA995', 81, 1, CAST(N'2018-04-05' AS Date), 47, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1044, N'Benjamin', N'Adams', CAST(N'2013-08-16' AS Date), N'BA995', 0, 1, CAST(N'2018-04-05' AS Date), 47, 4)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1045, N'Olivia', N'Young', CAST(N'1986-12-21' AS Date), N'OY731', 27, 0, NULL, 59, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1046, N'Amelia', N'King', CAST(N'1976-12-02' AS Date), N'AK326', 5, 1, CAST(N'2014-05-20' AS Date), 52, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1046, N'Amelia', N'King', CAST(N'1976-12-02' AS Date), N'AK326', 0, 1, CAST(N'2014-05-20' AS Date), 52, 4)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1047, N'Elijah', N'Baker', CAST(N'2011-11-28' AS Date), N'EB303', 83, 0, NULL, 18, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1048, N'Charlotte', N'Turner', CAST(N'1987-03-01' AS Date), N'CT356', 47, 1, CAST(N'1994-07-30' AS Date), 75, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1048, N'Charlotte', N'Turner', CAST(N'1987-03-01' AS Date), N'CT356', 0, 1, CAST(N'1994-07-30' AS Date), 75, 4)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1049, N'Lucas', N'Phillips', CAST(N'2012-05-22' AS Date), N'LP243', 64, 0, NULL, 71, 4)
 GO
@@ -5276,27 +5276,27 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1051, N'Olivia', N'Phillips', CAST(N'1950-10-07' AS Date), N'OP358', 40, 0, NULL, 71, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1052, N'Benjamin', N'King', CAST(N'1958-01-26' AS Date), N'BK220', 64, 1, CAST(N'2003-03-27' AS Date), 52, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1052, N'Benjamin', N'King', CAST(N'1958-01-26' AS Date), N'BK220', 0, 1, CAST(N'2003-03-27' AS Date), 52, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1053, N'Alexander', N'Phillips', CAST(N'1993-08-12' AS Date), N'AP648', 34, 1, CAST(N'2001-02-26' AS Date), 71, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1053, N'Alexander', N'Phillips', CAST(N'1993-08-12' AS Date), N'AP648', 0, 1, CAST(N'2001-02-26' AS Date), 71, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1054, N'Liam', N'Mitchell', CAST(N'1943-11-20' AS Date), N'LM719', 43, 1, CAST(N'1954-12-06' AS Date), 18, 4)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1054, N'Liam', N'Mitchell', CAST(N'1943-11-20' AS Date), N'LM719', 0, 1, CAST(N'1954-12-06' AS Date), 18, 4)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1055, N'William', N'Roberts', CAST(N'2013-09-04' AS Date), N'WR420', 24, 1, CAST(N'2023-08-04' AS Date), 9, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1055, N'William', N'Roberts', CAST(N'2013-09-04' AS Date), N'WR420', 0, 1, CAST(N'2023-08-04' AS Date), 9, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1056, N'Henry', N'Nelson', CAST(N'1995-04-12' AS Date), N'HN782', 30, 1, CAST(N'2000-10-20' AS Date), 76, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1056, N'Henry', N'Nelson', CAST(N'1995-04-12' AS Date), N'HN782', 0, 1, CAST(N'2000-10-20' AS Date), 76, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1057, N'Lucas', N'Gonzalez', CAST(N'1931-06-23' AS Date), N'LG445', 28, 1, CAST(N'1977-03-13' AS Date), 40, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1057, N'Lucas', N'Gonzalez', CAST(N'1931-06-23' AS Date), N'LG445', 0, 1, CAST(N'1977-03-13' AS Date), 40, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1058, N'Olivia', N'Hernandez', CAST(N'2012-05-31' AS Date), N'OH972', 99, 0, NULL, 2, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1059, N'Lucas', N'Hernandez', CAST(N'1931-12-06' AS Date), N'LH784', 1, 1, CAST(N'2012-08-08' AS Date), 2, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1059, N'Lucas', N'Hernandez', CAST(N'1931-12-06' AS Date), N'LH784', 0, 1, CAST(N'2012-08-08' AS Date), 2, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1060, N'Alexander', N'Baker', CAST(N'1927-05-09' AS Date), N'AB993', 72, 0, NULL, 77, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1061, N'Emma', N'Campbell', CAST(N'1922-05-24' AS Date), N'EC593', 98, 1, CAST(N'1925-11-18' AS Date), 77, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1061, N'Emma', N'Campbell', CAST(N'1922-05-24' AS Date), N'EC593', 0, 1, CAST(N'1925-11-18' AS Date), 77, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1062, N'Olivia', N'Phillips', CAST(N'1940-06-08' AS Date), N'OP891', 37, 1, CAST(N'2010-04-29' AS Date), 11, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1062, N'Olivia', N'Phillips', CAST(N'1940-06-08' AS Date), N'OP891', 0, 1, CAST(N'2010-04-29' AS Date), 11, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1063, N'Liam', N'Wright', CAST(N'1938-11-30' AS Date), N'LW341', 25, 0, NULL, 70, 7)
 GO
@@ -5304,13 +5304,13 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1065, N'Elijah', N'Gonzalez', CAST(N'1937-11-28' AS Date), N'EG835', 64, 0, NULL, 40, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1066, N'Emma', N'Roberts', CAST(N'1975-01-22' AS Date), N'ER738', 94, 1, CAST(N'2016-01-28' AS Date), 9, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1066, N'Emma', N'Roberts', CAST(N'1975-01-22' AS Date), N'ER738', 0, 1, CAST(N'2016-01-28' AS Date), 9, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1067, N'Evelyn', N'Gonzalez', CAST(N'1951-09-28' AS Date), N'EG519', 82, 0, NULL, 40, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1068, N'James', N'Gonzalez', CAST(N'1975-01-26' AS Date), N'JG629', 36, 0, NULL, 40, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1069, N'Charlotte', N'Phillips', CAST(N'1946-03-22' AS Date), N'CP421', 24, 1, CAST(N'2014-03-05' AS Date), 11, 7)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1069, N'Charlotte', N'Phillips', CAST(N'1946-03-22' AS Date), N'CP421', 0, 1, CAST(N'2014-03-05' AS Date), 11, 7)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1070, N'Liam', N'Wright', CAST(N'2000-07-27' AS Date), N'LW711', 80, 0, NULL, 70, 7)
 GO
@@ -5318,17 +5318,17 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1072, N'Ava', N'Perez', CAST(N'1975-08-08' AS Date), N'AP903', 94, 0, NULL, 78, 7)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1073, N'Alexander', N'Phillips', CAST(N'1959-07-24' AS Date), N'AP183', 82, 1, CAST(N'1994-05-13' AS Date), 64, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1073, N'Alexander', N'Phillips', CAST(N'1959-07-24' AS Date), N'AP183', 0, 1, CAST(N'1994-05-13' AS Date), 64, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1074, N'Oliver', N'Perez', CAST(N'1963-11-29' AS Date), N'OP340', 3, 0, NULL, 90, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1075, N'Emma', N'Campbell', CAST(N'2000-06-20' AS Date), N'EC596', 20, 1, CAST(N'2019-03-15' AS Date), 21, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1075, N'Emma', N'Campbell', CAST(N'2000-06-20' AS Date), N'EC596', 0, 1, CAST(N'2019-03-15' AS Date), 21, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1076, N'Alexander', N'King', CAST(N'1978-04-10' AS Date), N'AK500', 62, 0, NULL, 30, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1077, N'Mia', N'Wright', CAST(N'1944-10-17' AS Date), N'MW569', 62, 0, NULL, 69, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1078, N'Emma', N'Hernandez', CAST(N'1997-01-04' AS Date), N'EH984', 46, 1, CAST(N'2014-07-24' AS Date), 114, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1078, N'Emma', N'Hernandez', CAST(N'1997-01-04' AS Date), N'EH984', 0, 1, CAST(N'2014-07-24' AS Date), 114, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1079, N'Evelyn', N'Phillips', CAST(N'2018-05-03' AS Date), N'EP730', 31, 0, NULL, 64, 9)
 GO
@@ -5338,49 +5338,49 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1082, N'Benjamin', N'Young', CAST(N'1947-03-29' AS Date), N'BY814', 33, 0, NULL, 87, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1083, N'Olivia', N'Baker', CAST(N'1981-04-14' AS Date), N'OB840', 14, 1, CAST(N'1988-02-22' AS Date), 40, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1083, N'Olivia', N'Baker', CAST(N'1981-04-14' AS Date), N'OB840', 0, 1, CAST(N'1988-02-22' AS Date), 40, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1084, N'Sophia', N'Perez', CAST(N'1978-04-26' AS Date), N'SP193', 76, 0, NULL, 90, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1085, N'Ava', N'Carter', CAST(N'1955-07-15' AS Date), N'AC631', 99, 1, CAST(N'1986-06-26' AS Date), 83, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1085, N'Ava', N'Carter', CAST(N'1955-07-15' AS Date), N'AC631', 0, 1, CAST(N'1986-06-26' AS Date), 83, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1086, N'Liam', N'Perez', CAST(N'1941-05-25' AS Date), N'LP475', 14, 0, NULL, 90, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1087, N'Elijah', N'Gonzalez', CAST(N'1943-01-06' AS Date), N'EG982', 93, 0, NULL, 24, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1088, N'Emma', N'Campbell', CAST(N'1949-11-27' AS Date), N'EC566', 32, 1, CAST(N'2023-11-21' AS Date), 21, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1088, N'Emma', N'Campbell', CAST(N'1949-11-27' AS Date), N'EC566', 0, 1, CAST(N'2023-11-21' AS Date), 21, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1089, N'Henry', N'Perez', CAST(N'1956-04-13' AS Date), N'HP269', 50, 1, CAST(N'1984-02-11' AS Date), 90, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1089, N'Henry', N'Perez', CAST(N'1956-04-13' AS Date), N'HP269', 0, 1, CAST(N'1984-02-11' AS Date), 90, 9)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1090, N'Alexander', N'Scott', CAST(N'1939-08-26' AS Date), N'AS516', 100, 1, CAST(N'1968-03-23' AS Date), 10, 9)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1090, N'Alexander', N'Scott', CAST(N'1939-08-26' AS Date), N'AS516', 0, 1, CAST(N'1968-03-23' AS Date), 10, 9)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1091, N'Isabella', N'King', CAST(N'1986-03-19' AS Date), N'IK947', 20, 0, NULL, 50, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1092, N'James', N'Wright', CAST(N'1961-10-26' AS Date), N'JW541', 42, 1, CAST(N'1988-12-29' AS Date), 93, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1092, N'James', N'Wright', CAST(N'1961-10-26' AS Date), N'JW541', 0, 1, CAST(N'1988-12-29' AS Date), 93, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1093, N'Sophia', N'Adams', CAST(N'1974-08-07' AS Date), N'SA449', 14, 0, NULL, 84, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1094, N'Benjamin', N'Roberts', CAST(N'1971-07-03' AS Date), N'BR963', 61, 1, CAST(N'1981-11-16' AS Date), 58, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1094, N'Benjamin', N'Roberts', CAST(N'1971-07-03' AS Date), N'BR963', 0, 1, CAST(N'1981-11-16' AS Date), 58, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1095, N'Sophia', N'Adams', CAST(N'2018-03-27' AS Date), N'SA371', 88, 0, NULL, 84, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1096, N'Amelia', N'Roberts', CAST(N'2018-08-14' AS Date), N'AR838', 2, 0, NULL, 58, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1097, N'Amelia', N'Scott', CAST(N'1928-11-10' AS Date), N'AS755', 13, 1, CAST(N'2009-01-04' AS Date), 21, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1097, N'Amelia', N'Scott', CAST(N'1928-11-10' AS Date), N'AS755', 0, 1, CAST(N'2009-01-04' AS Date), 21, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1098, N'Isabella', N'King', CAST(N'1968-09-05' AS Date), N'IK608', 12, 1, CAST(N'1985-10-23' AS Date), 50, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1098, N'Isabella', N'King', CAST(N'1968-09-05' AS Date), N'IK608', 0, 1, CAST(N'1985-10-23' AS Date), 50, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1099, N'Liam', N'Green', CAST(N'1961-12-10' AS Date), N'LG335', 27, 1, CAST(N'1967-08-30' AS Date), 79, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1099, N'Liam', N'Green', CAST(N'1961-12-10' AS Date), N'LG335', 0, 1, CAST(N'1967-08-30' AS Date), 79, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1100, N'Alexander', N'Campbell', CAST(N'2003-11-04' AS Date), N'AC227', 23, 0, NULL, 81, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1101, N'Amelia', N'Campbell', CAST(N'2018-07-13' AS Date), N'AC792', 83, 1, CAST(N'2023-02-10' AS Date), 81, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1101, N'Amelia', N'Campbell', CAST(N'2018-07-13' AS Date), N'AC792', 0, 1, CAST(N'2023-02-10' AS Date), 81, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1102, N'Henry', N'Gonzalez', CAST(N'2009-03-25' AS Date), N'HG209', 67, 0, NULL, 70, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1103, N'Charlotte', N'Wright', CAST(N'1998-06-10' AS Date), N'CW107', 14, 0, NULL, 93, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1104, N'William', N'Young', CAST(N'1954-02-28' AS Date), N'WY834', 52, 1, CAST(N'2004-06-25' AS Date), 100, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1104, N'William', N'Young', CAST(N'1954-02-28' AS Date), N'WY834', 0, 1, CAST(N'2004-06-25' AS Date), 100, 14)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1105, N'William', N'Hernandez', CAST(N'1966-01-07' AS Date), N'WH993', 33, 0, NULL, 118, 14)
 GO
@@ -5388,17 +5388,17 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1107, N'Benjamin', N'Phillips', CAST(N'1948-06-09' AS Date), N'BP557', 78, 0, NULL, 56, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1108, N'Emma', N'Carter', CAST(N'1959-01-11' AS Date), N'EC410', 87, 1, CAST(N'1979-04-28' AS Date), 65, 14)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1108, N'Emma', N'Carter', CAST(N'1959-01-11' AS Date), N'EC410', 0, 1, CAST(N'1979-04-28' AS Date), 65, 14)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1109, N'Alexander', N'Mitchell', CAST(N'1940-06-19' AS Date), N'AM550', 42, 1, CAST(N'2007-06-18' AS Date), 101, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1109, N'Alexander', N'Mitchell', CAST(N'1940-06-19' AS Date), N'AM550', 0, 1, CAST(N'2007-06-18' AS Date), 101, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1110, N'James', N'Hernandez', CAST(N'1962-08-30' AS Date), N'JH858', 17, 1, CAST(N'2008-12-09' AS Date), 24, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1110, N'James', N'Hernandez', CAST(N'1962-08-30' AS Date), N'JH858', 0, 1, CAST(N'2008-12-09' AS Date), 24, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1111, N'Charlotte', N'Mitchell', CAST(N'1971-07-31' AS Date), N'CM271', 82, 1, CAST(N'1994-10-12' AS Date), 101, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1111, N'Charlotte', N'Mitchell', CAST(N'1971-07-31' AS Date), N'CM271', 0, 1, CAST(N'1994-10-12' AS Date), 101, 17)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1112, N'James', N'Hernandez', CAST(N'1934-03-13' AS Date), N'JH974', 80, 0, NULL, 24, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1113, N'Harper', N'Baker', CAST(N'2012-06-22' AS Date), N'HB230', 46, 1, CAST(N'2022-01-02' AS Date), 75, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1113, N'Harper', N'Baker', CAST(N'2012-06-22' AS Date), N'HB230', 0, 1, CAST(N'2022-01-02' AS Date), 75, 17)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1114, N'Mia', N'Campbell', CAST(N'2012-01-23' AS Date), N'MC101', 53, 0, NULL, 75, 17)
 GO
@@ -5410,17 +5410,17 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1118, N'Harper', N'Carter', CAST(N'1959-01-18' AS Date), N'HC125', 49, 0, NULL, 16, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1119, N'James', N'Roberts', CAST(N'1953-03-17' AS Date), N'JR418', 69, 1, CAST(N'2012-09-17' AS Date), 33, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1119, N'James', N'Roberts', CAST(N'1953-03-17' AS Date), N'JR418', 0, 1, CAST(N'2012-09-17' AS Date), 33, 17)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1120, N'Isabella', N'Young', CAST(N'1985-05-19' AS Date), N'IY329', 18, 0, NULL, 16, 17)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1121, N'Charlotte', N'Scott', CAST(N'1933-09-29' AS Date), N'CS683', 3, 0, NULL, 84, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1122, N'Henry', N'Phillips', CAST(N'1966-11-09' AS Date), N'HP868', 84, 1, CAST(N'2023-09-17' AS Date), 111, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1122, N'Henry', N'Phillips', CAST(N'1966-11-09' AS Date), N'HP868', 0, 1, CAST(N'2023-09-17' AS Date), 111, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1123, N'Evelyn', N'Carter', CAST(N'2016-09-12' AS Date), N'EC803', 70, 1, CAST(N'2017-10-10' AS Date), 16, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1123, N'Evelyn', N'Carter', CAST(N'2016-09-12' AS Date), N'EC803', 0, 1, CAST(N'2017-10-10' AS Date), 16, 17)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1124, N'Olivia', N'Hernandez', CAST(N'1935-11-29' AS Date), N'OH199', 38, 1, CAST(N'2021-06-28' AS Date), 24, 17)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1124, N'Olivia', N'Hernandez', CAST(N'1935-11-29' AS Date), N'OH199', 0, 1, CAST(N'2021-06-28' AS Date), 24, 17)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1125, N'Sophia', N'Young', CAST(N'1946-11-08' AS Date), N'SY932', 74, 0, NULL, 16, 17)
 GO
@@ -5428,7 +5428,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1127, N'Lucas', N'Mitchell', CAST(N'1992-04-24' AS Date), N'LM201', 86, 0, NULL, 89, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1128, N'James', N'Carter', CAST(N'1987-05-05' AS Date), N'JC172', 9, 1, CAST(N'2017-03-23' AS Date), 27, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1128, N'James', N'Carter', CAST(N'1987-05-05' AS Date), N'JC172', 0, 1, CAST(N'2017-03-23' AS Date), 27, 20)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1129, N'Sophia', N'Campbell', CAST(N'2009-07-08' AS Date), N'SC987', 20, 0, NULL, 41, 20)
 GO
@@ -5440,17 +5440,17 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1133, N'Liam', N'Roberts', CAST(N'1975-06-17' AS Date), N'LR803', 18, 0, NULL, 94, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1134, N'Ava', N'Nelson', CAST(N'1936-06-02' AS Date), N'AN795', 65, 1, CAST(N'2015-04-28' AS Date), 40, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1134, N'Ava', N'Nelson', CAST(N'1936-06-02' AS Date), N'AN795', 0, 1, CAST(N'2015-04-28' AS Date), 40, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1135, N'Oliver', N'Phillips', CAST(N'2009-04-07' AS Date), N'OP909', 82, 1, CAST(N'2011-05-15' AS Date), 7, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1135, N'Oliver', N'Phillips', CAST(N'2009-04-07' AS Date), N'OP909', 0, 1, CAST(N'2011-05-15' AS Date), 7, 20)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1136, N'Oliver', N'Mitchell', CAST(N'2008-06-19' AS Date), N'OM893', 67, 0, NULL, 89, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1137, N'Evelyn', N'Phillips', CAST(N'1925-01-29' AS Date), N'EP819', 54, 1, CAST(N'2003-03-19' AS Date), 7, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1137, N'Evelyn', N'Phillips', CAST(N'1925-01-29' AS Date), N'EP819', 0, 1, CAST(N'2003-03-19' AS Date), 7, 20)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1138, N'Alexander', N'Mitchell', CAST(N'1981-10-30' AS Date), N'AM892', 62, 0, NULL, 89, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1139, N'Mia', N'Green', CAST(N'1996-11-24' AS Date), N'MG667', 7, 1, CAST(N'2020-05-13' AS Date), 97, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1139, N'Mia', N'Green', CAST(N'1996-11-24' AS Date), N'MG667', 0, 1, CAST(N'2020-05-13' AS Date), 97, 20)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1140, N'James', N'Lopez', CAST(N'1956-07-07' AS Date), N'JL838', 4, 0, NULL, 49, 20)
 GO
@@ -5458,25 +5458,25 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1142, N'Harper', N'Mitchell', CAST(N'1944-03-08' AS Date), N'HM699', 62, 0, NULL, 89, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1143, N'Liam', N'Nelson', CAST(N'1978-12-12' AS Date), N'LN771', 61, 1, CAST(N'2008-11-08' AS Date), 40, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1143, N'Liam', N'Nelson', CAST(N'1978-12-12' AS Date), N'LN771', 0, 1, CAST(N'2008-11-08' AS Date), 40, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1144, N'Ava', N'King', CAST(N'1944-05-23' AS Date), N'AK667', 11, 1, CAST(N'1952-12-17' AS Date), 63, 20)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1144, N'Ava', N'King', CAST(N'1944-05-23' AS Date), N'AK667', 0, 1, CAST(N'1952-12-17' AS Date), 63, 20)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1145, N'Ava', N'Campbell', CAST(N'1931-11-12' AS Date), N'AC943', 32, 1, CAST(N'1979-08-01' AS Date), 97, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1145, N'Ava', N'Campbell', CAST(N'1931-11-12' AS Date), N'AC943', 0, 1, CAST(N'1979-08-01' AS Date), 97, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1146, N'William', N'Perez', CAST(N'1973-05-06' AS Date), N'WP654', 58, 1, CAST(N'2001-04-27' AS Date), 79, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1146, N'William', N'Perez', CAST(N'1973-05-06' AS Date), N'WP654', 0, 1, CAST(N'2001-04-27' AS Date), 79, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1147, N'Liam', N'Roberts', CAST(N'1965-12-11' AS Date), N'LR726', 58, 0, NULL, 89, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1148, N'Olivia', N'King', CAST(N'1980-06-25' AS Date), N'OK573', 77, 1, CAST(N'1990-02-16' AS Date), 102, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1148, N'Olivia', N'King', CAST(N'1980-06-25' AS Date), N'OK573', 0, 1, CAST(N'1990-02-16' AS Date), 102, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1149, N'Amelia', N'Nelson', CAST(N'1963-08-27' AS Date), N'AN934', 40, 0, NULL, 71, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1150, N'Elijah', N'Hernandez', CAST(N'1979-04-15' AS Date), N'EH489', 96, 0, NULL, 90, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1151, N'Ava', N'Lopez', CAST(N'2000-02-10' AS Date), N'AL596', 11, 1, CAST(N'2000-10-20' AS Date), 29, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1151, N'Ava', N'Lopez', CAST(N'2000-02-10' AS Date), N'AL596', 0, 1, CAST(N'2000-10-20' AS Date), 29, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1152, N'James', N'Young', CAST(N'1983-03-18' AS Date), N'JY178', 80, 1, CAST(N'2004-08-15' AS Date), 58, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1152, N'James', N'Young', CAST(N'1983-03-18' AS Date), N'JY178', 0, 1, CAST(N'2004-08-15' AS Date), 58, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1153, N'Benjamin', N'Perez', CAST(N'1958-05-21' AS Date), N'BP275', 84, 0, NULL, 79, 21)
 GO
@@ -5484,7 +5484,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1155, N'Sophia', N'Phillips', CAST(N'1969-07-20' AS Date), N'SP421', 54, 0, NULL, 21, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1156, N'Mia', N'Baker', CAST(N'1939-06-02' AS Date), N'MB587', 6, 1, CAST(N'1967-08-25' AS Date), 92, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1156, N'Mia', N'Baker', CAST(N'1939-06-02' AS Date), N'MB587', 0, 1, CAST(N'1967-08-25' AS Date), 92, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1157, N'Benjamin', N'Baker', CAST(N'1984-08-24' AS Date), N'BB233', 76, 0, NULL, 92, 21)
 GO
@@ -5492,7 +5492,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1159, N'Olivia', N'Perez', CAST(N'1996-06-04' AS Date), N'OP969', 77, 0, NULL, 79, 21)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1160, N'Mia', N'Nelson', CAST(N'1973-02-22' AS Date), N'MN801', 28, 1, CAST(N'1987-09-13' AS Date), 71, 21)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1160, N'Mia', N'Nelson', CAST(N'1973-02-22' AS Date), N'MN801', 0, 1, CAST(N'1987-09-13' AS Date), 71, 21)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1161, N'William', N'Young', CAST(N'2014-09-12' AS Date), N'WY178', 26, 0, NULL, 58, 21)
 GO
@@ -5510,7 +5510,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1168, N'Harper', N'Nelson', CAST(N'1961-07-17' AS Date), N'HN856', 89, 0, NULL, 51, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1169, N'Alexander', N'Young', CAST(N'1990-02-19' AS Date), N'AY479', 84, 1, CAST(N'1994-11-01' AS Date), 76, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1169, N'Alexander', N'Young', CAST(N'1990-02-19' AS Date), N'AY479', 0, 1, CAST(N'1994-11-01' AS Date), 76, 23)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1170, N'Elijah', N'Perez', CAST(N'1954-08-08' AS Date), N'EP839', 75, 0, NULL, 68, 23)
 GO
@@ -5518,45 +5518,45 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1172, N'Henry', N'Wright', CAST(N'1932-02-09' AS Date), N'HW840', 53, 0, NULL, 46, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1173, N'James', N'Wright', CAST(N'2012-02-15' AS Date), N'JW818', 60, 1, CAST(N'2015-04-17' AS Date), 46, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1173, N'James', N'Wright', CAST(N'2012-02-15' AS Date), N'JW818', 0, 1, CAST(N'2015-04-17' AS Date), 46, 23)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1174, N'Oliver', N'Gonzalez', CAST(N'2004-04-12' AS Date), N'OG374', 15, 0, NULL, 78, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1175, N'Ava', N'Wright', CAST(N'1998-02-06' AS Date), N'AW385', 16, 1, CAST(N'2005-01-04' AS Date), 46, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1175, N'Ava', N'Wright', CAST(N'1998-02-06' AS Date), N'AW385', 0, 1, CAST(N'2005-01-04' AS Date), 46, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1176, N'Lucas', N'Young', CAST(N'1944-05-06' AS Date), N'LY363', 15, 1, CAST(N'2020-10-01' AS Date), 76, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1176, N'Lucas', N'Young', CAST(N'1944-05-06' AS Date), N'LY363', 0, 1, CAST(N'2020-10-01' AS Date), 76, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1177, N'Noah', N'Perez', CAST(N'1931-01-04' AS Date), N'NP370', 71, 1, CAST(N'1957-01-12' AS Date), 68, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1177, N'Noah', N'Perez', CAST(N'1931-01-04' AS Date), N'NP370', 0, 1, CAST(N'1957-01-12' AS Date), 68, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1178, N'Lucas', N'Lopez', CAST(N'1925-05-04' AS Date), N'LL147', 14, 1, CAST(N'2002-11-18' AS Date), 34, 23)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1178, N'Lucas', N'Lopez', CAST(N'1925-05-04' AS Date), N'LL147', 0, 1, CAST(N'2002-11-18' AS Date), 34, 23)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1179, N'Elijah', N'Mitchell', CAST(N'1980-01-22' AS Date), N'EM438', 45, 0, NULL, 76, 23)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1180, N'Mia', N'Hill', CAST(N'1966-06-28' AS Date), N'MH225', 20, 0, NULL, 7, 23)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1181, N'Oliver', N'King', CAST(N'2001-05-04' AS Date), N'OK588', 59, 1, CAST(N'2022-09-27' AS Date), 67, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1181, N'Oliver', N'King', CAST(N'2001-05-04' AS Date), N'OK588', 0, 1, CAST(N'2022-09-27' AS Date), 67, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1182, N'Noah', N'Lopez', CAST(N'2011-01-10' AS Date), N'NL197', 83, 1, CAST(N'2021-01-03' AS Date), 24, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1182, N'Noah', N'Lopez', CAST(N'2011-01-10' AS Date), N'NL197', 0, 1, CAST(N'2021-01-03' AS Date), 24, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1183, N'William', N'Scott', CAST(N'2013-03-26' AS Date), N'WS524', 55, 0, NULL, 49, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1184, N'Olivia', N'Campbell', CAST(N'1961-09-11' AS Date), N'OC437', 5, 0, NULL, 26, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1185, N'Elijah', N'Baker', CAST(N'1973-10-19' AS Date), N'EB613', 86, 1, CAST(N'2023-09-22' AS Date), 81, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1185, N'Elijah', N'Baker', CAST(N'1973-10-19' AS Date), N'EB613', 0, 1, CAST(N'2023-09-22' AS Date), 81, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1186, N'Harper', N'Perez', CAST(N'1956-01-20' AS Date), N'HP100', 81, 0, NULL, 81, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1187, N'Evelyn', N'Gonzalez', CAST(N'2008-07-08' AS Date), N'EG825', 16, 1, CAST(N'2010-02-13' AS Date), 105, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1187, N'Evelyn', N'Gonzalez', CAST(N'2008-07-08' AS Date), N'EG825', 0, 1, CAST(N'2010-02-13' AS Date), 105, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1188, N'Isabella', N'Turner', CAST(N'1934-10-03' AS Date), N'IT363', 36, 0, NULL, 106, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1189, N'Noah', N'Carter', CAST(N'1994-10-02' AS Date), N'NC538', 57, 1, CAST(N'2008-03-26' AS Date), 96, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1189, N'Noah', N'Carter', CAST(N'1994-10-02' AS Date), N'NC538', 0, 1, CAST(N'2008-03-26' AS Date), 96, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1190, N'Oliver', N'Adams', CAST(N'1998-02-25' AS Date), N'OA821', 97, 0, NULL, 99, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1191, N'Sophia', N'Lopez', CAST(N'1990-05-09' AS Date), N'SL742', 97, 0, NULL, 24, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1192, N'Charlotte', N'Nelson', CAST(N'1920-07-29' AS Date), N'CN250', 17, 1, CAST(N'1979-11-21' AS Date), 73, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1192, N'Charlotte', N'Nelson', CAST(N'1920-07-29' AS Date), N'CN250', 0, 1, CAST(N'1979-11-21' AS Date), 73, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1193, N'Noah', N'Adams', CAST(N'1995-12-26' AS Date), N'NA149', 29, 0, NULL, 99, 28)
 GO
@@ -5564,15 +5564,15 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1195, N'Alexander', N'King', CAST(N'1928-11-20' AS Date), N'AK842', 19, 0, NULL, 67, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1196, N'Henry', N'Nelson', CAST(N'1976-12-31' AS Date), N'HN917', 72, 1, CAST(N'1995-01-31' AS Date), 73, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1196, N'Henry', N'Nelson', CAST(N'1976-12-31' AS Date), N'HN917', 0, 1, CAST(N'1995-01-31' AS Date), 73, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1197, N'Henry', N'Campbell', CAST(N'1938-05-18' AS Date), N'HC484', 12, 0, NULL, 26, 28)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1198, N'Amelia', N'Campbell', CAST(N'1981-01-20' AS Date), N'AC924', 42, 1, CAST(N'1988-03-01' AS Date), 26, 28)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1198, N'Amelia', N'Campbell', CAST(N'1981-01-20' AS Date), N'AC924', 0, 1, CAST(N'1988-03-01' AS Date), 26, 28)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1199, N'William', N'Nelson', CAST(N'1934-07-10' AS Date), N'WN252', 53, 0, NULL, 12, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1200, N'Ava', N'Phillips', CAST(N'2001-10-10' AS Date), N'AP445', 47, 1, CAST(N'2023-05-31' AS Date), 103, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1200, N'Ava', N'Phillips', CAST(N'2001-10-10' AS Date), N'AP445', 0, 1, CAST(N'2023-05-31' AS Date), 103, 29)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1201, N'Emma', N'Perez', CAST(N'1920-04-05' AS Date), N'EP265', 61, 0, NULL, 55, 29)
 GO
@@ -5580,9 +5580,9 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1203, N'Noah', N'Adams', CAST(N'1977-05-23' AS Date), N'NA573', 25, 0, NULL, 21, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1204, N'James', N'Roberts', CAST(N'1969-12-04' AS Date), N'JR814', 39, 1, CAST(N'1982-09-23' AS Date), 84, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1204, N'James', N'Roberts', CAST(N'1969-12-04' AS Date), N'JR814', 0, 1, CAST(N'1982-09-23' AS Date), 84, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1205, N'Oliver', N'Wright', CAST(N'2003-05-12' AS Date), N'OW410', 31, 1, CAST(N'2012-12-22' AS Date), 56, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1205, N'Oliver', N'Wright', CAST(N'2003-05-12' AS Date), N'OW410', 0, 1, CAST(N'2012-12-22' AS Date), 56, 29)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1206, N'Harper', N'Campbell', CAST(N'1986-01-07' AS Date), N'HC690', 83, 0, NULL, 55, 29)
 GO
@@ -5592,93 +5592,93 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1209, N'Sophia', N'Hernandez', CAST(N'2009-05-23' AS Date), N'SH169', 29, 0, NULL, 21, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1210, N'Elijah', N'Perez', CAST(N'2015-09-23' AS Date), N'EP879', 25, 1, CAST(N'2023-11-19' AS Date), 55, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1210, N'Elijah', N'Perez', CAST(N'2015-09-23' AS Date), N'EP879', 0, 1, CAST(N'2023-11-19' AS Date), 55, 29)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1211, N'Oliver', N'Hill', CAST(N'1984-09-22' AS Date), N'OH196', 25, 0, NULL, 63, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1212, N'William', N'King', CAST(N'2001-05-19' AS Date), N'WK285', 21, 1, CAST(N'2020-03-27' AS Date), 1, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1212, N'William', N'King', CAST(N'2001-05-19' AS Date), N'WK285', 0, 1, CAST(N'2020-03-27' AS Date), 1, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1213, N'Ava', N'Hill', CAST(N'1959-06-08' AS Date), N'AH414', 12, 1, CAST(N'1998-06-03' AS Date), 63, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1213, N'Ava', N'Hill', CAST(N'1959-06-08' AS Date), N'AH414', 0, 1, CAST(N'1998-06-03' AS Date), 63, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1214, N'Alexander', N'Carter', CAST(N'2003-10-25' AS Date), N'AC895', 54, 1, CAST(N'2020-09-01' AS Date), 65, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1214, N'Alexander', N'Carter', CAST(N'2003-10-25' AS Date), N'AC895', 0, 1, CAST(N'2020-09-01' AS Date), 65, 29)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1215, N'James', N'Carter', CAST(N'1924-09-24' AS Date), N'JC800', 92, 0, NULL, 65, 29)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1216, N'Mia', N'Roberts', CAST(N'2012-08-19' AS Date), N'MR397', 10, 1, CAST(N'2019-04-30' AS Date), 84, 29)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1216, N'Mia', N'Roberts', CAST(N'2012-08-19' AS Date), N'MR397', 0, 1, CAST(N'2019-04-30' AS Date), 84, 29)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1217, N'Lucas', N'Nelson', CAST(N'1966-02-18' AS Date), N'LN329', 31, 0, NULL, 21, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1218, N'Noah', N'Nelson', CAST(N'1972-03-08' AS Date), N'NN404', 24, 0, NULL, 21, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1219, N'Mia', N'Campbell', CAST(N'2002-11-07' AS Date), N'MC542', 67, 1, CAST(N'2019-07-05' AS Date), 56, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1219, N'Mia', N'Campbell', CAST(N'2002-11-07' AS Date), N'MC542', 0, 1, CAST(N'2019-07-05' AS Date), 56, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1220, N'Harper', N'Hernandez', CAST(N'1961-12-19' AS Date), N'HH299', 44, 0, NULL, 68, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1221, N'Amelia', N'Phillips', CAST(N'1982-10-01' AS Date), N'AP849', 50, 1, CAST(N'2012-01-11' AS Date), 3, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1221, N'Amelia', N'Phillips', CAST(N'1982-10-01' AS Date), N'AP849', 0, 1, CAST(N'2012-01-11' AS Date), 3, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1222, N'Amelia', N'Mitchell', CAST(N'2007-02-02' AS Date), N'AM204', 81, 1, CAST(N'2011-02-01' AS Date), 98, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1222, N'Amelia', N'Mitchell', CAST(N'2007-02-02' AS Date), N'AM204', 0, 1, CAST(N'2011-02-01' AS Date), 98, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1223, N'Noah', N'Turner', CAST(N'1954-08-19' AS Date), N'NT183', 61, 1, CAST(N'1993-12-13' AS Date), 42, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1223, N'Noah', N'Turner', CAST(N'1954-08-19' AS Date), N'NT183', 0, 1, CAST(N'1993-12-13' AS Date), 42, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1224, N'Oliver', N'Turner', CAST(N'1976-07-01' AS Date), N'OT371', 99, 1, CAST(N'2021-11-13' AS Date), 42, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1224, N'Oliver', N'Turner', CAST(N'1976-07-01' AS Date), N'OT371', 0, 1, CAST(N'2021-11-13' AS Date), 42, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1225, N'Ava', N'Scott', CAST(N'1921-04-17' AS Date), N'AS648', 68, 0, NULL, 46, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1226, N'James', N'Gonzalez', CAST(N'1958-11-10' AS Date), N'JG713', 63, 1, CAST(N'2004-10-28' AS Date), 15, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1226, N'James', N'Gonzalez', CAST(N'1958-11-10' AS Date), N'JG713', 0, 1, CAST(N'2004-10-28' AS Date), 15, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1227, N'Amelia', N'Turner', CAST(N'1938-11-24' AS Date), N'AT325', 85, 1, CAST(N'1998-01-29' AS Date), 42, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1227, N'Amelia', N'Turner', CAST(N'1938-11-24' AS Date), N'AT325', 0, 1, CAST(N'1998-01-29' AS Date), 42, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1228, N'Amelia', N'King', CAST(N'1971-01-29' AS Date), N'AK310', 100, 1, CAST(N'2011-02-22' AS Date), 112, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1228, N'Amelia', N'King', CAST(N'1971-01-29' AS Date), N'AK310', 0, 1, CAST(N'2011-02-22' AS Date), 112, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1229, N'Lucas', N'Hill', CAST(N'2005-12-31' AS Date), N'LH978', 31, 0, NULL, 21, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1230, N'William', N'Scott', CAST(N'1935-09-21' AS Date), N'WS277', 65, 1, CAST(N'1951-01-20' AS Date), 46, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1230, N'William', N'Scott', CAST(N'1935-09-21' AS Date), N'WS277', 0, 1, CAST(N'1951-01-20' AS Date), 46, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1231, N'Liam', N'Baker', CAST(N'2005-04-29' AS Date), N'LB654', 38, 0, NULL, 37, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1232, N'Ava', N'Carter', CAST(N'1994-01-02' AS Date), N'AC414', 78, 1, CAST(N'1994-01-04' AS Date), 79, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1232, N'Ava', N'Carter', CAST(N'1994-01-02' AS Date), N'AC414', 0, 1, CAST(N'1994-01-04' AS Date), 79, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1233, N'Alexander', N'Green', CAST(N'1947-08-08' AS Date), N'AG784', 87, 1, CAST(N'2011-04-26' AS Date), 73, 30)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1233, N'Alexander', N'Green', CAST(N'1947-08-08' AS Date), N'AG784', 0, 1, CAST(N'2011-04-26' AS Date), 73, 30)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1234, N'Olivia', N'Turner', CAST(N'1993-03-16' AS Date), N'OT345', 82, 0, NULL, 42, 30)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1235, N'James', N'Wright', CAST(N'1998-11-30' AS Date), N'JW986', 5, 1, CAST(N'2012-08-25' AS Date), 108, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1235, N'James', N'Wright', CAST(N'1998-11-30' AS Date), N'JW986', 0, 1, CAST(N'2012-08-25' AS Date), 108, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1236, N'Elijah', N'King', CAST(N'1946-10-28' AS Date), N'EK549', 10, 0, NULL, 3, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1237, N'Lucas', N'Gonzalez', CAST(N'1981-05-04' AS Date), N'LG490', 90, 0, NULL, 95, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1238, N'Benjamin', N'Baker', CAST(N'1956-09-06' AS Date), N'BB639', 74, 1, CAST(N'1960-01-08' AS Date), 34, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1238, N'Benjamin', N'Baker', CAST(N'1956-09-06' AS Date), N'BB639', 0, 1, CAST(N'1960-01-08' AS Date), 34, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1239, N'Mia', N'Turner', CAST(N'1935-02-05' AS Date), N'MT279', 71, 1, CAST(N'1960-03-09' AS Date), 116, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1239, N'Mia', N'Turner', CAST(N'1935-02-05' AS Date), N'MT279', 0, 1, CAST(N'1960-03-09' AS Date), 116, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1240, N'Alexander', N'Gonzalez', CAST(N'1983-05-24' AS Date), N'AG424', 43, 1, CAST(N'1992-08-31' AS Date), 95, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1240, N'Alexander', N'Gonzalez', CAST(N'1983-05-24' AS Date), N'AG424', 0, 1, CAST(N'1992-08-31' AS Date), 95, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1241, N'Mia', N'Perez', CAST(N'1990-10-20' AS Date), N'MP762', 71, 1, CAST(N'2012-08-25' AS Date), 64, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1241, N'Mia', N'Perez', CAST(N'1990-10-20' AS Date), N'MP762', 0, 1, CAST(N'2012-08-25' AS Date), 64, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1242, N'Ava', N'Perez', CAST(N'1965-06-25' AS Date), N'AP458', 33, 1, CAST(N'1978-07-03' AS Date), 64, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1242, N'Ava', N'Perez', CAST(N'1965-06-25' AS Date), N'AP458', 0, 1, CAST(N'1978-07-03' AS Date), 64, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1243, N'Oliver', N'Hill', CAST(N'1934-12-07' AS Date), N'OH127', 2, 0, NULL, 27, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1244, N'Sophia', N'Carter', CAST(N'1985-03-30' AS Date), N'SC641', 87, 0, NULL, 100, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1245, N'Ava', N'Young', CAST(N'1986-09-17' AS Date), N'AY649', 83, 1, CAST(N'2007-05-11' AS Date), 6, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1245, N'Ava', N'Young', CAST(N'1986-09-17' AS Date), N'AY649', 0, 1, CAST(N'2007-05-11' AS Date), 6, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1246, N'Isabella', N'Green', CAST(N'1972-06-15' AS Date), N'IG942', 88, 0, NULL, 107, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1247, N'Sophia', N'Lopez', CAST(N'1926-12-30' AS Date), N'SL993', 6, 0, NULL, 73, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1248, N'Charlotte', N'Campbell', CAST(N'2006-12-27' AS Date), N'CC964', 19, 1, CAST(N'2018-10-19' AS Date), 88, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1248, N'Charlotte', N'Campbell', CAST(N'2006-12-27' AS Date), N'CC964', 0, 1, CAST(N'2018-10-19' AS Date), 88, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1249, N'Noah', N'Wright', CAST(N'2005-07-29' AS Date), N'NW851', 81, 0, NULL, 108, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1250, N'Alexander', N'Nelson', CAST(N'1992-08-15' AS Date), N'AN456', 3, 0, NULL, 77, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1251, N'Liam', N'Carter', CAST(N'1939-04-21' AS Date), N'LC341', 20, 1, CAST(N'2011-12-29' AS Date), 100, 31)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1251, N'Liam', N'Carter', CAST(N'1939-04-21' AS Date), N'LC341', 0, 1, CAST(N'2011-12-29' AS Date), 100, 31)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1252, N'Emma', N'Perez', CAST(N'1974-10-10' AS Date), N'EP109', 76, 0, NULL, 64, 31)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1253, N'Liam', N'Mitchell', CAST(N'1981-09-14' AS Date), N'LM580', 49, 1, CAST(N'1996-09-10' AS Date), 105, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1253, N'Liam', N'Mitchell', CAST(N'1981-09-14' AS Date), N'LM580', 0, 1, CAST(N'1996-09-10' AS Date), 105, 32)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1254, N'Evelyn', N'Adams', CAST(N'1957-10-01' AS Date), N'EA297', 6, 0, NULL, 39, 32)
 GO
@@ -5688,7 +5688,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1257, N'Elijah', N'Phillips', CAST(N'1975-05-10' AS Date), N'EP824', 26, 0, NULL, 87, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1258, N'Liam', N'Carter', CAST(N'1993-06-05' AS Date), N'LC599', 23, 1, CAST(N'2018-06-18' AS Date), 76, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1258, N'Liam', N'Carter', CAST(N'1993-06-05' AS Date), N'LC599', 0, 1, CAST(N'2018-06-18' AS Date), 76, 32)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1259, N'Mia', N'Turner', CAST(N'1980-03-16' AS Date), N'MT610', 68, 0, NULL, 9, 32)
 GO
@@ -5696,29 +5696,29 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1261, N'William', N'Perez', CAST(N'1993-01-15' AS Date), N'WP778', 58, 0, NULL, 70, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1262, N'James', N'Carter', CAST(N'1963-09-05' AS Date), N'JC885', 66, 1, CAST(N'2006-12-12' AS Date), 76, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1262, N'James', N'Carter', CAST(N'1963-09-05' AS Date), N'JC885', 0, 1, CAST(N'2006-12-12' AS Date), 76, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1263, N'William', N'Adams', CAST(N'1954-07-19' AS Date), N'WA141', 34, 1, CAST(N'1997-04-15' AS Date), 39, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1263, N'William', N'Adams', CAST(N'1954-07-19' AS Date), N'WA141', 0, 1, CAST(N'1997-04-15' AS Date), 39, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1264, N'Evelyn', N'Lopez', CAST(N'1974-03-17' AS Date), N'EL280', 28, 1, CAST(N'1978-03-26' AS Date), 80, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1264, N'Evelyn', N'Lopez', CAST(N'1974-03-17' AS Date), N'EL280', 0, 1, CAST(N'1978-03-26' AS Date), 80, 32)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1265, N'Ava', N'Wright', CAST(N'1989-05-20' AS Date), N'AW170', 85, 0, NULL, 51, 32)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1266, N'Noah', N'Perez', CAST(N'1935-05-26' AS Date), N'NP456', 79, 0, NULL, 70, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1267, N'Emma', N'Wright', CAST(N'1922-06-01' AS Date), N'EW848', 43, 1, CAST(N'2008-01-21' AS Date), 51, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1267, N'Emma', N'Wright', CAST(N'1922-06-01' AS Date), N'EW848', 0, 1, CAST(N'2008-01-21' AS Date), 51, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1268, N'Henry', N'Perez', CAST(N'2009-10-21' AS Date), N'HP719', 8, 1, CAST(N'2014-04-30' AS Date), 70, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1268, N'Henry', N'Perez', CAST(N'2009-10-21' AS Date), N'HP719', 0, 1, CAST(N'2014-04-30' AS Date), 70, 32)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1269, N'Amelia', N'Perez', CAST(N'1956-05-31' AS Date), N'AP672', 45, 0, NULL, 70, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1270, N'Liam', N'Green', CAST(N'2006-06-02' AS Date), N'LG142', 62, 1, CAST(N'2021-08-19' AS Date), 88, 32)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1270, N'Liam', N'Green', CAST(N'2006-06-02' AS Date), N'LG142', 0, 1, CAST(N'2021-08-19' AS Date), 88, 32)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1271, N'Mia', N'Perez', CAST(N'1931-06-11' AS Date), N'MP701', 92, 1, CAST(N'2006-06-20' AS Date), 89, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1271, N'Mia', N'Perez', CAST(N'1931-06-11' AS Date), N'MP701', 0, 1, CAST(N'2006-06-20' AS Date), 89, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1272, N'Oliver', N'Baker', CAST(N'1971-09-30' AS Date), N'OB240', 68, 1, CAST(N'1988-07-11' AS Date), 92, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1272, N'Oliver', N'Baker', CAST(N'1971-09-30' AS Date), N'OB240', 0, 1, CAST(N'1988-07-11' AS Date), 92, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1273, N'Charlotte', N'Roberts', CAST(N'2001-07-02' AS Date), N'CR288', 85, 1, CAST(N'2011-12-18' AS Date), 37, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1273, N'Charlotte', N'Roberts', CAST(N'2001-07-02' AS Date), N'CR288', 0, 1, CAST(N'2011-12-18' AS Date), 37, 34)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1274, N'Alexander', N'Wright', CAST(N'2003-01-07' AS Date), N'AW941', 66, 0, NULL, 1, 34)
 GO
@@ -5728,23 +5728,23 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1277, N'Amelia', N'Lopez', CAST(N'1993-09-07' AS Date), N'AL238', 97, 0, NULL, 55, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1278, N'James', N'Green', CAST(N'2006-04-29' AS Date), N'JG970', 66, 1, CAST(N'2020-08-29' AS Date), 19, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1278, N'James', N'Green', CAST(N'2006-04-29' AS Date), N'JG970', 0, 1, CAST(N'2020-08-29' AS Date), 19, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1279, N'Elijah', N'Green', CAST(N'1920-10-28' AS Date), N'EG448', 67, 1, CAST(N'1982-05-01' AS Date), 19, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1279, N'Elijah', N'Green', CAST(N'1920-10-28' AS Date), N'EG448', 0, 1, CAST(N'1982-05-01' AS Date), 19, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1280, N'Noah', N'King', CAST(N'1959-04-23' AS Date), N'NK416', 44, 1, CAST(N'2007-01-27' AS Date), 3, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1280, N'Noah', N'King', CAST(N'1959-04-23' AS Date), N'NK416', 0, 1, CAST(N'2007-01-27' AS Date), 3, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1281, N'Emma', N'Carter', CAST(N'2009-11-06' AS Date), N'EC376', 4, 1, CAST(N'2012-03-03' AS Date), 95, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1281, N'Emma', N'Carter', CAST(N'2009-11-06' AS Date), N'EC376', 0, 1, CAST(N'2012-03-03' AS Date), 95, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1282, N'Alexander', N'Young', CAST(N'1932-12-14' AS Date), N'AY146', 62, 1, CAST(N'2010-06-20' AS Date), 52, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1282, N'Alexander', N'Young', CAST(N'1932-12-14' AS Date), N'AY146', 0, 1, CAST(N'2010-06-20' AS Date), 52, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1283, N'Evelyn', N'Scott', CAST(N'1953-02-06' AS Date), N'ES599', 44, 1, CAST(N'1997-05-21' AS Date), 37, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1283, N'Evelyn', N'Scott', CAST(N'1953-02-06' AS Date), N'ES599', 0, 1, CAST(N'1997-05-21' AS Date), 37, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1284, N'James', N'Carter', CAST(N'2008-02-29' AS Date), N'JC104', 78, 1, CAST(N'2012-09-24' AS Date), 95, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1284, N'James', N'Carter', CAST(N'2008-02-29' AS Date), N'JC104', 0, 1, CAST(N'2012-09-24' AS Date), 95, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1285, N'James', N'Phillips', CAST(N'1964-03-20' AS Date), N'JP628', 58, 1, CAST(N'1965-03-23' AS Date), 43, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1285, N'James', N'Phillips', CAST(N'1964-03-20' AS Date), N'JP628', 0, 1, CAST(N'1965-03-23' AS Date), 43, 34)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1286, N'Oliver', N'Campbell', CAST(N'1926-04-09' AS Date), N'OC793', 87, 1, CAST(N'1963-02-09' AS Date), 84, 34)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1286, N'Oliver', N'Campbell', CAST(N'1926-04-09' AS Date), N'OC793', 0, 1, CAST(N'1963-02-09' AS Date), 84, 34)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1287, N'Mia', N'Young', CAST(N'2008-02-27' AS Date), N'MY300', 26, 0, NULL, 52, 34)
 GO
@@ -5754,13 +5754,13 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1290, N'Elijah', N'Green', CAST(N'1998-10-30' AS Date), N'EG569', 17, 0, NULL, 18, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1291, N'Evelyn', N'Nelson', CAST(N'2009-09-07' AS Date), N'EN561', 14, 1, CAST(N'2021-02-06' AS Date), 54, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1291, N'Evelyn', N'Nelson', CAST(N'2009-09-07' AS Date), N'EN561', 0, 1, CAST(N'2021-02-06' AS Date), 54, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1292, N'William', N'Adams', CAST(N'1978-08-27' AS Date), N'WA502', 35, 1, CAST(N'1987-02-21' AS Date), 54, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1292, N'William', N'Adams', CAST(N'1978-08-27' AS Date), N'WA502', 0, 1, CAST(N'1987-02-21' AS Date), 54, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1293, N'Emma', N'Scott', CAST(N'2010-10-21' AS Date), N'ES258', 18, 1, CAST(N'2015-10-03' AS Date), 84, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1293, N'Emma', N'Scott', CAST(N'2010-10-21' AS Date), N'ES258', 0, 1, CAST(N'2015-10-03' AS Date), 84, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1294, N'Charlotte', N'Campbell', CAST(N'2014-08-05' AS Date), N'CC396', 94, 1, CAST(N'2014-11-26' AS Date), 4, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1294, N'Charlotte', N'Campbell', CAST(N'2014-08-05' AS Date), N'CC396', 0, 1, CAST(N'2014-11-26' AS Date), 4, 35)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1295, N'Amelia', N'Adams', CAST(N'1945-02-20' AS Date), N'AA475', 91, 0, NULL, 54, 35)
 GO
@@ -5770,13 +5770,13 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1298, N'Lucas', N'Perez', CAST(N'1985-12-04' AS Date), N'LP267', 16, 0, NULL, 33, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1299, N'James', N'Scott', CAST(N'1969-04-03' AS Date), N'JS609', 58, 1, CAST(N'1971-10-03' AS Date), 84, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1299, N'James', N'Scott', CAST(N'1969-04-03' AS Date), N'JS609', 0, 1, CAST(N'1971-10-03' AS Date), 84, 35)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1300, N'Emma', N'Hernandez', CAST(N'1942-03-16' AS Date), N'EH283', 72, 0, NULL, 104, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1301, N'Emma', N'King', CAST(N'1963-02-10' AS Date), N'EK856', 25, 1, CAST(N'1999-05-14' AS Date), 6, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1301, N'Emma', N'King', CAST(N'1963-02-10' AS Date), N'EK856', 0, 1, CAST(N'1999-05-14' AS Date), 6, 35)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1302, N'Lucas', N'King', CAST(N'1951-02-06' AS Date), N'LK660', 38, 1, CAST(N'1982-02-10' AS Date), 6, 35)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1302, N'Lucas', N'King', CAST(N'1951-02-06' AS Date), N'LK660', 0, 1, CAST(N'1982-02-10' AS Date), 6, 35)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1303, N'Elijah', N'Turner', CAST(N'1929-01-21' AS Date), N'ET495', 9, 0, NULL, 84, 35)
 GO
@@ -5810,107 +5810,107 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1318, N'Alexander', N'Adams', CAST(N'1932-11-17' AS Date), N'AA201', 81, 0, NULL, 75, 36)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1319, N'Evelyn', N'King', CAST(N'1991-12-07' AS Date), N'EK658', 86, 1, CAST(N'2021-08-15' AS Date), 57, 36)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1319, N'Evelyn', N'King', CAST(N'1991-12-07' AS Date), N'EK658', 0, 1, CAST(N'2021-08-15' AS Date), 57, 36)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1320, N'Lucas', N'King', CAST(N'1977-06-25' AS Date), N'LK602', 30, 0, NULL, 57, 36)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1321, N'Mia', N'Roberts', CAST(N'1928-09-28' AS Date), N'MR722', 81, 1, CAST(N'1971-08-19' AS Date), 66, 36)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1321, N'Mia', N'Roberts', CAST(N'1928-09-28' AS Date), N'MR722', 0, 1, CAST(N'1971-08-19' AS Date), 66, 36)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1322, N'Benjamin', N'Mitchell', CAST(N'1961-06-01' AS Date), N'BM489', 97, 1, CAST(N'1991-12-03' AS Date), 63, 36)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1322, N'Benjamin', N'Mitchell', CAST(N'1961-06-01' AS Date), N'BM489', 0, 1, CAST(N'1991-12-03' AS Date), 63, 36)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1323, N'Elijah', N'Turner', CAST(N'1996-06-23' AS Date), N'ET520', 36, 1, CAST(N'2020-12-28' AS Date), 6, 36)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1323, N'Elijah', N'Turner', CAST(N'1996-06-23' AS Date), N'ET520', 0, 1, CAST(N'2020-12-28' AS Date), 6, 36)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1324, N'Benjamin', N'Perez', CAST(N'1935-11-29' AS Date), N'BP368', 0, 1, CAST(N'2009-05-15' AS Date), 112, 36)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1325, N'Henry', N'Gonzalez', CAST(N'2018-10-13' AS Date), N'HG526', 41, 0, NULL, 89, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1326, N'Liam', N'Hernandez', CAST(N'1985-10-16' AS Date), N'LH625', 22, 1, CAST(N'2008-05-19' AS Date), 114, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1326, N'Liam', N'Hernandez', CAST(N'1985-10-16' AS Date), N'LH625', 0, 1, CAST(N'2008-05-19' AS Date), 114, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1327, N'Lucas', N'Roberts', CAST(N'1944-12-07' AS Date), N'LR303', 28, 0, NULL, 2, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1328, N'Charlotte', N'Carter', CAST(N'1928-04-12' AS Date), N'CC920', 62, 1, CAST(N'2009-04-11' AS Date), 55, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1328, N'Charlotte', N'Carter', CAST(N'1928-04-12' AS Date), N'CC920', 0, 1, CAST(N'2009-04-11' AS Date), 55, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1329, N'Henry', N'Young', CAST(N'1967-07-03' AS Date), N'HY127', 33, 1, CAST(N'2005-10-16' AS Date), 3, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1329, N'Henry', N'Young', CAST(N'1967-07-03' AS Date), N'HY127', 0, 1, CAST(N'2005-10-16' AS Date), 3, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1330, N'Benjamin', N'Scott', CAST(N'1994-06-13' AS Date), N'BS178', 28, 1, CAST(N'2011-04-20' AS Date), 97, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1330, N'Benjamin', N'Scott', CAST(N'1994-06-13' AS Date), N'BS178', 0, 1, CAST(N'2011-04-20' AS Date), 97, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1331, N'Olivia', N'Scott', CAST(N'2008-12-22' AS Date), N'OS341', 36, 0, NULL, 97, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1332, N'Charlotte', N'Scott', CAST(N'1938-04-23' AS Date), N'CS295', 94, 1, CAST(N'1967-01-02' AS Date), 97, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1332, N'Charlotte', N'Scott', CAST(N'1938-04-23' AS Date), N'CS295', 0, 1, CAST(N'1967-01-02' AS Date), 97, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1333, N'Mia', N'Green', CAST(N'1976-03-04' AS Date), N'MG350', 32, 1, CAST(N'1998-01-11' AS Date), 120, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1333, N'Mia', N'Green', CAST(N'1976-03-04' AS Date), N'MG350', 0, 1, CAST(N'1998-01-11' AS Date), 120, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1334, N'Ava', N'Roberts', CAST(N'1979-05-25' AS Date), N'AR699', 50, 0, NULL, 2, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1335, N'Henry', N'Perez', CAST(N'1925-03-31' AS Date), N'HP158', 15, 1, CAST(N'1992-08-05' AS Date), 2, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1335, N'Henry', N'Perez', CAST(N'1925-03-31' AS Date), N'HP158', 0, 1, CAST(N'1992-08-05' AS Date), 2, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1336, N'Emma', N'Perez', CAST(N'1992-03-06' AS Date), N'EP121', 14, 1, CAST(N'1993-04-18' AS Date), 2, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1336, N'Emma', N'Perez', CAST(N'1992-03-06' AS Date), N'EP121', 0, 1, CAST(N'1993-04-18' AS Date), 2, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1337, N'Charlotte', N'Wright', CAST(N'1949-04-28' AS Date), N'CW212', 45, 0, NULL, 42, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1338, N'Charlotte', N'Perez', CAST(N'1978-09-24' AS Date), N'CP646', 30, 0, NULL, 2, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1339, N'Harper', N'Carter', CAST(N'1995-04-23' AS Date), N'HC657', 22, 1, CAST(N'2022-05-03' AS Date), 55, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1339, N'Harper', N'Carter', CAST(N'1995-04-23' AS Date), N'HC657', 0, 1, CAST(N'2022-05-03' AS Date), 55, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1340, N'Benjamin', N'Hernandez', CAST(N'1999-11-22' AS Date), N'BH258', 81, 0, NULL, 114, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1341, N'Noah', N'Hernandez', CAST(N'1976-11-24' AS Date), N'NH529', 48, 1, CAST(N'1995-12-09' AS Date), 114, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1341, N'Noah', N'Hernandez', CAST(N'1976-11-24' AS Date), N'NH529', 0, 1, CAST(N'1995-12-09' AS Date), 114, 37)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1342, N'Emma', N'Gonzalez', CAST(N'1997-09-21' AS Date), N'EG727', 41, 1, CAST(N'2012-03-22' AS Date), 89, 37)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1342, N'Emma', N'Gonzalez', CAST(N'1997-09-21' AS Date), N'EG727', 0, 1, CAST(N'2012-03-22' AS Date), 89, 37)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1343, N'Isabella', N'Scott', CAST(N'1995-04-17' AS Date), N'IS570', 9, 0, NULL, 91, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1344, N'Henry', N'Carter', CAST(N'1977-10-31' AS Date), N'HC198', 95, 0, NULL, 7, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1345, N'Sophia', N'Turner', CAST(N'1964-03-13' AS Date), N'ST295', 23, 1, CAST(N'1991-06-14' AS Date), 114, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1345, N'Sophia', N'Turner', CAST(N'1964-03-13' AS Date), N'ST295', 0, 1, CAST(N'1991-06-14' AS Date), 114, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1346, N'Harper', N'Roberts', CAST(N'1990-04-20' AS Date), N'HR905', 70, 1, CAST(N'2009-09-16' AS Date), 90, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1346, N'Harper', N'Roberts', CAST(N'1990-04-20' AS Date), N'HR905', 0, 1, CAST(N'2009-09-16' AS Date), 90, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1347, N'Emma', N'Perez', CAST(N'1946-11-01' AS Date), N'EP108', 100, 0, NULL, 105, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1348, N'Henry', N'Campbell', CAST(N'1988-10-08' AS Date), N'HC823', 95, 1, CAST(N'2021-07-17' AS Date), 19, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1348, N'Henry', N'Campbell', CAST(N'1988-10-08' AS Date), N'HC823', 0, 1, CAST(N'2021-07-17' AS Date), 19, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1349, N'Isabella', N'Turner', CAST(N'2012-10-31' AS Date), N'IT612', 5, 1, CAST(N'2021-07-13' AS Date), 114, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1349, N'Isabella', N'Turner', CAST(N'2012-10-31' AS Date), N'IT612', 0, 1, CAST(N'2021-07-13' AS Date), 114, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1350, N'Ava', N'Hill', CAST(N'1991-12-26' AS Date), N'AH775', 6, 1, CAST(N'2007-04-12' AS Date), 11, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1350, N'Ava', N'Hill', CAST(N'1991-12-26' AS Date), N'AH775', 0, 1, CAST(N'2007-04-12' AS Date), 11, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1351, N'Amelia', N'Young', CAST(N'1985-12-22' AS Date), N'AY130', 93, 1, CAST(N'1989-01-13' AS Date), 51, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1351, N'Amelia', N'Young', CAST(N'1985-12-22' AS Date), N'AY130', 0, 1, CAST(N'1989-01-13' AS Date), 51, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1352, N'Oliver', N'Scott', CAST(N'1972-07-07' AS Date), N'OS880', 32, 0, NULL, 91, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1353, N'Noah', N'Perez', CAST(N'1989-04-02' AS Date), N'NP884', 81, 1, CAST(N'2009-06-15' AS Date), 105, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1353, N'Noah', N'Perez', CAST(N'1989-04-02' AS Date), N'NP884', 0, 1, CAST(N'2009-06-15' AS Date), 105, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1354, N'Oliver', N'Mitchell', CAST(N'1970-08-02' AS Date), N'OM916', 70, 1, CAST(N'2005-06-11' AS Date), 54, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1354, N'Oliver', N'Mitchell', CAST(N'1970-08-02' AS Date), N'OM916', 0, 1, CAST(N'2005-06-11' AS Date), 54, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1355, N'Alexander', N'Carter', CAST(N'1989-06-11' AS Date), N'AC372', 9, 1, CAST(N'2009-12-19' AS Date), 7, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1355, N'Alexander', N'Carter', CAST(N'1989-06-11' AS Date), N'AC372', 0, 1, CAST(N'2009-12-19' AS Date), 7, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1356, N'Mia', N'Roberts', CAST(N'1970-08-01' AS Date), N'MR523', 30, 0, NULL, 90, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1357, N'Isabella', N'Scott', CAST(N'1977-09-12' AS Date), N'IS809', 87, 0, NULL, 91, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1358, N'Elijah', N'Turner', CAST(N'1994-06-29' AS Date), N'ET660', 27, 1, CAST(N'2016-06-30' AS Date), 114, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1358, N'Elijah', N'Turner', CAST(N'1994-06-29' AS Date), N'ET660', 0, 1, CAST(N'2016-06-30' AS Date), 114, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1359, N'Olivia', N'Adams', CAST(N'1980-07-18' AS Date), N'OA698', 77, 1, CAST(N'1987-01-27' AS Date), 75, 41)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1359, N'Olivia', N'Adams', CAST(N'1980-07-18' AS Date), N'OA698', 0, 1, CAST(N'1987-01-27' AS Date), 75, 41)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1360, N'Mia', N'Adams', CAST(N'1924-09-10' AS Date), N'MA455', 64, 0, NULL, 75, 41)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1361, N'Mia', N'Adams', CAST(N'1971-12-05' AS Date), N'MA529', 28, 1, CAST(N'2003-09-16' AS Date), 16, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1361, N'Mia', N'Adams', CAST(N'1971-12-05' AS Date), N'MA529', 0, 1, CAST(N'2003-09-16' AS Date), 16, 42)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1362, N'Amelia', N'Nelson', CAST(N'1957-01-27' AS Date), N'AN370', 11, 0, NULL, 1, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1363, N'Oliver', N'Campbell', CAST(N'2004-08-21' AS Date), N'OC728', 4, 1, CAST(N'2007-04-22' AS Date), 27, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1363, N'Oliver', N'Campbell', CAST(N'2004-08-21' AS Date), N'OC728', 0, 1, CAST(N'2007-04-22' AS Date), 27, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1364, N'Liam', N'Baker', CAST(N'1946-01-31' AS Date), N'LB954', 66, 1, CAST(N'1967-09-24' AS Date), 11, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1364, N'Liam', N'Baker', CAST(N'1946-01-31' AS Date), N'LB954', 0, 1, CAST(N'1967-09-24' AS Date), 11, 42)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1365, N'Charlotte', N'Wright', CAST(N'1975-05-03' AS Date), N'CW409', 45, 0, NULL, 23, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1366, N'Oliver', N'King', CAST(N'1921-09-25' AS Date), N'OK662', 47, 1, CAST(N'1958-08-27' AS Date), 85, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1366, N'Oliver', N'King', CAST(N'1921-09-25' AS Date), N'OK662', 0, 1, CAST(N'1958-08-27' AS Date), 85, 42)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1367, N'Harper', N'Hernandez', CAST(N'1991-04-05' AS Date), N'HH342', 45, 0, NULL, 93, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1368, N'Benjamin', N'Hernandez', CAST(N'2012-04-03' AS Date), N'BH735', 56, 1, CAST(N'2022-05-25' AS Date), 93, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1368, N'Benjamin', N'Hernandez', CAST(N'2012-04-03' AS Date), N'BH735', 0, 1, CAST(N'2022-05-25' AS Date), 93, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1369, N'Olivia', N'Phillips', CAST(N'1994-10-18' AS Date), N'OP166', 44, 1, CAST(N'1999-08-28' AS Date), 93, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1369, N'Olivia', N'Phillips', CAST(N'1994-10-18' AS Date), N'OP166', 0, 1, CAST(N'1999-08-28' AS Date), 93, 42)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1370, N'Olivia', N'Baker', CAST(N'1928-11-06' AS Date), N'OB982', 4, 0, NULL, 11, 42)
 GO
@@ -5918,11 +5918,11 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1372, N'Alexander', N'Perez', CAST(N'1939-03-26' AS Date), N'AP808', 0, 0, NULL, 95, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1373, N'William', N'Carter', CAST(N'1949-05-03' AS Date), N'WC261', 5, 1, CAST(N'1957-12-11' AS Date), 101, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1373, N'William', N'Carter', CAST(N'1949-05-03' AS Date), N'WC261', 0, 1, CAST(N'1957-12-11' AS Date), 101, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1374, N'Ava', N'Roberts', CAST(N'1955-06-08' AS Date), N'AR178', 71, 1, CAST(N'1982-03-24' AS Date), 18, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1374, N'Ava', N'Roberts', CAST(N'1955-06-08' AS Date), N'AR178', 0, 1, CAST(N'1982-03-24' AS Date), 18, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1375, N'Alexander', N'Carter', CAST(N'2007-12-08' AS Date), N'AC814', 27, 1, CAST(N'2022-10-04' AS Date), 101, 42)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1375, N'Alexander', N'Carter', CAST(N'2007-12-08' AS Date), N'AC814', 0, 1, CAST(N'2022-10-04' AS Date), 101, 42)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1376, N'William', N'Adams', CAST(N'1937-08-20' AS Date), N'WA707', 78, 0, NULL, 16, 42)
 GO
@@ -5930,11 +5930,11 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1378, N'Amelia', N'Carter', CAST(N'2013-09-14' AS Date), N'AC856', 64, 0, NULL, 101, 42)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1379, N'Henry', N'Hernandez', CAST(N'1960-10-03' AS Date), N'HH325', 30, 1, CAST(N'1982-09-14' AS Date), 96, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1379, N'Henry', N'Hernandez', CAST(N'1960-10-03' AS Date), N'HH325', 0, 1, CAST(N'1982-09-14' AS Date), 96, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1380, N'Alexander', N'Green', CAST(N'1921-06-26' AS Date), N'AG993', 36, 0, NULL, 57, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1381, N'Sophia', N'Baker', CAST(N'1991-11-11' AS Date), N'SB502', 38, 1, CAST(N'1992-02-07' AS Date), 50, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1381, N'Sophia', N'Baker', CAST(N'1991-11-11' AS Date), N'SB502', 0, 1, CAST(N'1992-02-07' AS Date), 50, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1382, N'James', N'Nelson', CAST(N'1940-10-22' AS Date), N'JN761', 56, 0, NULL, 4, 43)
 GO
@@ -5948,59 +5948,59 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1387, N'Noah', N'Wright', CAST(N'1929-11-11' AS Date), N'NW490', 91, 0, NULL, 104, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1388, N'Olivia', N'Perez', CAST(N'1946-10-03' AS Date), N'OP112', 84, 1, CAST(N'1964-11-11' AS Date), 110, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1388, N'Olivia', N'Perez', CAST(N'1946-10-03' AS Date), N'OP112', 0, 1, CAST(N'1964-11-11' AS Date), 110, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1389, N'Olivia', N'Nelson', CAST(N'2002-12-02' AS Date), N'ON780', 69, 0, NULL, 4, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1390, N'Evelyn', N'Hernandez', CAST(N'1958-08-23' AS Date), N'EH591', 18, 1, CAST(N'2002-04-20' AS Date), 96, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1390, N'Evelyn', N'Hernandez', CAST(N'1958-08-23' AS Date), N'EH591', 0, 1, CAST(N'2002-04-20' AS Date), 96, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1391, N'Olivia', N'Lopez', CAST(N'1949-04-16' AS Date), N'OL242', 58, 0, NULL, 63, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1392, N'Elijah', N'Nelson', CAST(N'1970-09-16' AS Date), N'EN146', 62, 1, CAST(N'2019-09-25' AS Date), 4, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1392, N'Elijah', N'Nelson', CAST(N'1970-09-16' AS Date), N'EN146', 0, 1, CAST(N'2019-09-25' AS Date), 4, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1393, N'Mia', N'Roberts', CAST(N'2011-05-03' AS Date), N'MR578', 13, 1, CAST(N'2012-03-11' AS Date), 24, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1393, N'Mia', N'Roberts', CAST(N'2011-05-03' AS Date), N'MR578', 0, 1, CAST(N'2012-03-11' AS Date), 24, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1394, N'Elijah', N'Roberts', CAST(N'2003-09-25' AS Date), N'ER982', 42, 0, NULL, 24, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1395, N'William', N'Hill', CAST(N'1996-04-05' AS Date), N'WH449', 52, 1, CAST(N'2017-09-15' AS Date), 110, 43)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1395, N'William', N'Hill', CAST(N'1996-04-05' AS Date), N'WH449', 0, 1, CAST(N'2017-09-15' AS Date), 110, 43)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1396, N'Henry', N'Adams', CAST(N'1989-02-02' AS Date), N'HA799', 30, 0, NULL, 65, 43)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1397, N'Lucas', N'Baker', CAST(N'2008-02-11' AS Date), N'LB283', 77, 1, CAST(N'2015-02-21' AS Date), 88, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1397, N'Lucas', N'Baker', CAST(N'2008-02-11' AS Date), N'LB283', 0, 1, CAST(N'2015-02-21' AS Date), 88, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1398, N'Harper', N'Gonzalez', CAST(N'1959-05-27' AS Date), N'HG334', 25, 0, NULL, 45, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1399, N'Amelia', N'King', CAST(N'1989-01-10' AS Date), N'AK432', 10, 1, CAST(N'1994-02-18' AS Date), 59, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1399, N'Amelia', N'King', CAST(N'1989-01-10' AS Date), N'AK432', 0, 1, CAST(N'1994-02-18' AS Date), 59, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1400, N'Liam', N'Carter', CAST(N'1963-05-26' AS Date), N'LC999', 68, 0, NULL, 69, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1401, N'Amelia', N'Phillips', CAST(N'1931-05-26' AS Date), N'AP882', 97, 1, CAST(N'1975-11-11' AS Date), 4, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1401, N'Amelia', N'Phillips', CAST(N'1931-05-26' AS Date), N'AP882', 0, 1, CAST(N'1975-11-11' AS Date), 4, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1402, N'Amelia', N'King', CAST(N'1951-10-08' AS Date), N'AK632', 56, 0, NULL, 59, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1403, N'Olivia', N'King', CAST(N'1929-07-26' AS Date), N'OK243', 27, 1, CAST(N'1995-10-22' AS Date), 59, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1403, N'Olivia', N'King', CAST(N'1929-07-26' AS Date), N'OK243', 0, 1, CAST(N'1995-10-22' AS Date), 59, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1404, N'Alexander', N'Phillips', CAST(N'1991-12-09' AS Date), N'AP249', 98, 1, CAST(N'2023-10-15' AS Date), 4, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1404, N'Alexander', N'Phillips', CAST(N'1991-12-09' AS Date), N'AP249', 0, 1, CAST(N'2023-10-15' AS Date), 4, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1405, N'Ava', N'Perez', CAST(N'1927-05-04' AS Date), N'AP863', 2, 1, CAST(N'1933-07-26' AS Date), 64, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1405, N'Ava', N'Perez', CAST(N'1927-05-04' AS Date), N'AP863', 0, 1, CAST(N'1933-07-26' AS Date), 64, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1406, N'Mia', N'Mitchell', CAST(N'2004-08-14' AS Date), N'MM244', 67, 1, CAST(N'2021-12-10' AS Date), 118, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1406, N'Mia', N'Mitchell', CAST(N'2004-08-14' AS Date), N'MM244', 0, 1, CAST(N'2021-12-10' AS Date), 118, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1407, N'Alexander', N'Young', CAST(N'2001-03-26' AS Date), N'AY259', 71, 1, CAST(N'2019-06-22' AS Date), 33, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1407, N'Alexander', N'Young', CAST(N'2001-03-26' AS Date), N'AY259', 0, 1, CAST(N'2019-06-22' AS Date), 33, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1408, N'Charlotte', N'Green', CAST(N'1977-07-19' AS Date), N'CG858', 36, 1, CAST(N'1990-01-11' AS Date), 97, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1408, N'Charlotte', N'Green', CAST(N'1977-07-19' AS Date), N'CG858', 0, 1, CAST(N'1990-01-11' AS Date), 97, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1409, N'Ava', N'Nelson', CAST(N'1957-05-20' AS Date), N'AN811', 70, 0, NULL, 76, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1410, N'Ava', N'Perez', CAST(N'1974-12-20' AS Date), N'AP869', 73, 0, NULL, 64, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1411, N'Mia', N'Roberts', CAST(N'2016-10-19' AS Date), N'MR913', 73, 1, CAST(N'2017-01-17' AS Date), 44, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1411, N'Mia', N'Roberts', CAST(N'2016-10-19' AS Date), N'MR913', 0, 1, CAST(N'2017-01-17' AS Date), 44, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1412, N'Liam', N'Perez', CAST(N'1999-10-10' AS Date), N'LP496', 90, 0, NULL, 64, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1413, N'James', N'Turner', CAST(N'1937-09-17' AS Date), N'JT562', 78, 0, NULL, 53, 44)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1414, N'Evelyn', N'Hernandez', CAST(N'1931-09-23' AS Date), N'EH386', 30, 1, CAST(N'1980-08-18' AS Date), 113, 44)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1414, N'Evelyn', N'Hernandez', CAST(N'1931-09-23' AS Date), N'EH386', 0, 1, CAST(N'1980-08-18' AS Date), 113, 44)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1415, N'Benjamin', N'Gonzalez', CAST(N'1935-01-14' AS Date), N'BG943', 16, 0, NULL, 59, 46)
 GO
@@ -6016,9 +6016,9 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1421, N'Elijah', N'Perez', CAST(N'2003-09-29' AS Date), N'EP703', 40, 0, NULL, 6, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1422, N'Lucas', N'Gonzalez', CAST(N'1982-03-11' AS Date), N'LG568', 17, 1, CAST(N'1983-08-19' AS Date), 59, 46)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1422, N'Lucas', N'Gonzalez', CAST(N'1982-03-11' AS Date), N'LG568', 0, 1, CAST(N'1983-08-19' AS Date), 59, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1423, N'Henry', N'Green', CAST(N'2010-06-18' AS Date), N'HG507', 22, 1, CAST(N'2012-07-04' AS Date), 59, 46)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1423, N'Henry', N'Green', CAST(N'2010-06-18' AS Date), N'HG507', 0, 1, CAST(N'2012-07-04' AS Date), 59, 46)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1424, N'Amelia', N'Adams', CAST(N'1980-12-10' AS Date), N'AA364', 43, 0, NULL, 107, 46)
 GO
@@ -6030,37 +6030,37 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1428, N'Alexander', N'Hill', CAST(N'1942-12-26' AS Date), N'AH310', 99, 0, NULL, 21, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1429, N'Benjamin', N'Scott', CAST(N'2012-09-14' AS Date), N'BS554', 59, 1, CAST(N'2016-06-14' AS Date), 107, 46)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1429, N'Benjamin', N'Scott', CAST(N'2012-09-14' AS Date), N'BS554', 0, 1, CAST(N'2016-06-14' AS Date), 107, 46)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1430, N'Liam', N'Scott', CAST(N'1937-12-07' AS Date), N'LS885', 96, 0, NULL, 107, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1431, N'William', N'Green', CAST(N'2011-10-07' AS Date), N'WG352', 29, 1, CAST(N'2015-02-09' AS Date), 59, 46)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1431, N'William', N'Green', CAST(N'2011-10-07' AS Date), N'WG352', 0, 1, CAST(N'2015-02-09' AS Date), 59, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1432, N'Oliver', N'Campbell', CAST(N'1941-01-12' AS Date), N'OC340', 14, 1, CAST(N'1983-12-14' AS Date), 97, 46)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1432, N'Oliver', N'Campbell', CAST(N'1941-01-12' AS Date), N'OC340', 0, 1, CAST(N'1983-12-14' AS Date), 97, 46)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1433, N'Elijah', N'Hernandez', CAST(N'2018-02-04' AS Date), N'EH956', 62, 1, CAST(N'2021-08-08' AS Date), 32, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1433, N'Elijah', N'Hernandez', CAST(N'2018-02-04' AS Date), N'EH956', 0, 1, CAST(N'2021-08-08' AS Date), 32, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1434, N'Ava', N'Baker', CAST(N'1984-09-26' AS Date), N'AB444', 57, 1, CAST(N'2007-01-15' AS Date), 99, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1434, N'Ava', N'Baker', CAST(N'1984-09-26' AS Date), N'AB444', 0, 1, CAST(N'2007-01-15' AS Date), 99, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1435, N'Charlotte', N'Turner', CAST(N'2015-04-03' AS Date), N'CT828', 35, 1, CAST(N'2020-06-21' AS Date), 4, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1435, N'Charlotte', N'Turner', CAST(N'2015-04-03' AS Date), N'CT828', 0, 1, CAST(N'2020-06-21' AS Date), 4, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1436, N'Benjamin', N'Campbell', CAST(N'1968-03-25' AS Date), N'BC419', 15, 1, CAST(N'2020-10-20' AS Date), 74, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1436, N'Benjamin', N'Campbell', CAST(N'1968-03-25' AS Date), N'BC419', 0, 1, CAST(N'2020-10-20' AS Date), 74, 47)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1437, N'Liam', N'Turner', CAST(N'1985-10-31' AS Date), N'LT132', 88, 0, NULL, 4, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1438, N'Amelia', N'Mitchell', CAST(N'2014-07-13' AS Date), N'AM660', 31, 1, CAST(N'2017-11-29' AS Date), 82, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1438, N'Amelia', N'Mitchell', CAST(N'2014-07-13' AS Date), N'AM660', 0, 1, CAST(N'2017-11-29' AS Date), 82, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1439, N'William', N'Young', CAST(N'1930-11-01' AS Date), N'WY669', 53, 1, CAST(N'2002-11-22' AS Date), 14, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1439, N'William', N'Young', CAST(N'1930-11-01' AS Date), N'WY669', 0, 1, CAST(N'2002-11-22' AS Date), 14, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1440, N'James', N'Gonzalez', CAST(N'1980-06-25' AS Date), N'JG238', 22, 1, CAST(N'2014-04-18' AS Date), 92, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1440, N'James', N'Gonzalez', CAST(N'1980-06-25' AS Date), N'JG238', 0, 1, CAST(N'2014-04-18' AS Date), 92, 47)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1441, N'Henry', N'Scott', CAST(N'2015-05-07' AS Date), N'HS474', 8, 0, NULL, 104, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1442, N'Amelia', N'Adams', CAST(N'1926-03-31' AS Date), N'AA827', 71, 1, CAST(N'2001-01-23' AS Date), 5, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1442, N'Amelia', N'Adams', CAST(N'1926-03-31' AS Date), N'AA827', 0, 1, CAST(N'2001-01-23' AS Date), 5, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1443, N'William', N'Perez', CAST(N'2007-09-23' AS Date), N'WP456', 54, 1, CAST(N'2017-08-26' AS Date), 2, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1443, N'William', N'Perez', CAST(N'2007-09-23' AS Date), N'WP456', 0, 1, CAST(N'2017-08-26' AS Date), 2, 47)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1444, N'Henry', N'Gonzalez', CAST(N'1939-03-05' AS Date), N'HG303', 66, 1, CAST(N'2001-03-03' AS Date), 92, 47)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1444, N'Henry', N'Gonzalez', CAST(N'1939-03-05' AS Date), N'HG303', 0, 1, CAST(N'2001-03-03' AS Date), 92, 47)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1445, N'Emma', N'Nelson', CAST(N'2008-03-31' AS Date), N'EN944', 82, 0, NULL, 59, 47)
 GO
@@ -6076,9 +6076,9 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1451, N'Emma', N'Adams', CAST(N'1982-05-02' AS Date), N'EA729', 13, 0, NULL, 109, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1452, N'Sophia', N'Carter', CAST(N'1982-08-10' AS Date), N'SC411', 65, 1, CAST(N'1986-03-20' AS Date), 38, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1452, N'Sophia', N'Carter', CAST(N'1982-08-10' AS Date), N'SC411', 0, 1, CAST(N'1986-03-20' AS Date), 38, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1453, N'Mia', N'Perez', CAST(N'1968-03-10' AS Date), N'MP213', 75, 1, CAST(N'1981-04-02' AS Date), 6, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1453, N'Mia', N'Perez', CAST(N'1968-03-10' AS Date), N'MP213', 0, 1, CAST(N'1981-04-02' AS Date), 6, 48)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1454, N'Mia', N'Perez', CAST(N'1934-11-17' AS Date), N'MP528', 33, 0, NULL, 6, 48)
 GO
@@ -6088,13 +6088,13 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1457, N'Noah', N'Turner', CAST(N'1963-07-12' AS Date), N'NT974', 62, 0, NULL, 94, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1458, N'Harper', N'Green', CAST(N'2000-09-19' AS Date), N'HG302', 39, 1, CAST(N'2014-08-29' AS Date), 45, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1458, N'Harper', N'Green', CAST(N'2000-09-19' AS Date), N'HG302', 0, 1, CAST(N'2014-08-29' AS Date), 45, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1459, N'Noah', N'Perez', CAST(N'2017-05-02' AS Date), N'NP749', 24, 1, CAST(N'2022-06-05' AS Date), 6, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1459, N'Noah', N'Perez', CAST(N'2017-05-02' AS Date), N'NP749', 0, 1, CAST(N'2022-06-05' AS Date), 6, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1460, N'Sophia', N'Lopez', CAST(N'1983-09-01' AS Date), N'SL667', 4, 1, CAST(N'2009-10-24' AS Date), 33, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1460, N'Sophia', N'Lopez', CAST(N'1983-09-01' AS Date), N'SL667', 0, 1, CAST(N'2009-10-24' AS Date), 33, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1461, N'Alexander', N'King', CAST(N'1993-12-18' AS Date), N'AK611', 86, 1, CAST(N'1996-10-15' AS Date), 52, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1461, N'Alexander', N'King', CAST(N'1993-12-18' AS Date), N'AK611', 0, 1, CAST(N'1996-10-15' AS Date), 52, 48)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1462, N'Isabella', N'Perez', CAST(N'1921-10-29' AS Date), N'IP953', 69, 0, NULL, 6, 48)
 GO
@@ -6104,31 +6104,31 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1465, N'Alexander', N'Wright', CAST(N'2001-03-16' AS Date), N'AW767', 33, 0, NULL, 45, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1466, N'Oliver', N'Nelson', CAST(N'1934-03-30' AS Date), N'ON954', 39, 1, CAST(N'1988-03-14' AS Date), 118, 48)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1466, N'Oliver', N'Nelson', CAST(N'1934-03-30' AS Date), N'ON954', 0, 1, CAST(N'1988-03-14' AS Date), 118, 48)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1467, N'Olivia', N'King', CAST(N'1987-03-13' AS Date), N'OK274', 42, 0, NULL, 52, 48)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1468, N'Oliver', N'Young', CAST(N'2017-03-19' AS Date), N'OY860', 90, 0, NULL, 96, 48)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1469, N'Sophia', N'Mitchell', CAST(N'1950-11-09' AS Date), N'SM626', 7, 1, CAST(N'2017-05-27' AS Date), 21, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1469, N'Sophia', N'Mitchell', CAST(N'1950-11-09' AS Date), N'SM626', 0, 1, CAST(N'2017-05-27' AS Date), 21, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1470, N'William', N'Perez', CAST(N'1928-11-02' AS Date), N'WP161', 88, 0, NULL, 96, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1471, N'William', N'Nelson', CAST(N'1954-07-05' AS Date), N'WN206', 36, 1, CAST(N'1989-06-30' AS Date), 79, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1471, N'William', N'Nelson', CAST(N'1954-07-05' AS Date), N'WN206', 0, 1, CAST(N'1989-06-30' AS Date), 79, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1472, N'James', N'Wright', CAST(N'1980-12-15' AS Date), N'JW649', 84, 0, NULL, 12, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1473, N'Benjamin', N'Wright', CAST(N'2003-10-10' AS Date), N'BW779', 56, 0, NULL, 12, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1474, N'Amelia', N'Mitchell', CAST(N'2017-12-11' AS Date), N'AM150', 12, 1, CAST(N'2019-07-30' AS Date), 21, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1474, N'Amelia', N'Mitchell', CAST(N'2017-12-11' AS Date), N'AM150', 0, 1, CAST(N'2019-07-30' AS Date), 21, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1475, N'Benjamin', N'Scott', CAST(N'1949-01-22' AS Date), N'BS646', 20, 0, NULL, 29, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1476, N'Elijah', N'Perez', CAST(N'1958-02-15' AS Date), N'EP768', 76, 0, NULL, 96, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1477, N'Noah', N'Campbell', CAST(N'1974-01-02' AS Date), N'NC213', 75, 1, CAST(N'1985-09-30' AS Date), 8, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1477, N'Noah', N'Campbell', CAST(N'1974-01-02' AS Date), N'NC213', 0, 1, CAST(N'1985-09-30' AS Date), 8, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1478, N'Harper', N'Lopez', CAST(N'1936-03-15' AS Date), N'HL230', 31, 1, CAST(N'1989-11-26' AS Date), 89, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1478, N'Harper', N'Lopez', CAST(N'1936-03-15' AS Date), N'HL230', 0, 1, CAST(N'1989-11-26' AS Date), 89, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1479, N'James', N'Hernandez', CAST(N'1936-09-06' AS Date), N'JH517', 23, 0, NULL, 72, 49)
 GO
@@ -6138,7 +6138,7 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1482, N'Harper', N'Wright', CAST(N'1959-09-04' AS Date), N'HW865', 16, 0, NULL, 12, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1483, N'Evelyn', N'Wright', CAST(N'2008-04-14' AS Date), N'EW633', 89, 1, CAST(N'2021-12-23' AS Date), 12, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1483, N'Evelyn', N'Wright', CAST(N'2008-04-14' AS Date), N'EW633', 0, 1, CAST(N'2021-12-23' AS Date), 12, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1484, N'James', N'Young', CAST(N'1945-02-27' AS Date), N'JY342', 0, 1, CAST(N'1960-08-18' AS Date), 99, 49)
 GO
@@ -6146,11 +6146,11 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1486, N'Elijah', N'Campbell', CAST(N'1921-09-20' AS Date), N'EC946', 87, 0, NULL, 8, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1487, N'Benjamin', N'Nelson', CAST(N'1981-12-01' AS Date), N'BN139', 83, 1, CAST(N'1994-05-14' AS Date), 79, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1487, N'Benjamin', N'Nelson', CAST(N'1981-12-01' AS Date), N'BN139', 0, 1, CAST(N'1994-05-14' AS Date), 79, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1488, N'Alexander', N'Campbell', CAST(N'1961-02-06' AS Date), N'AC483', 72, 1, CAST(N'2005-09-29' AS Date), 8, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1488, N'Alexander', N'Campbell', CAST(N'1961-02-06' AS Date), N'AC483', 0, 1, CAST(N'2005-09-29' AS Date), 8, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1489, N'Henry', N'Adams', CAST(N'1990-02-26' AS Date), N'HA999', 82, 1, CAST(N'2000-10-26' AS Date), 91, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1489, N'Henry', N'Adams', CAST(N'1990-02-26' AS Date), N'HA999', 0, 1, CAST(N'2000-10-26' AS Date), 91, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1490, N'Harper', N'Turner', CAST(N'1935-08-28' AS Date), N'HT127', 46, 0, NULL, 102, 49)
 GO
@@ -6162,11 +6162,11 @@ INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonD
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1494, N'Lucas', N'Baker', CAST(N'2009-07-18' AS Date), N'LB651', 80, 0, NULL, 44, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1495, N'Noah', N'Carter', CAST(N'1969-08-23' AS Date), N'NC283', 8, 1, CAST(N'2006-01-13' AS Date), 50, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1495, N'Noah', N'Carter', CAST(N'1969-08-23' AS Date), N'NC283', 0, 1, CAST(N'2006-01-13' AS Date), 50, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1496, N'Mia', N'Young', CAST(N'2002-05-21' AS Date), N'MY535', 1, 0, NULL, 99, 49)
 GO
-INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1497, N'James', N'Nelson', CAST(N'1922-03-04' AS Date), N'JN595', 2, 1, CAST(N'1935-11-17' AS Date), 79, 49)
+INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1497, N'James', N'Nelson', CAST(N'1922-03-04' AS Date), N'JN595', 0, 1, CAST(N'1935-11-17' AS Date), 79, 49)
 GO
 INSERT [dbo].[Person] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [PersonCallSign], [PersonHealth], [PersonDeceased], [PersonDateOfDeath], [LocationLodgingID], [FactionID]) VALUES (1498, N'Alexander', N'Carter', CAST(N'1929-11-28' AS Date), N'AC379', 4, 0, NULL, 50, 49)
 GO
@@ -14083,6 +14083,8 @@ GO
 INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (46, N'Promote Water Conservation', N' Advocate for and practice water conservation habits to preserve local water resources.')
 GO
 INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (47, N'Tree Planting Events', N' Join or organize tree-planting events to contribute to environmental sustainability.')
+GO
+INSERT [dbo].[Task] ([TaskID], [TaskName], [TaskDescription]) VALUES (48, N'Healthcare Directive Planning', N'Involved in creating a legal document that outlines preferences for medical treatment in case you are unable to make decisions for yourself.')
 GO
 SET IDENTITY_INSERT [dbo].[Task] OFF
 GO
