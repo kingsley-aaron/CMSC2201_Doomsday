@@ -42,7 +42,8 @@ CREATE TABLE Faction (
     FactionID INT IDENTITY(1,1) PRIMARY KEY,
     FactionName NVARCHAR(35),
     FactionSize INT CHECK (FactionSize > 0),
-    FactionInfluence TINYINT CHECK (FactionInfluence BETWEEN 1 AND 10)
+    FactionInfluence TINYINT CHECK (FactionInfluence BETWEEN 1 AND 10),
+    FactionCoffer DECIMAL(12,2)
 );
 
 -- Create the FactionLocation Table
@@ -63,7 +64,8 @@ CREATE TABLE FoodSource (
 -- Create the WaterSource table
 CREATE TABLE WaterSource (
     WaterSourceID INT IDENTITY(1,1) PRIMARY KEY,
-    WaterSource NVARCHAR(35)
+    WaterSource NVARCHAR(35),
+    WaterQuality TINYINT CHECK (WaterQuality BETWEEN 1 AND 5)
 );
 
 -- Create the PowerSource table
@@ -83,31 +85,10 @@ CREATE TABLE TaskStatus (
 CREATE TABLE Food (
     FoodID INT IDENTITY(1,1) PRIMARY KEY,
     FoodName NVARCHAR(35),
-    FoodAmount DECIMAL(8,2),
     FoodExpiryDate DATE,
     FoodSourceID INT,
     FOREIGN KEY (FoodSourceID) REFERENCES FoodSource(FoodSourceID)
 );
-
--- Create the Water table
-CREATE TABLE Water (
-    WaterID INT IDENTITY(1,1) PRIMARY KEY,
-    WaterQuality TINYINT CHECK (WaterQuality BETWEEN 1 AND 5),
-    WaterQuantity DECIMAL(8,2),
-    WaterSourceID INT,
-    FOREIGN KEY (WaterSourceID) REFERENCES WaterSource(WaterSourceID)
-);
--- Create the Power table
-CREATE TABLE Power (
-    PowerID INT IDENTITY(1,1) PRIMARY KEY,
-    PowerCapacity DECIMAL(8,2),
-    PowerAmount DECIMAL(8,2),
-    PowerSourceID INT,
-    FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID),
-    CONSTRAINT CHK_PowerAmount_LessThan_Capacity 
-        CHECK (PowerAmount < PowerCapacity)
-);
-
 
 -- Create the Currency table
 CREATE TABLE Currency (
@@ -181,15 +162,20 @@ CREATE TABLE PersonTask (
 CREATE TABLE Inventory (
     InventoryID INT IDENTITY(1,1) PRIMARY KEY,
     LocationID INT,
-    WaterID INT,
     FoodID INT,
-    PowerID INT,
-    FactionID INT,
+    InvFoodAmount DECIMAL(8,2), 
+    WaterSourceID INT,
+    InvWaterQuantity DECIMAL(8,2),
+    PowerSourceID INT,
+    InvPowerCapacity DECIMAL(8,2),
+    InvPowerAmount DECIMAL(8,2),
+    InvDateAcquired DATE
     FOREIGN KEY (LocationID) REFERENCES Location(LocationID),
-    FOREIGN KEY (WaterID) REFERENCES Water(WaterID),
+    FOREIGN KEY (WaterSourceID) REFERENCES WaterSource(WaterSourceID),
     FOREIGN KEY (FoodID) REFERENCES Food(FoodID),
-    FOREIGN KEY (PowerID) REFERENCES Power(PowerID),
-    FOREIGN KEY (FactionID) REFERENCES Faction(FactionID)
+    FOREIGN KEY (PowerSourceID) REFERENCES PowerSource(PowerSourceID),
+    CONSTRAINT CHK_PowerAmount_LessThan_Capacity 
+        CHECK (InvPowerAmount < InvPowerCapacity)
 );
 
 -- Create the CurrencyPerson table
