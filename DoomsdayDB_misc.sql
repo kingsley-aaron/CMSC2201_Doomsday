@@ -145,7 +145,9 @@ BEGIN
     SELECT PersonID, TaskID, TaskStatusID, PersonTaskStartDate, PersonTaskDueDate
     FROM inserted;
 END;
+
 GO
+
 
 -- Stored Procedure to check if PersonTaskStartDate is in the past and if so
 -- update TaskStatusID from 1 (Not Started) -> 2 (In Progress)
@@ -160,6 +162,8 @@ BEGIN
     WHERE TaskStatusID = 1 AND PersonTaskStartDate <= CONVERT(DATE, GETDATE());
 END;
 
+GO
+
 
 --create view of the tasks that are overdue and display the person and task
 CREATE VIEW	overDueTasks AS
@@ -169,6 +173,7 @@ FROM dbo.PersonTask
 JOIN dbo.Task ON dbo.task.TaskID = dbo.PersonTask.TaskID
 JOIN dbo.Person ON dbo.Person.PersonID = dbo.PersonTask.PersonID
 WHERE TaskStatusID = 4;
+GO
 
 
 --Michael
@@ -182,6 +187,10 @@ CREATE TABLE [dbo].[Deceased](
 	[FactionID] [int] NOT NULL,
     [DeathTimestamp] [datetime] DEFAULT GETDATE() NOT NULL
 );
+
+GO
+
+
 --create trigger that adds the name of the deceased after the table updates 
 CREATE TRIGGER trg_PassedAway 
 ON [dbo].[Person]
@@ -196,80 +205,11 @@ BEGIN
      WHERE [PersonDeceased] = 1;
  END;
 
- --Stored Proc
- CREATE PROCEDURE sp_FactionDetail
---initiate variables and set to null
-    @factionInfluence INT = NULL,
-    @factionMembers INT = NULL
-AS
-BEGIN
-
-    SET NOCOUNT ON;
--- Initialize the @sql with a placeholder
-    DECLARE @sql NVARCHAR(MAX);
-	DECLARE @sql2 NVARCHAR(MAX);
-    SET @sql = N'SELECT * FROM dbo.Faction';
-	SET @sql2 = N'SELECT PersonID,PersonFirstName,PersonLastName,PersonDateOfBirth,PersonCallSign,PersonHealth,PersonDeceased
-	FROM dbo.Faction';
---change conditions based on entered values
---factionMembers list
-    IF @factionMembers IS NOT NULL
-    BEGIN
-        SET @sql = @sql2 + N' JOIN dbo.Person ON dbo.Person.FactionID = dbo.Faction.FactionID' +
-		N' AND dbo.Person.FactionID = @factionMembers';
-    END
-
-    IF @factionInfluence IS NOT NULL
-    BEGIN
-        SET @sql = @sql + N' WHERE FactionInfluence = @factionInfluence';
-    END
-
-  -- Execute the dynamic SQL query 
-    EXEC sp_executesql @sql,
-        N'@factionInfluence INT, @factionMembers INT',
-        @factionInfluence, @factionMembers;
-END
-
-
-GO
---create view of the tasks that are overdue and display the person and task
-CREATE VIEW	overDueTasks AS
-SELECT dbo.PersonTask.PersonID,CONCAT(dbo.Person.PersonFirstName,' ',dbo.Person.PersonLastName) AS Name,
-PersonTaskStartDate, PersonTaskDueDate,TaskName,TaskDescription
-FROM dbo.PersonTask
-JOIN dbo.Task ON dbo.task.TaskID = dbo.PersonTask.TaskID
-JOIN dbo.Person ON dbo.Person.PersonID = dbo.PersonTask.PersonID
-WHERE TaskStatusID = 4;
-GO
-
---Michael
---create temp table called deceased to hold information on deceased
-CREATE TABLE [dbo].[Deceased](
-    [DeceasedID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    [PersonID] [int] NOT NULL,
-    [PersonFirstName] nvarchar(255)  NOT NULL,
-    [PersonLastName] nvarchar(255) NOT NULL,
-	[PersonDateOfBirth] [date] NOT NULL,
-	[FactionID] [int] NOT NULL,
-    [DeathTimestamp] [datetime] DEFAULT GETDATE() NOT NULL
-);
-GO
---create trigger that adds the name of the deceased after the table updates 
-CREATE TRIGGER trg_PassedAway 
-ON [dbo].[Person]
-AFTER UPDATE
-AS
-BEGIN
-	SET NOCOUNT ON;
-
-	 INSERT INTO [dbo].[Deceased] ([PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [FactionID])
-     SELECT [PersonID], [PersonFirstName], [PersonLastName], [PersonDateOfBirth], [FactionID]
-     FROM inserted
-     WHERE [PersonDeceased] = 1;
- END;
  GO
- --Stored Proc
- CREATE PROCEDURE sp_FactionDetail
+
+
+--Stored Proc
+CREATE PROCEDURE sp_FactionDetail
 --initiate variables and set to null
     @factionInfluence INT = NULL,
     @factionMembers INT = NULL
@@ -295,15 +235,15 @@ BEGIN
     BEGIN
         SET @sql = @sql + N' WHERE FactionInfluence = @factionInfluence';
     END
+END;
 
-  -- Execute the dynamic SQL query 
-    EXEC sp_executesql @sql,
-        N'@factionInfluence INT, @factionMembers INT',
-        @factionInfluence, @factionMembers;
-END
-
+-- Execute the dynamic SQL query 
+EXEC sp_executesql @sql,
+    N'@factionInfluence INT, @factionMembers INT',
+    @factionInfluence, @factionMembers;
 
 GO
+
 
 --Aaron
 
@@ -383,6 +323,7 @@ BEGIN
 END;
 
 GO
+
 
 -- SPROC to get all information on a person into one report
 CREATE PROCEDURE [dbo].[usp_GetPersonInformation]
@@ -465,6 +406,7 @@ BEGIN
 END;
 GO
 
+
 -- View to get combined wealth of each faction
 CREATE VIEW FactionWealthView AS
 SELECT
@@ -490,49 +432,10 @@ GROUP BY
 
 GO
 
--- SPROC to update tasks to overdue if not completed by due date
-CREATE PROCEDURE usp_UpdateOverdueTasks
-AS 
-BEGIN
-
-	UPDATE PersonTask
-	SET TaskStatusID = 4
-	WHERE TaskStatusID NOT IN (3, 4)
-	AND PersonTaskDueDate < GETDATE();
-END;
-GO
-
--- SPROC to get report of all in-progress tasks for a faction
-CREATE PROCEDURE usp_InProgressTasks
-	@factionID INT
-AS 
-BEGIN
-	SELECT 
-		p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
-		t.TaskName,
-		pt.PersonTaskStartDate AS [Start Date],
-		pt.PersonTaskDueDate AS [Due Date],
-		DATEDIFF(DAY, pt.PersonTaskDueDate, GETDATE()) AS [Days Until Due],
-		CASE WHEN pt.TaskStatusID = 4 THEN 'Overdue'
-		ELSE 'In-Progress' 
-		END AS [Task Status]
-		
-	FROM
-		Person p
-	JOIN 
-		PersonTask pt ON p.PersonID = pt.PersonID
-	JOIN 
-		Task t ON pt.TaskID = t.TaskID
-	WHERE p.FactionID = @factionID
-	AND TaskStatusID in (2, 4)
-	ORDER BY [Days Until Due];
-END;
-GO
 
 --Heidi
 
 -- Trigger to update influence when a new location and faction are added to FactionLocation table.
-
 CREATE TRIGGER [dbo].[trg_UpdateInfluence]
 ON [dbo].[FactionLocation]
 AFTER INSERT
@@ -552,6 +455,8 @@ AS
 	END;
 
 GO
+
+
 -- SPROC to update date of death and deceased status when health reaches 0
 CREATE PROCEDURE [dbo].[sp_ZeroHealth]
 AS
@@ -614,6 +519,7 @@ WHERE
 
 END;
 
+
 -- View to find safest locations when danger is imminent
 CREATE VIEW view_SafestLocations
 AS
@@ -622,8 +528,8 @@ FROM     dbo.Location
 GROUP BY LocationSafetyLevel, LocationName, LocationDescription
 ORDER BY LocationSafetyLevel DESC
 
-
 GO
+
 
 -- View to get combined wealth of each faction
 CREATE VIEW FactionWealthView AS
@@ -648,8 +554,8 @@ GROUP BY
 	FactionInfluence
 ORDER BY CombinedWealth DESC
 
-
 GO
+
 
 -- SPROC to update tasks to overdue if not completed by due date
 CREATE PROCEDURE usp_UpdateOverdueTasks
@@ -663,8 +569,37 @@ BEGIN
 END;
 GO
 
+
 -- SPROC to get report of all in-progress tasks for a faction
 ALTER PROCEDURE usp_InProgressTasks
+	@factionID INT
+AS 
+BEGIN
+	SELECT 
+		p.PersonFirstName + ' ' + p.PersonLastName AS [Name],
+		t.TaskName,
+		pt.PersonTaskStartDate AS [Start Date],
+		pt.PersonTaskDueDate AS [Due Date],
+		DATEDIFF(DAY, pt.PersonTaskDueDate, GETDATE()) AS [Days Until Due],
+		CASE WHEN pt.TaskStatusID = 4 THEN 'Overdue'
+		ELSE 'In-Progress' 
+		END AS [Task Status]
+		
+	FROM
+		Person p
+	JOIN 
+		PersonTask pt ON p.PersonID = pt.PersonID
+	JOIN 
+		Task t ON pt.TaskID = t.TaskID
+	WHERE p.FactionID = @factionID
+	AND TaskStatusID in (2, 4)
+	ORDER BY [Days Until Due];
+END;
+GO
+
+
+-- SPROC to get report of all in-progress tasks for a faction
+CREATE PROCEDURE usp_InProgressTasks
 	@factionID INT
 AS 
 BEGIN
