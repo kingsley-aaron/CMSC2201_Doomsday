@@ -38,12 +38,8 @@ END;
 
 GO
 
--- Stored Procedure to allocate resources to a different Location
-
-
 
 -- Updated Stored Procedure with Amounts as a parameter.
-
 CREATE PROCEDURE sp_AllocateResources
     @LocationID INT, 
     @ResourceType NVARCHAR(50), -- Resource Type 'Food', 'Water', 'Power'
@@ -53,15 +49,12 @@ CREATE PROCEDURE sp_AllocateResources
 AS
 BEGIN
     SET NOCOUNT ON;
-
-
     -- Check if the specified location exists
     IF NOT EXISTS (SELECT 1 FROM Location WHERE LocationID = @LocationID)
     BEGIN
         RAISERROR ('Invalid location specified', 16, 1);
         RETURN;
     END
-
     -- Allocate Food resources
     IF @ResourceType = 'Food'
     BEGIN
@@ -71,7 +64,6 @@ BEGIN
             RAISERROR ('Invalid FoodID specified', 16, 1);
             RETURN;
         END
-
         -- Assign Food resource to the location
         IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND FoodID = @ResourceID)
         BEGIN
@@ -91,7 +83,6 @@ BEGIN
             RAISERROR ('Invalid WaterSourceID specified', 16, 1);
             RETURN;
         END
-
         -- Assign Water resource to the location
         IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND WaterSourceID = @ResourceID)
         BEGIN
@@ -111,7 +102,6 @@ BEGIN
             RAISERROR ('Invalid PowerSourceID specified', 16, 1);
             RETURN;
         END
-
         -- Assign Power resource to the location
         IF NOT EXISTS (SELECT 1 FROM Inventory WHERE LocationID = @LocationID AND PowerSourceID = @ResourceID)
         BEGIN
@@ -128,6 +118,7 @@ BEGIN
         RAISERROR ('Resource type not recognized', 16, 1);
     END
 END;
+
 GO
 
 
@@ -138,7 +129,6 @@ INSTEAD OF INSERT
 AS
 BEGIN
     SET NOCOUNT ON;
-
     -- Check if any of the persons to be inserted are deceased
     IF EXISTS (
         SELECT 1
@@ -150,7 +140,6 @@ BEGIN
         RAISERROR ('Cannot add tasks for deceased persons.', 16, 1);
         RETURN;
     END;
-
     -- If all persons are alive, proceed with the insertion
     INSERT INTO PersonTask (PersonID, TaskID, TaskStatusID, PersonTaskStartDate, PersonTaskDueDate)
     SELECT PersonID, TaskID, TaskStatusID, PersonTaskStartDate, PersonTaskDueDate
@@ -165,7 +154,7 @@ CREATE PROCEDURE sp_UpdateTaskStatus
 AS
 BEGIN
     SET NOCOUNT ON;
-
+    
     UPDATE PersonTask
     SET TaskStatusID = 2
     WHERE TaskStatusID = 1 AND PersonTaskStartDate <= CONVERT(DATE, GETDATE());
