@@ -164,7 +164,7 @@ END;
 
 GO
 
-
+--Michael
 --create view of the tasks that are overdue and display the person and task
 CREATE VIEW	overDueTasks AS
 SELECT dbo.PersonTask.PersonID,CONCAT(dbo.Person.PersonFirstName,' ',dbo.Person.PersonLastName) AS Name,
@@ -176,7 +176,7 @@ WHERE TaskStatusID = 4;
 GO
 
 
---Michael
+
 --create temp table called deceased to hold information on deceased
 CREATE TABLE [dbo].[Deceased](
     [DeceasedID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
